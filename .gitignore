@@ -7,6 +7,8 @@ __screenshots__/
 # 插件构建产物（发布时作为 GitHub Release 附件上传）
 /main.js
 /styles.css
+# 核心库的 npm pack 产物（同样作为 Release 附件上传）
+/*.tgz
 
 .claude/worktrees/
 

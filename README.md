@@ -31,19 +31,19 @@ law1 -.->|special case| law2
 ```
 ````
 
-| What | How |
-|---|---|
-| Nodes | `#` headings and `-` lists; indent 2 spaces per level. One root. |
-| Summary brace | Put `{ ` before the first bracketed sibling and add a sibling line `- } summary text` after the last one. The summary may have children. |
-| Relationship | In a `%%` … `%%` block at the very end: `from --> to`, `-.->` dashed, `==>` thick, optional `\|label\|`. Endpoints are node IDs. |
-| Node ID | `^id` at the end of a node line (letters, digits, `-`). |
-| Color | One of 🔴 🟠 🟡 🟢 🔵 🟣 ⚫ at the end of the line. |
-| Folded by default | `<!-- fold -->` at the end of the line. |
-| Inline | `**bold**`, `*italic*`, `~~strike~~`, `` `code` ``, `==highlight==`, `$math$` (incl. `\ce{}` chemistry), `[[wikilinks]]`, `[links](url)`. |
+| What              | How                                                                                                                                       |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Nodes             | `#` headings and `-` lists; indent 2 spaces per level. One root.                                                                          |
+| Summary brace     | Put `{ ` before the first bracketed sibling and add a sibling line `- } summary text` after the last one. The summary may have children.  |
+| Relationship      | In a `%%` … `%%` block at the very end: `from --> to`, `-.->` dashed, `==>` thick, optional `\|label\|`. Endpoints are node IDs.          |
+| Node ID           | `^id` at the end of a node line (letters, digits, `-`).                                                                                   |
+| Color             | One of 🔴 🟠 🟡 🟢 🔵 🟣 ⚫ at the end of the line.                                                                                       |
+| Folded by default | `<!-- fold -->` at the end of the line.                                                                                                   |
+| Inline            | `**bold**`, `*italic*`, `~~strike~~`, `` `code` ``, `==highlight==`, `$math$` (incl. `\ce{}` chemistry), `[[wikilinks]]`, `[links](url)`. |
 
 The full rules, written for AI assistants, are in [`ai-guide.md`](packages/mdmindmap/ai-guide.md) (Chinese). The command **Copy AI authoring guide** puts it on your clipboard so you can paste it into a chat. The guide is in Chinese, as are all diagnostic messages.
 
-To check a file from the command line (also handy for AI agents): `npx mdmindmap check <file>`.
+To check a file from the command line (also handy for AI agents): `npx mdmindmap check <file>`, after [installing the library](packages/mdmindmap/README.md#install).
 
 ## Using it in Obsidian
 
@@ -89,7 +89,7 @@ The full variable list is in the [library README](packages/mdmindmap/README.md#c
 
 ## Using it on the web
 
-The renderer is also an npm package: see [packages/mdmindmap](packages/mdmindmap/README.md).
+The renderer is also a standalone library for web apps: see [packages/mdmindmap](packages/mdmindmap/README.md).
 
 ## Development
 

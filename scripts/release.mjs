@@ -1,6 +1,7 @@
 // npm run release <版本号>
 // 把版本号同步写进 npm 包、插件、根目录的 package.json 和 manifest.json、versions.json，
-// 跑 npm run check，提交并打上不带 v 的标签。到此为止，不做任何发布（spec §13）。
+// 跑 npm run check，提交并打上不带 v 的标签，再把核心库打成 tgz 供 GitHub Release 附带。
+// 到此为止，不做任何发布（spec §13）。
 import { execSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
 
@@ -64,8 +65,10 @@ try {
 run(`git add ${touched.join(" ")}`);
 run(`git commit -m "release ${version}"`);
 run(`git tag ${version}`);
+// check 刚构建过 dist，直接打包；还没发布到 npm，其他 web 应用从 Release 附件安装
+run("npm pack -w mdmindmap");
 
 console.log(`
 已打标签 ${version}。接下来手动发布：
-  npm publish -w mdmindmap
-  在 GitHub 上建 Release，标签 ${version}，附上根目录的 main.js、manifest.json、styles.css`);
+  git push origin main ${version}
+  在 GitHub 上建 Release，标签 ${version}，附上根目录的 main.js、manifest.json、styles.css、mdmindmap-${version}.tgz`);

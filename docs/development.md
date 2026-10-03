@@ -13,24 +13,24 @@ npx playwright install chromium   # 渲染器的测试跑在浏览器里
 
 都在仓库根目录运行。
 
-| 命令 | 作用 |
-|---|---|
-| `npm run dev` | 监听源码，改动后重新构建插件，并复制到测试 vault |
+| 命令            | 作用                                                             |
+| --------------- | ---------------------------------------------------------------- |
+| `npm run dev`   | 监听源码，改动后重新构建插件，并复制到测试 vault                 |
 | `npm run build` | 构建核心库和插件，产出根目录的 `main.js`、`styles.css`（压缩版） |
-| `npm run check` | lint、类型检查、测试、构建，全部跑一遍；提交前先跑 |
-| `npm run test` | 只跑测试 |
-| `npm run demo` | 在浏览器里打开核心库的演示页，不需要 Obsidian |
+| `npm run check` | lint、类型检查、测试、构建，全部跑一遍；提交前先跑               |
+| `npm run test`  | 只跑测试                                                         |
+| `npm run demo`  | 在浏览器里打开核心库的演示页，不需要 Obsidian                    |
 
 ## 在 Obsidian 里调试：仓库自带的测试 vault
 
 仓库里的 `test-vault/` 本身就是一个 Obsidian vault。里面已经装好了 [Hot Reload](https://github.com/pjeby/hot-reload)，还有几篇示例笔记：
 
-| 笔记 | 用来测 |
-|---|---|
+| 笔记            | 用来测                                                       |
+| --------------- | ------------------------------------------------------------ |
 | `代码块导图.md` | 代码块渲染，覆盖所有写法：概要、联系、颜色、折叠、公式、双链 |
-| `整篇导图.md` | 命令「以导图打开当前文件」 |
-| `错误示例.md` | 源文有问题时的 ⚠ 角标 |
-| `连接体问题.md` | 双链跳转的目标 |
+| `整篇导图.md`   | 命令「以导图打开当前文件」                                   |
+| `错误示例.md`   | 源文有问题时的 ⚠ 角标                                        |
+| `连接体问题.md` | 双链跳转的目标                                               |
 
 第一次使用：
 
@@ -74,7 +74,8 @@ BRAT 从 GitHub Release 下载插件，和用户安装的方式一样。适合�
    npm run release <x.y.z>   # 不带 v
    ```
 
-   它会把版本号写进各个 `package.json`、`manifest.json` 和 `versions.json`，跑 `npm run check`，然后提交并打标签。
+   它会把版本号写进各个 `package.json`、`manifest.json` 和 `versions.json`，跑 `npm run check`，然后提交并打标签，最后把核心库打包成根目录的 `mdmindmap-<x.y.z>.tgz`。
+
 2. 推送提交和标签：
 
    ```sh
@@ -83,10 +84,10 @@ BRAT 从 GitHub Release 下载插件，和用户安装的方式一样。适合�
 
 3. 在 GitHub 的 Releases 页面新建 Release：
    - 选刚推上去的标签。
-   - 附上根目录的 `main.js`、`manifest.json`、`styles.css`。
+   - 附上根目录的 `main.js`、`manifest.json`、`styles.css`，以及 `mdmindmap-<x.y.z>.tgz`（核心库还没发布到 npm，其他 web 应用从这里安装）。
    - 测试版勾选 "Set as a pre-release"。
 
-`npm run dev` 会把根目录的 `main.js` 换成不压缩的调试版。`npm run release` 会先重新构建，所以不受影响；但如果是手动上传附件，上传前先跑一次 `npm run build`。
+`npm run dev` 会把根目录的 `main.js` 换成不压缩的调试版。`npm run release` 会先重新构建，所以不受影响；但如果是手动上传附件，上传前先跑一次 `npm run build`；tgz 要重新打的话，再跑 `npm pack -w mdmindmap`。
 
 ### 在 Obsidian 里安装
 

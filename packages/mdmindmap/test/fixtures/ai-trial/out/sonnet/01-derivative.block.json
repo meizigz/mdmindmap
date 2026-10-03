@@ -1,0 +1,184 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "导数与函数的单调性、极值、最值",
+      "children": [
+        {
+          "line": 3,
+          "text": "导数的概念",
+          "children": [
+            {
+              "line": 4,
+              "text": "定义：$f'(x_0)=\\lim_{\\Delta x\\to 0}\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}$"
+            },
+            {
+              "line": 5,
+              "text": "几何意义：曲线在 $x_0$ 处切线的斜率"
+            },
+            {
+              "line": 6,
+              "text": "切线方程：$y-f(x_0)=f'(x_0)(x-x_0)$"
+            }
+          ]
+        },
+        {
+          "line": 7,
+          "text": "常用求导公式",
+          "fold": true,
+          "children": [
+            {
+              "line": 8,
+              "text": "$(x^n)'=nx^{n-1}$"
+            },
+            {
+              "line": 9,
+              "text": "$(\\sin x)'=\\cos x$"
+            },
+            {
+              "line": 10,
+              "text": "$(\\cos x)'=-\\sin x$"
+            },
+            {
+              "line": 11,
+              "text": "$(e^x)'=e^x$"
+            },
+            {
+              "line": 12,
+              "text": "$(\\ln x)'=\\frac{1}{x}$"
+            },
+            {
+              "line": 13,
+              "text": "四则运算：$(uv)'=u'v+uv'$"
+            },
+            {
+              "line": 14,
+              "text": "复合函数：$[f(g(x))]'=f'(g(x))g'(x)$"
+            }
+          ]
+        },
+        {
+          "line": 15,
+          "text": "单调性",
+          "id": "mono",
+          "children": [
+            {
+              "line": 16,
+              "text": "$f'(x)>0$ 则 $f(x)$ 在该区间单调递增"
+            },
+            {
+              "line": 17,
+              "text": "$f'(x)<0$ 则 $f(x)$ 在该区间单调递减"
+            },
+            {
+              "line": 18,
+              "text": "步骤：定义域、求导、解不等式、写区间"
+            },
+            {
+              "line": 19,
+              "text": "已知单调求参：转化为 $f'(x)\\ge 0$ 或 $\\le 0$ 恒成立",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "line": 20,
+          "text": "极值",
+          "id": "extreme",
+          "children": [
+            {
+              "line": 21,
+              "text": "左正右负：极大值点"
+            },
+            {
+              "line": 22,
+              "text": "左负右正：极小值点"
+            },
+            {
+              "line": 24,
+              "text": "必要条件：$f'(x_0)=0$"
+            },
+            {
+              "line": 25,
+              "text": "易错：$f'(x_0)=0$ 不一定是极值点",
+              "color": "red"
+            },
+            {
+              "line": 26,
+              "text": "极值是局部概念，可以有多个"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 1,
+              "node": {
+                "line": 23,
+                "text": "判别方法"
+              }
+            }
+          ]
+        },
+        {
+          "line": 27,
+          "text": "最值",
+          "id": "maxmin",
+          "children": [
+            {
+              "line": 28,
+              "text": "闭区间 $[a,b]$ 上连续函数必有最值"
+            },
+            {
+              "line": 29,
+              "text": "步骤：求极值，再与端点值 $f(a)$、$f(b)$ 比较"
+            },
+            {
+              "line": 30,
+              "text": "最大者为最大值，最小者为最小值"
+            },
+            {
+              "line": 31,
+              "text": "开区间或无穷区间：结合单调性判断"
+            }
+          ]
+        },
+        {
+          "line": 32,
+          "text": "应用",
+          "children": [
+            {
+              "line": 33,
+              "text": "恒成立问题：分离参数，转化为求最值"
+            },
+            {
+              "line": 34,
+              "text": "函数零点个数：画出单调性与极值草图"
+            },
+            {
+              "line": 35,
+              "text": "实际优化问题：建立函数，求导找最值"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "mono",
+        "to": "extreme",
+        "style": "solid",
+        "line": 38,
+        "label": "由导数符号判断"
+      },
+      {
+        "from": "extreme",
+        "to": "maxmin",
+        "style": "solid",
+        "line": 39,
+        "label": "与端点比较"
+      }
+    ],
+    "diagnostics": []
+  }
+]

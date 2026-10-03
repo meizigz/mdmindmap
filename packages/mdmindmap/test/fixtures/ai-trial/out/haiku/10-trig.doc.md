@@ -1,0 +1,190 @@
+# 三角函数
+
+- 任意角与弧度制 ^angle-radian
+  - 任意角的概念
+    - 正角：逆时针旋转产生
+    - 负角：顺时针旋转产生
+    - 零角：射线不旋转
+  - 角的集合表示
+    - 终边相同的角：$\{\alpha | \alpha = \theta + k \cdot 360°, k \in \mathbb{Z}\}$
+    - 第一象限角：$\{0° + k \cdot 360° < \alpha < 90° + k \cdot 360°\}$
+  - { 弧度与角度的关系
+    - $\pi$ 弧度 $= 180°$
+    - $1$ 弧度 $= \frac{180°}{\pi} \approx 57.3°$
+    - $1° = \frac{\pi}{180}$ 弧度
+    - } 换算公式
+  - 弧长与面积
+    - 弧长：$l = r|\alpha|$
+    - 扇形面积：$S = \frac{1}{2}r^2|\alpha|$ 🔴 ^arc-area
+- 三角函数的定义 ^trig-def
+  - { 直角三角形定义（锐角）
+    - $\sin \alpha = \frac{\text{对边}}{\text{斜边}}$
+    - $\cos \alpha = \frac{\text{邻边}}{\text{斜边}}$
+    - $\tan \alpha = \frac{\text{对边}}{\text{邻边}}$
+    - } 锐角三角函数
+  - { 单位圆定义（任意角）
+    - 设 $P(x, y)$ 是角 $\alpha$ 的终边与单位圆交点
+    - $\sin \alpha = y$
+    - $\cos \alpha = x$
+    - $\tan \alpha = \frac{y}{x}$ $(x \neq 0)$
+    - } 一般三角函数
+  - { 三角函数值的符号规律
+    - 第一象限：$\sin, \cos, \tan$ 都为正
+    - 第二象限：$\sin$ 正，$\cos, \tan$ 负
+    - 第三象限：$\tan$ 正，$\sin, \cos$ 负
+    - 第四象限：$\cos$ 正，$\sin, \tan$ 负
+    - } 象限符号
+    - 记忆口诀：一全正，二正弦，三切正，四余弦
+  - 三角函数值表
+    - 常用特殊角值：$0°, 30°, 45°, 60°, 90°$ 等
+- 诱导公式 ^induction <!-- fold -->
+  - { 终边关系为 $\alpha + k \cdot 360°$（周期性）
+    - $\sin(\alpha + k \cdot 360°) = \sin \alpha$
+    - $\cos(\alpha + k \cdot 360°) = \cos \alpha$
+    - $\tan(\alpha + k \cdot 360°) = \tan \alpha$
+    - } 周期型诱导公式
+  - { 关于 $x$ 轴对称：角为 $-\alpha$
+    - $\sin(-\alpha) = -\sin \alpha$
+    - $\cos(-\alpha) = \cos \alpha$
+    - $\tan(-\alpha) = -\tan \alpha$
+    - } 负角诱导公式
+  - { 关于 $y$ 轴对称：角为 $180° - \alpha$
+    - $\sin(180° - \alpha) = \sin \alpha$
+    - $\cos(180° - \alpha) = -\cos \alpha$
+    - $\tan(180° - \alpha) = -\tan \alpha$
+    - } 补角诱导公式
+  - { 关于原点对称：角为 $180° + \alpha$
+    - $\sin(180° + \alpha) = -\sin \alpha$
+    - $\cos(180° + \alpha) = -\cos \alpha$
+    - $\tan(180° + \alpha) = \tan \alpha$
+    - } 补集角诱导公式
+  - { 关于 $y = x$ 对称：角为 $90° - \alpha$
+    - $\sin(90° - \alpha) = \cos \alpha$
+    - $\cos(90° - \alpha) = \sin \alpha$
+    - $\tan(90° - \alpha) = \cot \alpha$
+    - } 余角诱导公式
+  - { 角为 $90° + \alpha$
+    - $\sin(90° + \alpha) = \cos \alpha$
+    - $\cos(90° + \alpha) = -\sin \alpha$
+    - $\tan(90° + \alpha) = -\cot \alpha$
+    - } 邻角诱导公式
+- 同角关系 ^same-angle <!-- fold -->
+  - { 平方和关系
+    - $\sin^2 \alpha + \cos^2 \alpha = 1$
+    - 变形：$\sin^2 \alpha = 1 - \cos^2 \alpha$
+    - } 勾股关系
+    - 同时除以 $\cos^2 \alpha$：$\tan^2 \alpha + 1 = \sec^2 \alpha$
+  - { 商数关系
+    - $\tan \alpha = \frac{\sin \alpha}{\cos \alpha}$
+    - $\cot \alpha = \frac{\cos \alpha}{\sin \alpha}$
+    - } 比值关系
+  - 互余关系
+    - $\sin \alpha \cdot \csc \alpha = 1$
+    - $\cos \alpha \cdot \sec \alpha = 1$
+    - $\tan \alpha \cdot \cot \alpha = 1$
+- 图像与性质 ^graph-properties <!-- fold -->
+  - { 正弦函数 $y = \sin x$
+    - 定义域：$\mathbb{R}$
+    - 值域：$[-1, 1]$
+    - 周期：$2\pi$
+    - 奇偶性：奇函数
+    - 单调性：$[-\frac{\pi}{2} + 2k\pi, \frac{\pi}{2} + 2k\pi]$ 递增
+    - } 正弦函数
+  - { 余弦函数 $y = \cos x$
+    - 定义域：$\mathbb{R}$
+    - 值域：$[-1, 1]$
+    - 周期：$2\pi$
+    - 奇偶性：偶函数
+    - 单调性：$[-\pi + 2k\pi, 0 + 2k\pi]$ 递增
+    - } 余弦函数
+  - { 正切函数 $y = \tan x$
+    - 定义域：$\{x | x \neq \frac{\pi}{2} + k\pi, k \in \mathbb{Z}\}$
+    - 值域：$\mathbb{R}$
+    - 周期：$\pi$
+    - 奇偶性：奇函数
+    - 单调性：$(-\frac{\pi}{2} + k\pi, \frac{\pi}{2} + k\pi)$ 递增
+    - } 正切函数
+  - { 一般形式 $y = A\sin(\omega x + \varphi) + B$
+    - 振幅：$|A|$，最高点到中位线的距离
+    - 角频率：$\omega$，控制周期 $T = \frac{2\pi}{\omega}$
+    - 初相位：$\varphi$，图像左右移动
+    - 纵向平移：$B$，上下移动
+    - } 函数变换
+    - 从 $y = \sin x$ 到 $y = A\sin(\omega x + \varphi) + B$ 的变换步骤 🔴 ^graph-transform
+- 恒等变换 ^identity
+  - { 和差公式
+    - $\sin(\alpha \pm \beta) = \sin \alpha \cos \beta \pm \cos \alpha \sin \beta$
+    - $\cos(\alpha \pm \beta) = \cos \alpha \cos \beta \mp \sin \alpha \sin \beta$
+    - $\tan(\alpha \pm \beta) = \frac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta}$
+    - } 和差三角函数
+    - 应用：求非特殊角的三角函数值
+  - { 二倍角公式
+    - $\sin 2\alpha = 2\sin \alpha \cos \alpha$
+    - $\cos 2\alpha = \cos^2 \alpha - \sin^2 \alpha = 2\cos^2 \alpha - 1 = 1 - 2\sin^2 \alpha$
+    - $\tan 2\alpha = \frac{2\tan \alpha}{1 - \tan^2 \alpha}$
+    - } 倍角公式
+    - 降幂：$\cos^2 \alpha = \frac{1 + \cos 2\alpha}{2}$，$\sin^2 \alpha = \frac{1 - \cos 2\alpha}{2}$
+  - { 半角公式
+    - $\sin \frac{\alpha}{2} = \pm\sqrt{\frac{1 - \cos \alpha}{2}}$
+    - $\cos \frac{\alpha}{2} = \pm\sqrt{\frac{1 + \cos \alpha}{2}}$
+    - $\tan \frac{\alpha}{2} = \pm\sqrt{\frac{1 - \cos \alpha}{1 + \cos \alpha}} = \frac{\sin \alpha}{1 + \cos \alpha}$
+    - } 半角公式
+  - { 积化和差公式
+    - $\sin \alpha \cos \beta = \frac{1}{2}[\sin(\alpha + \beta) + \sin(\alpha - \beta)]$
+    - $\cos \alpha \sin \beta = \frac{1}{2}[\sin(\alpha + \beta) - \sin(\alpha - \beta)]$
+    - $\cos \alpha \cos \beta = \frac{1}{2}[\cos(\alpha + \beta) + \cos(\alpha - \beta)]$
+    - $\sin \alpha \sin \beta = -\frac{1}{2}[\cos(\alpha + \beta) - \cos(\alpha - \beta)]$
+    - } 积化和差
+  - { 和差化积公式
+    - $\sin \alpha + \sin \beta = 2\sin \frac{\alpha + \beta}{2} \cos \frac{\alpha - \beta}{2}$
+    - $\sin \alpha - \sin \beta = 2\cos \frac{\alpha + \beta}{2} \sin \frac{\alpha - \beta}{2}$
+    - $\cos \alpha + \cos \beta = 2\cos \frac{\alpha + \beta}{2} \cos \frac{\alpha - \beta}{2}$
+    - $\cos \alpha - \cos \beta = -2\sin \frac{\alpha + \beta}{2} \sin \frac{\alpha - \beta}{2}$
+    - } 和差化积
+- 解三角形 ^solve-triangle
+  - { 正弦定理
+    - $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$
+    - 其中 $R$ 是外接圆半径
+    - 应用：已知两角一边或两边一对角时求解
+    - } 正弦定理
+  - { 余弦定理
+    - $a^2 = b^2 + c^2 - 2bc\cos A$
+    - $b^2 = a^2 + c^2 - 2ac\cos B$
+    - $c^2 = a^2 + b^2 - 2ab\cos C$
+    - 变形：$\cos A = \frac{b^2 + c^2 - a^2}{2bc}$
+    - 应用：已知两边一夹角或三边时求解
+    - } 余弦定理
+  - { 三角形面积公式
+    - $S = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ac\sin B$
+    - $S = \frac{abc}{4R}$，其中 $R$ 是外接圆半径
+    - $S = \frac{1}{2}(a + b + c)r$，其中 $r$ 是内切圆半径
+    - } 面积公式
+  - 解三角形的步骤 🔴
+    - 判断已知量，选择正弦或余弦定理
+    - 列出方程并求解
+    - 检验答案的合理性（三角形三边关系）
+- 三角函数应用 ^applications <!-- fold -->
+  - 物理应用
+    - 简谐振动：$y = A\sin(\omega t + \varphi)$
+    - 交流电：$i = I_0 \sin(\omega t + \varphi)$
+  - 几何应用
+    - 高度问题：利用仰角和俯角
+    - 距离问题：船航问题、方位角问题
+  - 工程应用
+    - 建筑中的角度设计
+    - 土木工程中的测量
+
+%%
+angle-radian --> trig-def
+trig-def --> induction
+induction --> same-angle
+same-angle --> graph-properties
+same-angle --> identity
+graph-properties --> identity
+identity --> solve-triangle
+solve-triangle --> applications
+trig-def -.-> |基础| graph-properties
+induction -.-> |简化计算| identity
+arc-area -.-> |相关概念| angle-radian
+graph-transform -.-> |重点难点| graph-properties
+%%

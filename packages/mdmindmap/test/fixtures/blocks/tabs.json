@@ -1,0 +1,26 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "一级",
+        "children": [
+          {
+            "line": 3,
+            "text": "二级（制表符缩进）",
+            "children": [
+              {
+                "line": 4,
+                "text": "三级"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

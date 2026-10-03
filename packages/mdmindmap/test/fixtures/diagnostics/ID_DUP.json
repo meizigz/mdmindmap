@@ -1,0 +1,27 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "第一定律",
+        "id": "law"
+      },
+      {
+        "line": 3,
+        "text": "第二定律"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 3,
+      "severity": "error",
+      "code": "ID_DUP",
+      "message": "节点ID `law` 已在第 2 行用过，这里的ID不生效。",
+      "fix": "改成一个不重复的ID，并同步修改引用它的联系。"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "root": {
+    "line": 1,
+    "text": "定语从句",
+    "children": [
+      {
+        "line": 3,
+        "text": "定语从句的定义",
+        "id": "definition",
+        "children": [
+          {
+            "line": 4,
+            "text": "修饰名词或代词的从句"
+          },
+          {
+            "line": 5,
+            "text": "先行词：被修饰的词"
+          },
+          {
+            "line": 6,
+            "text": "引导词：关系代词或关系副词"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "text": "关系代词",
+        "id": "rel-pron",
+        "children": [
+          {
+            "line": 8,
+            "text": "who（主语、宾语）"
+          },
+          {
+            "line": 9,
+            "text": "指人，主语时必不可少"
+          },
+          {
+            "line": 10,
+            "text": "例：The teacher **who** teaches us is kind."
+          },
+          {
+            "line": 11,
+            "text": "whom（宾语）",
+            "color": "red"
+          },
+          {
+            "line": 12,
+            "text": "指人，作宾语，口语常用 who 代替"
+          },
+          {
+            "line": 13,
+            "text": "例：The man **whom** I met yesterday is here."
+          },
+          {
+            "line": 14,
+            "text": "that（主语、宾语）"
+          },
+          {
+            "line": 15,
+            "text": "指人或物，限制性定语从句中可用"
+          },
+          {
+            "line": 16,
+            "text": "例：The book **that** I like is interesting."
+          },
+          {
+            "line": 18,
+            "text": "which（主语、宾语）"
+          },
+          {
+            "line": 19,
+            "text": "指物，可用于限制性或非限制性"
+          },
+          {
+            "line": 20,
+            "text": "例：The house **which** is big belongs to him."
+          },
+          {
+            "line": 21,
+            "text": "whose（所有格）"
+          },
+          {
+            "line": 22,
+            "text": "指人或物的所属关系"
+          },
+          {
+            "line": 23,
+            "text": "例：The girl **whose** book is lost is crying."
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 8,
+            "node": {
+              "line": 17,
+              "text": "代词对比"
+            }
+          },
+          {
+            "from": 9,
+            "to": 14,
+            "node": {
+              "line": 24,
+              "text": ""
+            }
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "text": "关系副词",
+        "id": "rel-adv",
+        "children": [
+          {
+            "line": 26,
+            "text": "where（地点）"
+          },
+          {
+            "line": 27,
+            "text": "指地点，在从句中作地点状语"
+          },
+          {
+            "line": 28,
+            "text": "例：The place **where** I live is beautiful."
+          },
+          {
+            "line": 29,
+            "text": "when（时间）"
+          },
+          {
+            "line": 30,
+            "text": "指时间，在从句中作时间状语"
+          },
+          {
+            "line": 31,
+            "text": "例：I remember the day **when** we first met."
+          },
+          {
+            "line": 32,
+            "text": "why（原因）"
+          },
+          {
+            "line": 33,
+            "text": "指原因，在从句中作原因状语"
+          },
+          {
+            "line": 34,
+            "text": "例：The reason **why** he left is unknown."
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 8,
+            "node": {
+              "line": 35,
+              "text": "副词对比"
+            }
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "text": "限制性vs非限制性",
+        "id": "restriction",
+        "children": [
+          {
+            "line": 37,
+            "text": "限制性定语从句"
+          },
+          {
+            "line": 38,
+            "text": "不用逗号分隔，对先行词有限制作用"
+          },
+          {
+            "line": 39,
+            "text": "不能省去，在意义上是先行词不可分割的部分"
+          },
+          {
+            "line": 40,
+            "text": "非限制性定语从句",
+            "color": "red"
+          },
+          {
+            "line": 41,
+            "text": "用逗号分隔，对先行词做补充说明"
+          },
+          {
+            "line": 42,
+            "text": "可以省去，不影响主句意思"
+          },
+          {
+            "line": 43,
+            "text": "which 和 who 常用于非限制性"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 6,
+            "node": {
+              "line": 44,
+              "text": "两种类型",
+              "children": [
+                {
+                  "line": 45,
+                  "text": "例对比：The students **who** study hard pass. (限制)"
+                },
+                {
+                  "line": 46,
+                  "text": "例对比：My best friend, **who** is kind, helped me. (非限制)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "text": "易错点",
+        "id": "tips",
+        "color": "red",
+        "children": [
+          {
+            "line": 48,
+            "text": "whom 和 who 的区分：作宾语用 whom，但口语多用 who"
+          },
+          {
+            "line": 49,
+            "text": "that 不能用于非限制性定语从句"
+          },
+          {
+            "line": 50,
+            "text": "关系代词在从句中不能与其他代词重复"
+          },
+          {
+            "line": 51,
+            "text": "前置词+which 结构在非限制性中常见"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "rel-pron",
+      "to": "restriction",
+      "style": "solid",
+      "line": 54
+    },
+    {
+      "from": "rel-adv",
+      "to": "restriction",
+      "style": "solid",
+      "line": 55
+    },
+    {
+      "from": "definition",
+      "to": "rel-pron",
+      "style": "solid",
+      "line": 56
+    },
+    {
+      "from": "definition",
+      "to": "rel-adv",
+      "style": "solid",
+      "line": 57
+    },
+    {
+      "from": "tips",
+      "to": "rel-pron",
+      "style": "dashed",
+      "line": 58,
+      "label": "常见问题"
+    },
+    {
+      "from": "tips",
+      "to": "rel-adv",
+      "style": "dashed",
+      "line": 59,
+      "label": "常见问题"
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 24,
+      "severity": "warning",
+      "code": "SUM_EMPTY",
+      "message": "概要 `}` 后面没有总结文字，导图里会画出一个空的概要节点。",
+      "fix": "在 `}` 后面写上总结文字：`- } 总结文字`。"
+    }
+  ]
+}

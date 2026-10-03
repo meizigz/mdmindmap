@@ -1,0 +1,143 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "氧化还原反应",
+      "children": [
+        {
+          "line": 3,
+          "text": "基本概念",
+          "id": "concept",
+          "children": [
+            {
+              "line": 4,
+              "text": "定义：电子转移的反应"
+            },
+            {
+              "line": 5,
+              "text": "氧化反应：失电子"
+            },
+            {
+              "line": 6,
+              "text": "还原反应：得电子"
+            },
+            {
+              "line": 7,
+              "text": "必须同时进行：得失电子相等"
+            }
+          ]
+        },
+        {
+          "line": 8,
+          "text": "关键元素判断",
+          "id": "redox-check",
+          "children": [
+            {
+              "line": 9,
+              "text": "同时满足"
+            },
+            {
+              "line": 10,
+              "text": "元素化合价升高"
+            },
+            {
+              "line": 11,
+              "text": "元素化合价降低"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 12,
+                "text": "判断是否是氧化还原反应"
+              }
+            }
+          ]
+        },
+        {
+          "line": 13,
+          "text": "常见反应类型",
+          "id": "types",
+          "children": [
+            {
+              "line": 14,
+              "text": "分解反应：通常是氧化还原反应"
+            },
+            {
+              "line": 15,
+              "text": "化合反应：不一定是氧化还原反应"
+            },
+            {
+              "line": 16,
+              "text": "置换反应：都是氧化还原反应"
+            },
+            {
+              "line": 18,
+              "text": "非氧化还原反应：如酸碱中和"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 17,
+                "text": "主要类型"
+              }
+            }
+          ]
+        },
+        {
+          "line": 19,
+          "text": "配平方程式",
+          "id": "balance",
+          "children": [
+            {
+              "line": 20,
+              "text": "化学式法：氧先平，氢后平，金属最后平"
+            },
+            {
+              "line": 21,
+              "text": "电子转移法 🔴：根据电子转移数配平"
+            },
+            {
+              "line": 22,
+              "text": "$\\ce{2Fe + 3Cl2 -> 2FeCl3}$"
+            },
+            {
+              "line": 23,
+              "text": "检验：原子数、电荷数是否守恒"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "concept",
+        "to": "redox-check",
+        "style": "solid",
+        "line": 26,
+        "label": "用于判断"
+      },
+      {
+        "from": "redox-check",
+        "to": "types",
+        "style": "solid",
+        "line": 27,
+        "label": "分为"
+      },
+      {
+        "from": "types",
+        "to": "balance",
+        "style": "solid",
+        "line": 28,
+        "label": "需要"
+      }
+    ],
+    "diagnostics": []
+  }
+]

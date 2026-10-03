@@ -1,0 +1,32 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲",
+        "id": "a"
+      },
+      {
+        "line": 3,
+        "text": "乙",
+        "id": "b"
+      },
+      {
+        "line": 9,
+        "text": "丙（照常显示）"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 5,
+      "severity": "error",
+      "code": "REGION_NOT_LAST",
+      "message": "这个写了联系的 `%%` 块后面还有正文，所以它只被当作普通注释，里面的联系没有画出。",
+      "fix": "把联系块移到文件最末尾。"
+    }
+  ]
+}

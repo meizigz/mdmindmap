@@ -1,0 +1,180 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "议论文论证方法",
+      "children": [
+        {
+          "line": 3,
+          "text": "举例论证",
+          "id": "example",
+          "children": [
+            {
+              "line": 4,
+              "text": "通过具体事例支撑论点"
+            },
+            {
+              "line": 5,
+              "text": "有说服力和可信度"
+            },
+            {
+              "line": 6,
+              "text": "例：史实、新闻、个人经历"
+            }
+          ]
+        },
+        {
+          "line": 7,
+          "text": "对比论证",
+          "id": "contrast",
+          "children": [
+            {
+              "line": 8,
+              "text": "正反对照，突出论点"
+            },
+            {
+              "line": 9,
+              "text": "通过对比凸显正面观点的价值"
+            },
+            {
+              "line": 10,
+              "text": "例：先进与落后、成功与失败的对比"
+            }
+          ]
+        },
+        {
+          "line": 11,
+          "text": "比喻论证",
+          "id": "analogy",
+          "children": [
+            {
+              "line": 12,
+              "text": "用浅显的事物比喻抽象的观点"
+            },
+            {
+              "line": 13,
+              "text": "增强表现力和趣味性"
+            },
+            {
+              "line": 14,
+              "text": "例：人生如航海、学习如登山"
+            }
+          ]
+        },
+        {
+          "line": 15,
+          "text": "引用论证",
+          "id": "quotation",
+          "children": [
+            {
+              "line": 16,
+              "text": "引用名言"
+            },
+            {
+              "line": 17,
+              "text": "古代格言、谚语"
+            },
+            {
+              "line": 18,
+              "text": "名人观点、理论"
+            },
+            {
+              "line": 20,
+              "text": "增强权威性和说服力"
+            },
+            {
+              "line": 21,
+              "text": "例：孔子、莎士比亚的名言"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 19,
+                "text": "引用类型"
+              }
+            }
+          ]
+        },
+        {
+          "line": 22,
+          "text": "论证方法的 { 组合使用",
+          "children": [
+            {
+              "line": 23,
+              "text": "多种方法结合更有力"
+            },
+            {
+              "line": 24,
+              "text": "相互支撑、相互补充"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 1,
+              "node": {
+                "line": 25,
+                "text": "综合应用"
+              }
+            }
+          ]
+        },
+        {
+          "line": 26,
+          "text": "常见错误",
+          "color": "red",
+          "children": [
+            {
+              "line": 27,
+              "text": "举例论证：例子与论点关联度不够"
+            },
+            {
+              "line": 28,
+              "text": "论证不充分：仅用一个例子"
+            },
+            {
+              "line": 29,
+              "text": "只有论点无论证：缺乏说服力"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "example",
+        "to": "contrast",
+        "style": "solid",
+        "line": 32,
+        "label": "与"
+      },
+      {
+        "from": "contrast",
+        "to": "analogy",
+        "style": "solid",
+        "line": 33,
+        "label": "可与"
+      },
+      {
+        "from": "analogy",
+        "to": "quotation",
+        "style": "solid",
+        "line": 34,
+        "label": "配合"
+      }
+    ],
+    "diagnostics": [
+      {
+        "line": 35,
+        "severity": "error",
+        "code": "REL_UNKNOWN_ID",
+        "message": "联系的终点 `综合应用` 不是已定义的节点ID，这条联系没有画出。",
+        "fix": "「综合应用」是节点文字，不是ID。请在那个节点行末尾加 `^id`（只用英文字母、数字和 `-`），再在这里写这个ID（不带 `^`）。"
+      }
+    ]
+  }
+]

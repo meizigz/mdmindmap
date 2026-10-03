@@ -1,0 +1,44 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲"
+      },
+      {
+        "line": 3,
+        "text": "乙"
+      },
+      {
+        "line": 5,
+        "text": "丙"
+      },
+      {
+        "line": 6,
+        "text": "丁"
+      }
+    ],
+    "summaries": [
+      {
+        "from": 0,
+        "to": 1,
+        "node": {
+          "line": 4,
+          "text": "甲乙的总结"
+        }
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "node": {
+          "line": 7,
+          "text": "丙丁的总结（从上一个概要之后开始）"
+        }
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

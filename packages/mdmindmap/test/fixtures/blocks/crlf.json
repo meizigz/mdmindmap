@@ -1,0 +1,20 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "子一",
+        "children": [
+          {
+            "line": 3,
+            "text": "孙"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

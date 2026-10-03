@@ -1,0 +1,156 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "氧化还原反应",
+      "children": [
+        {
+          "line": 3,
+          "text": "基本概念",
+          "id": "basic",
+          "children": [
+            {
+              "line": 4,
+              "text": "化合价变化：一种元素升高，另一种降低"
+            },
+            {
+              "line": 5,
+              "text": "电子转移：失电子和得电子的数量相等"
+            },
+            {
+              "line": 6,
+              "text": "氧化剂与还原剂：根据是否得电子或失电子判断"
+            }
+          ]
+        },
+        {
+          "line": 7,
+          "text": "反应类型",
+          "id": "types",
+          "children": [
+            {
+              "line": 8,
+              "text": "化合反应：$2\\ce{Mg + O2 ->[燃烧] 2MgO}$"
+            },
+            {
+              "line": 9,
+              "text": "分解反应：$2\\ce{H2O2 ->[MnO2] 2H2O + O2}$"
+            },
+            {
+              "line": 10,
+              "text": "置换反应：$\\ce{Fe + CuSO4 = FeSO4 + Cu}$"
+            },
+            {
+              "line": 12,
+              "text": "非氧化还原反应：沉淀反应、中和反应等"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 11,
+                "text": "主要氧化还原反应"
+              }
+            }
+          ]
+        },
+        {
+          "line": 13,
+          "text": "重要化学方程式",
+          "id": "equations",
+          "color": "red",
+          "children": [
+            {
+              "line": 14,
+              "text": "$\\ce{2Cu + O2 ->[高温] 2CuO}$"
+            },
+            {
+              "line": 15,
+              "text": "$\\ce{C + 2H2SO4(浓) ->[加热] CO2 + 2SO2 + 2H2O}$"
+            },
+            {
+              "line": 16,
+              "text": "$\\ce{2KMnO4 + 16HCl(浓) = 2KCl + 2MnCl2 + 5Cl2 + 8H2O}$",
+              "id": "permanganate",
+              "color": "red"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 17,
+                "text": "常见反应",
+                "children": [
+                  {
+                    "line": 18,
+                    "text": "注意：浓硫酸既是氧化剂又是脱水剂"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 19,
+          "text": "氧化剂与还原剂",
+          "id": "ox-red",
+          "children": [
+            {
+              "line": 20,
+              "text": "氧化剂：得电子，化合价降低，被还原"
+            },
+            {
+              "line": 21,
+              "text": "还原剂：失电子，化合价升高，被氧化"
+            },
+            {
+              "line": 22,
+              "text": "关键：同一物质中不同元素可一升一降"
+            },
+            {
+              "line": 23,
+              "text": "一种单质既是氧化剂也是还原剂（自身氧化还原）"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 2,
+              "to": 3,
+              "node": {
+                "line": 24,
+                "text": "特殊情况"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "basic",
+        "to": "types",
+        "style": "solid",
+        "line": 27
+      },
+      {
+        "from": "equations",
+        "to": "ox-red",
+        "style": "solid",
+        "line": 28
+      },
+      {
+        "from": "permanganate",
+        "to": "ox-red",
+        "style": "dashed",
+        "line": 29,
+        "label": "易错点"
+      }
+    ],
+    "diagnostics": []
+  }
+]

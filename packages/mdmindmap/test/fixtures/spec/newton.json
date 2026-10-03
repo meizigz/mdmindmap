@@ -1,0 +1,155 @@
+{
+  "root": {
+    "line": 1,
+    "text": "牛顿运动定律",
+    "children": [
+      {
+        "line": 3,
+        "text": "牛顿第一定律",
+        "id": "law1",
+        "children": [
+          {
+            "line": 4,
+            "text": "惯性：物体保持原有运动状态的性质"
+          },
+          {
+            "line": 5,
+            "text": "质量是惯性大小的唯一量度"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "text": "牛顿第二定律",
+        "id": "law2",
+        "color": "red",
+        "children": [
+          {
+            "line": 7,
+            "text": "$F=ma$"
+          },
+          {
+            "line": 8,
+            "text": "$a$ 由合外力决定，与 $m$ 成反比"
+          },
+          {
+            "line": 10,
+            "text": "注意：$F$ 指合外力"
+          },
+          {
+            "line": 11,
+            "text": "同向性：$a$ 与 $F_合$ 方向相同"
+          },
+          {
+            "line": 12,
+            "text": "瞬时性：$a$ 与 $F_合$ 同时变化"
+          },
+          {
+            "line": 13,
+            "text": "独立性：各分力独立产生加速度"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 1,
+            "node": {
+              "line": 9,
+              "text": "定量关系"
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 14,
+              "text": "三性",
+              "children": [
+                {
+                  "line": 15,
+                  "text": "解题先做受力分析"
+                },
+                {
+                  "line": 16,
+                  "text": "正交分解 $F_x=ma_x$"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "text": "牛顿第三定律",
+        "id": "law3",
+        "children": [
+          {
+            "line": 18,
+            "text": "等大、反向、共线"
+          },
+          {
+            "line": 19,
+            "text": "作用在两个物体上"
+          },
+          {
+            "line": 20,
+            "text": "同时产生、同时消失"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 21,
+              "text": "与平衡力的区别",
+              "children": [
+                {
+                  "line": 22,
+                  "text": "平衡力作用在同一物体上",
+                  "id": "balance"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "text": "应用",
+        "fold": true,
+        "children": [
+          {
+            "line": 24,
+            "text": "[[连接体问题]]"
+          },
+          {
+            "line": 25,
+            "text": "超重与失重"
+          },
+          {
+            "line": 26,
+            "text": "传送带与板块模型"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "law1",
+      "to": "law2",
+      "style": "dashed",
+      "line": 29,
+      "label": "合力为零时的特例"
+    },
+    {
+      "from": "law3",
+      "to": "balance",
+      "style": "solid",
+      "line": 30,
+      "label": "对比"
+    }
+  ],
+  "diagnostics": []
+}

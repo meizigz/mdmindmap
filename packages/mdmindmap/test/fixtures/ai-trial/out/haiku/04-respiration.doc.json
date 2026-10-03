@@ -1,0 +1,220 @@
+{
+  "root": {
+    "line": 1,
+    "text": "细胞呼吸",
+    "children": [
+      {
+        "line": 3,
+        "text": "有氧呼吸",
+        "id": "aerobic",
+        "children": [
+          {
+            "line": 4,
+            "text": "第一阶段（细胞质基质）"
+          },
+          {
+            "line": 5,
+            "text": "葡萄糖分解成丙酮酸，产生少量ATP和$\\ce{[H]}$"
+          },
+          {
+            "line": 6,
+            "text": "第二阶段（线粒体基质）"
+          },
+          {
+            "line": 7,
+            "text": "丙酮酸氧化脱羧，产生少量ATP、$\\ce{CO2}$和大量$\\ce{[H]}$"
+          },
+          {
+            "line": 8,
+            "text": "第三阶段（线粒体内膜）"
+          },
+          {
+            "line": 9,
+            "text": "$\\ce{[H]}$与$\\ce{O2}$结合，释放大量能量用于ATP合成"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 5,
+            "node": {
+              "line": 10,
+              "text": "三个阶段",
+              "children": [
+                {
+                  "line": 11,
+                  "text": "总方程式：$\\ce{C6H12O6 + 6O2 = 6CO2 + 6H2O}$ 能量释放大"
+                },
+                {
+                  "line": 12,
+                  "text": "每1分子葡萄糖产生约32~38个ATP"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "text": "无氧呼吸",
+        "id": "anaerobic",
+        "children": [
+          {
+            "line": 14,
+            "text": "乳酸发酵（动物、乳酸菌）"
+          },
+          {
+            "line": 15,
+            "text": "葡萄糖→丙酮酸→乳酸"
+          },
+          {
+            "line": 16,
+            "text": "少量ATP，丙酮酸被还原"
+          },
+          {
+            "line": 17,
+            "text": "酒精发酵（酵母菌、某些植物细胞）"
+          },
+          {
+            "line": 18,
+            "text": "葡萄糖→丙酮酸→乙醇+$\\ce{CO2}$"
+          },
+          {
+            "line": 19,
+            "text": "少量ATP，丙酮酸被还原"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 5,
+            "node": {
+              "line": 20,
+              "text": "两种类型",
+              "children": [
+                {
+                  "line": 21,
+                  "text": "都只发生在细胞质基质中"
+                },
+                {
+                  "line": 22,
+                  "text": "产能远少于有氧呼吸"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "text": "有氧vs无氧呼吸",
+        "id": "comparison",
+        "children": [
+          {
+            "line": 24,
+            "text": "进行场所：有氧在线粒体，无氧在细胞质基质"
+          },
+          {
+            "line": 25,
+            "text": "$\\ce{O2}$ 参与：有氧需要，无氧不需要"
+          },
+          {
+            "line": 26,
+            "text": "产能效率：有氧(32~38 ATP) >> 无氧(2 ATP)"
+          },
+          {
+            "line": 28,
+            "text": "有利条件充足时进行有氧呼吸"
+          },
+          {
+            "line": 29,
+            "text": "$\\ce{O2}$缺乏时切换到无氧呼吸"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 27,
+              "text": "主要差异"
+            }
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "node": {
+              "line": 30,
+              "text": "生理意义"
+            }
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "text": "影响因素",
+        "id": "factors",
+        "color": "red",
+        "fold": true,
+        "children": [
+          {
+            "line": 32,
+            "text": "温度：影响酶活性，通常37℃最适"
+          },
+          {
+            "line": 33,
+            "text": "$\\ce{O2}$浓度：浓度↑，有氧呼吸↑，无氧呼吸↓"
+          },
+          {
+            "line": 34,
+            "text": "葡萄糖浓度：底物浓度↑，呼吸速率↑"
+          },
+          {
+            "line": 35,
+            "text": "pH：不同阶段有不同最适pH"
+          },
+          {
+            "line": 36,
+            "text": "水分：影响代谢速率"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "aerobic",
+      "to": "comparison",
+      "style": "solid",
+      "line": 39
+    },
+    {
+      "from": "anaerobic",
+      "to": "comparison",
+      "style": "solid",
+      "line": 40
+    },
+    {
+      "from": "factors",
+      "to": "aerobic",
+      "style": "solid",
+      "line": 41,
+      "label": "决定呼吸速率"
+    },
+    {
+      "from": "factors",
+      "to": "anaerobic",
+      "style": "solid",
+      "line": 42
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 31,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^factors` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^factors]]` 引用这个节点。",
+      "fix": "把 `^factors` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    }
+  ]
+}

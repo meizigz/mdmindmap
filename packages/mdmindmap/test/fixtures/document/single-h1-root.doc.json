@@ -1,0 +1,40 @@
+{
+  "root": {
+    "line": 4,
+    "text": "电磁感应",
+    "children": [
+      {
+        "line": 8,
+        "text": "楞次定律",
+        "children": [
+          {
+            "line": 9,
+            "text": "感应电流的磁场阻碍磁通量的变化",
+            "id": "lenz"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "text": "法拉第定律",
+        "children": [
+          {
+            "line": 11,
+            "text": "$E = n\\frac{\\Delta\\Phi}{\\Delta t}$",
+            "id": "faraday"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "lenz",
+      "to": "faraday",
+      "style": "solid",
+      "line": 14,
+      "label": "决定方向"
+    }
+  ],
+  "diagnostics": []
+}

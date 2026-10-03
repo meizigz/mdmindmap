@@ -1,0 +1,26 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "有序一"
+      },
+      {
+        "line": 3,
+        "text": "有序二"
+      },
+      {
+        "line": 4,
+        "text": "星号"
+      },
+      {
+        "line": 5,
+        "text": "加号"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

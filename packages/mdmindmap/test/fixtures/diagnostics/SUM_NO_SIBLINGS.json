@@ -1,0 +1,28 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "父节点",
+        "children": [
+          {
+            "line": 3,
+            "text": "前面没有兄弟"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 3,
+      "severity": "error",
+      "code": "SUM_NO_SIBLINGS",
+      "message": "概要「前面没有兄弟」前面没有可以括住的兄弟节点，已当作普通节点显示。",
+      "fix": "概要 `- } 总结文字` 要写在被括住的那几个兄弟节点之后，并与它们缩进相同。"
+    }
+  ]
+}

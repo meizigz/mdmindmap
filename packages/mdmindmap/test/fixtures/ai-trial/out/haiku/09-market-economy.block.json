@@ -1,0 +1,265 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "社会主义市场经济",
+      "children": [
+        {
+          "line": 3,
+          "text": "基本概念",
+          "id": "concept",
+          "children": [
+            {
+              "line": 4,
+              "text": "定义：在社会主义制度基础上建立市场经济"
+            },
+            {
+              "line": 5,
+              "text": "结合：社会主义制度优越性 + 市场经济效率"
+            },
+            {
+              "line": 6,
+              "text": "发展阶段：中共十四大确立目标（1992年）"
+            }
+          ]
+        },
+        {
+          "line": 7,
+          "text": "基本特征",
+          "id": "characteristics",
+          "children": [
+            {
+              "line": 8,
+              "text": "市场调节：资源配置主要由市场决定"
+            },
+            {
+              "line": 9,
+              "text": "政府调控：国家宏观调控维持稳定和公平"
+            },
+            {
+              "line": 10,
+              "text": "社会主义方向：以公有制为主体，多种所有制共同发展"
+            },
+            {
+              "line": 11,
+              "text": "坚持：共同繁荣与按劳分配"
+            },
+            {
+              "line": 12,
+              "text": "消除剥削和两极分化"
+            },
+            {
+              "line": 13,
+              "text": "实现社会主义最终目标"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 3,
+              "to": 5,
+              "node": {
+                "line": 14,
+                "text": "社会主义原则"
+              }
+            }
+          ]
+        },
+        {
+          "line": 15,
+          "text": "市场机制",
+          "id": "mechanism",
+          "children": [
+            {
+              "line": 16,
+              "text": "价格机制"
+            },
+            {
+              "line": 17,
+              "text": "商品价格由供求关系决定"
+            },
+            {
+              "line": 18,
+              "text": "价格信号引导生产者和消费者行动"
+            },
+            {
+              "line": 19,
+              "text": "竞争机制"
+            },
+            {
+              "line": 20,
+              "text": "生产者竞争，优胜劣汰"
+            },
+            {
+              "line": 21,
+              "text": "促进技术进步和效率提高"
+            },
+            {
+              "line": 23,
+              "text": "风险机制"
+            },
+            {
+              "line": 24,
+              "text": "市场参与者承担风险"
+            },
+            {
+              "line": 25,
+              "text": "提高投资决策的审慎性"
+            },
+            {
+              "line": 26,
+              "text": "供求机制"
+            },
+            {
+              "line": 27,
+              "text": "供给与需求平衡市场"
+            },
+            {
+              "line": 28,
+              "text": "实现资源优化配置"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 5,
+              "node": {
+                "line": 22,
+                "text": "主要作用"
+              }
+            },
+            {
+              "from": 6,
+              "to": 11,
+              "node": {
+                "line": 29,
+                "text": ""
+              }
+            }
+          ]
+        },
+        {
+          "line": 30,
+          "text": "国家宏观调控",
+          "id": "macro-control",
+          "color": "red",
+          "children": [
+            {
+              "line": 31,
+              "text": "必要性：弥补市场失灵，维护经济秩序"
+            },
+            {
+              "line": 32,
+              "text": "经济手段"
+            },
+            {
+              "line": 33,
+              "text": "财政政策：税收、财政支出调节"
+            },
+            {
+              "line": 34,
+              "text": "货币政策：利率、货币供应量调节"
+            },
+            {
+              "line": 35,
+              "text": "法律手段"
+            },
+            {
+              "line": 36,
+              "text": "完善市场法律体系"
+            },
+            {
+              "line": 37,
+              "text": "保护生产者和消费者权益"
+            },
+            {
+              "line": 38,
+              "text": "行政手段"
+            },
+            {
+              "line": 39,
+              "text": "政府直接干预"
+            },
+            {
+              "line": 40,
+              "text": "指导和规范经济活动"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 1,
+              "to": 9,
+              "node": {
+                "line": 41,
+                "text": "调控方式"
+              }
+            }
+          ]
+        },
+        {
+          "line": 42,
+          "text": "改革任务",
+          "id": "tasks",
+          "children": [
+            {
+              "line": 43,
+              "text": "完善所有制结构"
+            },
+            {
+              "line": 44,
+              "text": "建立现代企业制度"
+            },
+            {
+              "line": 45,
+              "text": "健全市场体系：商品市场、要素市场、资本市场"
+            },
+            {
+              "line": 46,
+              "text": "转变政府职能：从全能型向服务型转变"
+            },
+            {
+              "line": 47,
+              "text": "完善分配制度：按劳分配为主，多种分配方式并存"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "concept",
+        "to": "characteristics",
+        "style": "solid",
+        "line": 50
+      },
+      {
+        "from": "mechanism",
+        "to": "macro-control",
+        "style": "solid",
+        "line": 51
+      },
+      {
+        "from": "macro-control",
+        "to": "tasks",
+        "style": "solid",
+        "line": 52
+      },
+      {
+        "from": "characteristics",
+        "to": "macro-control",
+        "style": "dashed",
+        "line": 53,
+        "label": "需要调控"
+      }
+    ],
+    "diagnostics": [
+      {
+        "line": 29,
+        "severity": "warning",
+        "code": "SUM_EMPTY",
+        "message": "概要 `}` 后面没有总结文字，导图里会画出一个空的概要节点。",
+        "fix": "在 `}` 后面写上总结文字：`- } 总结文字`。"
+      }
+    ]
+  }
+]

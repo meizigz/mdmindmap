@@ -1,0 +1,78 @@
+{
+  "root": {
+    "line": 1,
+    "text": "电磁感应",
+    "children": [
+      {
+        "line": 2,
+        "text": "楞次定律",
+        "id": "lenz"
+      },
+      {
+        "line": 3,
+        "text": "法拉第定律",
+        "id": "faraday"
+      },
+      {
+        "line": 4,
+        "text": "自感",
+        "id": "self-ind"
+      },
+      {
+        "line": 5,
+        "text": "欧姆定律",
+        "id": "ohm"
+      },
+      {
+        "line": 6,
+        "text": "电功率",
+        "id": "power"
+      }
+    ],
+    "summaries": [
+      {
+        "from": 4,
+        "to": 4,
+        "node": {
+          "line": 7,
+          "text": "能量",
+          "id": "energy"
+        }
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "lenz",
+      "to": "faraday",
+      "style": "solid",
+      "line": 10,
+      "label": "决定方向"
+    },
+    {
+      "from": "self-ind",
+      "to": "lenz",
+      "style": "dashed",
+      "line": 11
+    },
+    {
+      "from": "ohm",
+      "to": "power",
+      "style": "thick",
+      "line": 12
+    },
+    {
+      "from": "faraday",
+      "to": "energy",
+      "style": "solid",
+      "line": 13
+    },
+    {
+      "from": "power",
+      "to": "ohm",
+      "style": "dashed",
+      "line": 14
+    }
+  ],
+  "diagnostics": []
+}

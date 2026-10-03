@@ -1,0 +1,33 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "他背负的首要期望 ^期望"
+      },
+      {
+        "line": 3,
+        "text": "下划线也不行 ^law_2"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 2,
+      "severity": "warning",
+      "code": "ID_INVALID",
+      "message": "行尾的 `^期望` 不是有效的节点ID，已当作文字显示。",
+      "fix": "节点ID只能用英文字母、数字和 `-`，例如 `^law2`。"
+    },
+    {
+      "line": 3,
+      "severity": "warning",
+      "code": "ID_INVALID",
+      "message": "行尾的 `^law_2` 不是有效的节点ID，已当作文字显示。",
+      "fix": "节点ID只能用英文字母、数字和 `-`，例如 `^law2`。"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "root": {
+    "line": 1,
+    "text": "牛顿运动定律",
+    "children": [
+      {
+        "line": 2,
+        "text": "牛顿第一定律"
+      },
+      {
+        "line": 3,
+        "text": "动量",
+        "children": [
+          {
+            "line": 4,
+            "text": "动量守恒"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 3,
+      "severity": "error",
+      "code": "MULTI_ROOT",
+      "message": "导图只能有一个根节点，这里又开始了一个顶层节点「动量」，已暂时挂在根节点「牛顿运动定律」下面。",
+      "fix": "在最前面加一个 `# 标题` 作为唯一的根，或者把这一行及其下面的节点缩进到根节点下。"
+    }
+  ]
+}

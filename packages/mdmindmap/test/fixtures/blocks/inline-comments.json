@@ -1,0 +1,20 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "去掉行内注释 保留后半句"
+      },
+      {
+        "line": 3,
+        "text": "注释在标记前面",
+        "id": "c",
+        "color": "red"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

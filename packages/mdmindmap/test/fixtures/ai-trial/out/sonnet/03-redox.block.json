@@ -1,0 +1,176 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "氧化还原反应",
+      "children": [
+        {
+          "line": 3,
+          "text": "基本概念",
+          "children": [
+            {
+              "line": 4,
+              "text": "本质：电子的转移（得失或偏移）"
+            },
+            {
+              "line": 5,
+              "text": "特征：元素化合价发生变化"
+            },
+            {
+              "line": 6,
+              "text": "氧化剂：得电子，化合价降低，被还原"
+            },
+            {
+              "line": 7,
+              "text": "还原剂：失电子，化合价升高，被氧化"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 2,
+              "to": 3,
+              "node": {
+                "line": 8,
+                "text": "概念对应关系",
+                "children": [
+                  {
+                    "line": 9,
+                    "text": "口诀：升失氧还，降得还氧"
+                  },
+                  {
+                    "line": 10,
+                    "text": "氧化产物由还原剂生成"
+                  },
+                  {
+                    "line": 11,
+                    "text": "还原产物由氧化剂生成"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 12,
+          "text": "典型反应",
+          "id": "examples",
+          "children": [
+            {
+              "line": 13,
+              "text": "氢气还原氧化铜：$\\ce{H2 + CuO ->[\\Delta] Cu + H2O}$"
+            },
+            {
+              "line": 14,
+              "text": "氢气燃烧：$\\ce{2H2 + O2 -> 2H2O}$"
+            },
+            {
+              "line": 15,
+              "text": "铁与铜离子：$\\ce{Fe + Cu^2+ -> Fe^2+ + Cu}$"
+            },
+            {
+              "line": 16,
+              "text": "实验室制氯气：$\\ce{MnO2 + 4HCl(浓) ->[\\Delta] MnCl2 + Cl2 ^ + 2H2O}$"
+            }
+          ]
+        },
+        {
+          "line": 17,
+          "text": "与四种基本反应类型的关系",
+          "children": [
+            {
+              "line": 18,
+              "text": "置换反应：一定是氧化还原反应"
+            },
+            {
+              "line": 19,
+              "text": "复分解反应：一定不是氧化还原反应"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 1,
+              "node": {
+                "line": 20,
+                "text": "一定与一定不",
+                "children": [
+                  {
+                    "line": 21,
+                    "text": "化合、分解反应：有单质参加或生成的才是"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 22,
+          "text": "强弱比较",
+          "children": [
+            {
+              "line": 23,
+              "text": "氧化性：氧化剂 $>$ 氧化产物"
+            },
+            {
+              "line": 24,
+              "text": "还原性：还原剂 $>$ 还原产物"
+            },
+            {
+              "line": 25,
+              "text": "易错：氧化性强弱看得电子能力，不看得电子数目多少",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "line": 26,
+          "text": "配平与计算",
+          "id": "balance",
+          "children": [
+            {
+              "line": 27,
+              "text": "配平依据：得失电子守恒"
+            },
+            {
+              "line": 28,
+              "text": "步骤：标价态、列变化、求最小公倍数、配系数、查守恒"
+            },
+            {
+              "line": 29,
+              "text": "电子转移计算：$n(e^-)=$ 变价原子数 $\\times$ 每个原子变价数"
+            }
+          ]
+        },
+        {
+          "line": 30,
+          "text": "常见物质",
+          "children": [
+            {
+              "line": 31,
+              "text": "常见氧化剂：$\\ce{O2}$、$\\ce{Cl2}$、$\\ce{KMnO4}$、浓硫酸、$\\ce{Fe^3+}$"
+            },
+            {
+              "line": 32,
+              "text": "常见还原剂：$\\ce{H2}$、$\\ce{C}$、$\\ce{CO}$、$\\ce{Fe^2+}$、$\\ce{Zn}$"
+            },
+            {
+              "line": 33,
+              "text": "中间价态物质既有氧化性又有还原性：$\\ce{SO2}$、$\\ce{Fe^2+}$"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "examples",
+        "to": "balance",
+        "style": "solid",
+        "line": 36,
+        "label": "用于练习"
+      }
+    ],
+    "diagnostics": []
+  }
+]

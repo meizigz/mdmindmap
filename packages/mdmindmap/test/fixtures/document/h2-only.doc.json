@@ -1,0 +1,24 @@
+{
+  "root": {
+    "line": 0,
+    "text": "h2-only",
+    "children": [
+      {
+        "line": 1,
+        "text": "只有二级标题",
+        "children": [
+          {
+            "line": 2,
+            "text": "要点"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "text": "另一个"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

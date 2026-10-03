@@ -1,0 +1,271 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "辛亥革命",
+      "children": [
+        {
+          "line": 3,
+          "text": "历史背景",
+          "id": "background",
+          "children": [
+            {
+              "line": 4,
+              "text": "国内矛盾"
+            },
+            {
+              "line": 5,
+              "text": "满汉民族矛盾激化"
+            },
+            {
+              "line": 6,
+              "text": "帝国主义加强侵略"
+            },
+            {
+              "line": 7,
+              "text": "资本主义发展与专制统治冲突"
+            },
+            {
+              "line": 9,
+              "text": "清末新政失败",
+              "children": [
+                {
+                  "line": 10,
+                  "text": "预备立宪只是缓兵之计"
+                },
+                {
+                  "line": 11,
+                  "text": "激进派寻求推翻清政府"
+                }
+              ]
+            },
+            {
+              "line": 12,
+              "text": "资产阶级革命思想传播",
+              "children": [
+                {
+                  "line": 13,
+                  "text": "孙中山提出三民主义"
+                }
+              ]
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 3,
+              "node": {
+                "line": 8,
+                "text": "社会矛盾"
+              }
+            }
+          ]
+        },
+        {
+          "line": 14,
+          "text": "事件过程",
+          "id": "process",
+          "children": [
+            {
+              "line": 15,
+              "text": "武昌起义（1911年10月）",
+              "color": "red",
+              "children": [
+                {
+                  "line": 16,
+                  "text": "标志：辛亥革命爆发"
+                },
+                {
+                  "line": 17,
+                  "text": "湖北新军举义"
+                }
+              ]
+            },
+            {
+              "line": 18,
+              "text": "各地响应",
+              "children": [
+                {
+                  "line": 19,
+                  "text": "南方各省纷纷响应"
+                },
+                {
+                  "line": 20,
+                  "text": "北方局势复杂"
+                }
+              ]
+            },
+            {
+              "line": 21,
+              "text": "南京政府成立",
+              "children": [
+                {
+                  "line": 22,
+                  "text": "孙中山当选临时大总统"
+                },
+                {
+                  "line": 23,
+                  "text": "中华民国成立（1912年1月）"
+                }
+              ]
+            },
+            {
+              "line": 24,
+              "text": "清帝退位（1912年2月）",
+              "children": [
+                {
+                  "line": 25,
+                  "text": "宣统帝正式退位"
+                },
+                {
+                  "line": 26,
+                  "text": "清廷势力衰亡"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 27,
+          "text": "革命结果",
+          "id": "result",
+          "children": [
+            {
+              "line": 28,
+              "text": "政治上的成果"
+            },
+            {
+              "line": 29,
+              "text": "推翻满清专制统治"
+            },
+            {
+              "line": 30,
+              "text": "建立资产阶级共和政权"
+            },
+            {
+              "line": 31,
+              "text": "制定《临时约法》"
+            },
+            {
+              "line": 33,
+              "text": "社会转变"
+            },
+            {
+              "line": 34,
+              "text": "独裁制变为共和制"
+            },
+            {
+              "line": 35,
+              "text": "民主思想初步传播"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 3,
+              "node": {
+                "line": 32,
+                "text": "政治成果"
+              }
+            },
+            {
+              "from": 4,
+              "to": 6,
+              "node": {
+                "line": 36,
+                "text": "社会变化"
+              }
+            }
+          ]
+        },
+        {
+          "line": 37,
+          "text": "历史意义与局限",
+          "id": "significance",
+          "children": [
+            {
+              "line": 38,
+              "text": "进步意义",
+              "color": "red"
+            },
+            {
+              "line": 39,
+              "text": "推翻了中国的封建专制制度"
+            },
+            {
+              "line": 40,
+              "text": "建立了共和制国家"
+            },
+            {
+              "line": 41,
+              "text": "开启民主政治的新时代"
+            },
+            {
+              "line": 43,
+              "text": "历史局限"
+            },
+            {
+              "line": 44,
+              "text": "没有解决帝国主义问题"
+            },
+            {
+              "line": 45,
+              "text": "没有解决土地分配问题"
+            },
+            {
+              "line": 46,
+              "text": "权力最终落入袁世凯手中"
+            },
+            {
+              "line": 47,
+              "text": "资产阶级力量有限"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 3,
+              "node": {
+                "line": 42,
+                "text": "历史意义"
+              }
+            },
+            {
+              "from": 4,
+              "to": 8,
+              "node": {
+                "line": 48,
+                "text": "局限性"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "background",
+        "to": "process",
+        "style": "solid",
+        "line": 51,
+        "label": "导致"
+      },
+      {
+        "from": "process",
+        "to": "result",
+        "style": "thick",
+        "line": 52,
+        "label": "产生"
+      },
+      {
+        "from": "result",
+        "to": "significance",
+        "style": "solid",
+        "line": 53,
+        "label": "有"
+      }
+    ],
+    "diagnostics": []
+  }
+]

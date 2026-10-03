@@ -1,0 +1,35 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲",
+        "id": "a"
+      },
+      {
+        "line": 3,
+        "text": "乙",
+        "id": "b"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "a",
+      "to": "b",
+      "style": "solid",
+      "line": 6
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 9,
+      "severity": "error",
+      "code": "REGION_NOT_LAST",
+      "message": "联系块后面还有内容，从这里往后的内容都被忽略了。",
+      "fix": "把联系块移到最末尾，节点都写在它前面。"
+    }
+  ]
+}

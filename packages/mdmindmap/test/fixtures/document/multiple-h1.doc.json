@@ -1,0 +1,30 @@
+{
+  "root": {
+    "line": 0,
+    "text": "multiple-h1",
+    "children": [
+      {
+        "line": 1,
+        "text": "第一章",
+        "children": [
+          {
+            "line": 2,
+            "text": "要点一"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "text": "第二章",
+        "children": [
+          {
+            "line": 4,
+            "text": "要点二"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

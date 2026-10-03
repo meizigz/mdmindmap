@@ -1,0 +1,216 @@
+{
+  "root": {
+    "line": 1,
+    "text": "电磁感应",
+    "children": [
+      {
+        "line": 3,
+        "text": "电磁感应现象",
+        "children": [
+          {
+            "line": 4,
+            "text": "产生条件：闭合回路磁通量发生变化"
+          },
+          {
+            "line": 5,
+            "text": "磁通量：$\\Phi=BS\\cos\\theta$"
+          },
+          {
+            "line": 6,
+            "text": "感应电流方向：楞次定律；感应电动势大小：法拉第定律"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "text": "法拉第电磁感应定律",
+        "id": "faraday",
+        "children": [
+          {
+            "line": 8,
+            "text": "内容：$E=n\\frac{\\Delta\\Phi}{\\Delta t}$"
+          },
+          {
+            "line": 9,
+            "text": "导体棒切割磁感线：$E=BLv$"
+          },
+          {
+            "line": 10,
+            "text": "切割且 $v$ 与 $B$ 不垂直：$E=BLv\\sin\\theta$"
+          },
+          {
+            "line": 11,
+            "text": "转动切割：$E=\\frac{1}{2}BL^2\\omega$"
+          },
+          {
+            "line": 12,
+            "text": "易错：$E$ 与 $\\Phi$ 大小无关，与 $\\frac{\\Delta\\Phi}{\\Delta t}$ 有关",
+            "color": "red"
+          },
+          {
+            "line": 13,
+            "text": "电路问题：切割导体相当于电源，有内阻"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "text": "楞次定律",
+        "id": "lenz",
+        "children": [
+          {
+            "line": 15,
+            "text": "内容：感应电流的磁场总是阻碍引起感应电流的磁通量的变化"
+          },
+          {
+            "line": 16,
+            "text": "增反减同"
+          },
+          {
+            "line": 17,
+            "text": "来拒去留"
+          },
+          {
+            "line": 18,
+            "text": "增缩减扩"
+          },
+          {
+            "line": 20,
+            "text": "易错：「阻碍」不是「阻止」，也不是「相反」",
+            "color": "red"
+          },
+          {
+            "line": 21,
+            "text": "右手定则：判断导体切割时的电流方向"
+          },
+          {
+            "line": 22,
+            "text": "应用步骤",
+            "children": [
+              {
+                "line": 23,
+                "text": "明确原磁场方向及磁通量变化"
+              },
+              {
+                "line": 24,
+                "text": "确定感应磁场方向"
+              },
+              {
+                "line": 25,
+                "text": "用安培定则得出感应电流方向"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 1,
+            "to": 3,
+            "node": {
+              "line": 19,
+              "text": "常用推论"
+            }
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "text": "自感",
+        "id": "selfind",
+        "children": [
+          {
+            "line": 27,
+            "text": "定义：自身电流变化产生感应电动势"
+          },
+          {
+            "line": 28,
+            "text": "自感电动势：$E=L\\frac{\\Delta I}{\\Delta t}$"
+          },
+          {
+            "line": 29,
+            "text": "通电自感：灯泡逐渐变亮"
+          },
+          {
+            "line": 30,
+            "text": "断电自感：灯泡可能闪亮一下再熄灭"
+          },
+          {
+            "line": 31,
+            "text": "易错：断电闪亮的条件是线圈电流大于灯泡原电流",
+            "color": "red"
+          },
+          {
+            "line": 32,
+            "text": "自感系数 $L$ 与线圈匝数、长度、截面积、有无铁芯有关"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "text": "互感",
+        "id": "mutual",
+        "children": [
+          {
+            "line": 34,
+            "text": "定义：一个线圈电流变化在另一个线圈中产生感应电动势"
+          },
+          {
+            "line": 35,
+            "text": "应用：变压器"
+          },
+          {
+            "line": 36,
+            "text": "变压器：$\\frac{U_1}{U_2}=\\frac{n_1}{n_2}$"
+          },
+          {
+            "line": 37,
+            "text": "只能改变交变电流电压"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "text": "能量与电量",
+        "children": [
+          {
+            "line": 39,
+            "text": "安培力做负功，机械能转化为电能"
+          },
+          {
+            "line": 40,
+            "text": "通过截面的电量：$q=n\\frac{\\Delta\\Phi}{R}$"
+          },
+          {
+            "line": 41,
+            "text": "焦耳热：$Q=I^2Rt$",
+            "fold": true
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "lenz",
+      "to": "faraday",
+      "style": "solid",
+      "line": 44,
+      "label": "决定方向"
+    },
+    {
+      "from": "selfind",
+      "to": "lenz",
+      "style": "dashed",
+      "line": 45,
+      "label": "遵循"
+    },
+    {
+      "from": "selfind",
+      "to": "mutual",
+      "style": "dashed",
+      "line": 46,
+      "label": "特殊的"
+    }
+  ],
+  "diagnostics": []
+}

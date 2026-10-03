@@ -1,0 +1,299 @@
+{
+  "root": {
+    "line": 1,
+    "text": "定语从句",
+    "children": [
+      {
+        "line": 3,
+        "text": "基本概念",
+        "children": [
+          {
+            "line": 4,
+            "text": "修饰名词或代词的从句，放在被修饰词之后"
+          },
+          {
+            "line": 5,
+            "text": "先行词：被修饰的名词或代词"
+          },
+          {
+            "line": 6,
+            "text": "关系词：引导从句并在从句中充当成分"
+          },
+          {
+            "line": 7,
+            "text": "例：The boy who is singing is my brother."
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "text": "关系代词",
+        "id": "pronoun",
+        "children": [
+          {
+            "line": 9,
+            "text": "who：指人，作主语或宾语",
+            "children": [
+              {
+                "line": 10,
+                "text": "例：The man who helped me is a doctor."
+              }
+            ]
+          },
+          {
+            "line": 11,
+            "text": "whom：指人，作宾语",
+            "children": [
+              {
+                "line": 12,
+                "text": "例：The girl whom I met is Lily."
+              }
+            ]
+          },
+          {
+            "line": 13,
+            "text": "whose：指人或物，表所属关系",
+            "children": [
+              {
+                "line": 14,
+                "text": "例：I have a friend whose father is a pilot."
+              }
+            ]
+          },
+          {
+            "line": 15,
+            "text": "which：指物，作主语或宾语",
+            "children": [
+              {
+                "line": 16,
+                "text": "例：The book which I bought is good."
+              }
+            ]
+          },
+          {
+            "line": 17,
+            "text": "that：指人或物，作主语或宾语",
+            "children": [
+              {
+                "line": 18,
+                "text": "例：This is the best film that I have seen."
+              }
+            ]
+          },
+          {
+            "line": 19,
+            "text": "先行词是不定代词 all、everything、something"
+          },
+          {
+            "line": 20,
+            "text": "先行词被最高级修饰"
+          },
+          {
+            "line": 21,
+            "text": "先行词被序数词、the only、the very 修饰"
+          },
+          {
+            "line": 24,
+            "text": "介词后面"
+          },
+          {
+            "line": 25,
+            "text": "非限制性定语从句"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 5,
+            "to": 7,
+            "node": {
+              "line": 22,
+              "text": "只用 that 的情况",
+              "children": [
+                {
+                  "line": 23,
+                  "text": "例：Everything that he said is true."
+                }
+              ]
+            }
+          },
+          {
+            "from": 8,
+            "to": 9,
+            "node": {
+              "line": 26,
+              "text": "不能用 that 的情况",
+              "children": [
+                {
+                  "line": 27,
+                  "text": "例：This is the room in which he lives."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "text": "关系副词",
+        "id": "adverb",
+        "children": [
+          {
+            "line": 29,
+            "text": "when：先行词表时间，在从句中作时间状语",
+            "children": [
+              {
+                "line": 30,
+                "text": "例：I remember the day when we met."
+              }
+            ]
+          },
+          {
+            "line": 31,
+            "text": "where：先行词表地点，在从句中作地点状语",
+            "children": [
+              {
+                "line": 32,
+                "text": "例：This is the school where I studied."
+              }
+            ]
+          },
+          {
+            "line": 33,
+            "text": "why：先行词是 reason，在从句中作原因状语",
+            "children": [
+              {
+                "line": 34,
+                "text": "例：Tell me the reason why you were late."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "text": "限制性与非限制性",
+        "id": "restrict",
+        "children": [
+          {
+            "line": 36,
+            "text": "限制性：与先行词关系紧密，不能去掉，不用逗号",
+            "children": [
+              {
+                "line": 37,
+                "text": "例：I like the book that you gave me."
+              }
+            ]
+          },
+          {
+            "line": 38,
+            "text": "非限制性：补充说明，去掉后句意仍完整，用逗号隔开",
+            "children": [
+              {
+                "line": 39,
+                "text": "例：He lives in Beijing, where he works."
+              }
+            ]
+          },
+          {
+            "line": 40,
+            "text": "非限制性不用 that，也不用 why"
+          },
+          {
+            "line": 41,
+            "text": "which 可以指代整个主句，译为「这一点」",
+            "children": [
+              {
+                "line": 42,
+                "text": "例：He passed the exam, which surprised us.",
+                "color": "red"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "text": "易错点",
+        "color": "red",
+        "fold": true,
+        "children": [
+          {
+            "line": 44,
+            "text": "关系词的选择：看它在从句中充当的成分",
+            "children": [
+              {
+                "line": 45,
+                "text": "例：This is the house which I bought.",
+                "id": "which-obj"
+              }
+            ]
+          },
+          {
+            "line": 46,
+            "text": "介词加关系代词：介词由从句中的动词或形容词搭配决定",
+            "children": [
+              {
+                "line": 47,
+                "text": "例：This is the pen with which he writes."
+              }
+            ]
+          },
+          {
+            "line": 48,
+            "text": "where 与 which 的区别：从句缺主语或宾语用 which，不缺成分用 where",
+            "children": [
+              {
+                "line": 49,
+                "text": "例：This is the factory where he works."
+              }
+            ]
+          },
+          {
+            "line": 50,
+            "text": "主谓一致：从句谓语动词与先行词在数上一致",
+            "children": [
+              {
+                "line": 51,
+                "text": "例：He is one of the students who are good at math."
+              }
+            ]
+          },
+          {
+            "line": 52,
+            "text": "as 引导定语从句：与 such、the same、so 搭配",
+            "children": [
+              {
+                "line": 53,
+                "text": "例：He is such a man as I like."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "pronoun",
+      "to": "adverb",
+      "style": "dashed",
+      "line": 56,
+      "label": "看成分选词"
+    },
+    {
+      "from": "restrict",
+      "to": "pronoun",
+      "style": "solid",
+      "line": 57,
+      "label": "逗号决定"
+    },
+    {
+      "from": "which-obj",
+      "to": "adverb",
+      "style": "dashed",
+      "line": 58,
+      "label": "对比"
+    }
+  ],
+  "diagnostics": []
+}

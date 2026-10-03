@@ -1,0 +1,166 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "导数与函数的单调性、极值、最值",
+      "children": [
+        {
+          "line": 3,
+          "text": "导数的定义",
+          "id": "deriv-def",
+          "children": [
+            {
+              "line": 4,
+              "text": "$f'(x_0) = \\lim_{\\Delta x \\to 0} \\frac{\\Delta y}{\\Delta x}$"
+            },
+            {
+              "line": 5,
+              "text": "几何意义：曲线在该点的切线斜率"
+            }
+          ]
+        },
+        {
+          "line": 6,
+          "text": "导数与单调性",
+          "id": "mono",
+          "children": [
+            {
+              "line": 7,
+              "text": "$f'(x) > 0$ 时函数单调递增"
+            },
+            {
+              "line": 8,
+              "text": "$f'(x) < 0$ 时函数单调递减"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 1,
+              "node": {
+                "line": 9,
+                "text": "判断方法",
+                "children": [
+                  {
+                    "line": 10,
+                    "text": "求导数，列出不等式"
+                  },
+                  {
+                    "line": 11,
+                    "text": "确定单调区间"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 12,
+          "text": "极值",
+          "id": "extreme",
+          "children": [
+            {
+              "line": 13,
+              "text": "极大值：$f'(x)$ 由正变负"
+            },
+            {
+              "line": 14,
+              "text": "极小值：$f'(x)$ 由负变正"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 1,
+              "node": {
+                "line": 15,
+                "text": "极值点判断",
+                "children": [
+                  {
+                    "line": 16,
+                    "text": "必要条件：$f'(x_0) = 0$"
+                  },
+                  {
+                    "line": 17,
+                    "text": "充分条件：检验导数符号"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 18,
+          "text": "最值",
+          "id": "max-min",
+          "children": [
+            {
+              "line": 19,
+              "text": "在闭区间 $[a, b]$ 上",
+              "children": [
+                {
+                  "line": 20,
+                  "text": "比较极值点和端点函数值"
+                },
+                {
+                  "line": 21,
+                  "text": "其中最大、最小的就是最值"
+                }
+              ]
+            },
+            {
+              "line": 22,
+              "text": "应用：实际问题中求最大收益、最小成本等"
+            }
+          ]
+        },
+        {
+          "line": 23,
+          "text": "导数的计算",
+          "id": "compute",
+          "color": "red",
+          "children": [
+            {
+              "line": 24,
+              "text": "$(x^n)' = nx^{n-1}$"
+            },
+            {
+              "line": 25,
+              "text": "$(e^x)' = e^x$"
+            },
+            {
+              "line": 26,
+              "text": "$(\\sin x)' = \\cos x$"
+            },
+            {
+              "line": 27,
+              "text": "$(\\ln x)' = \\frac{1}{x}$"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "deriv-def",
+        "to": "mono",
+        "style": "solid",
+        "line": 30
+      },
+      {
+        "from": "deriv-def",
+        "to": "extreme",
+        "style": "solid",
+        "line": 31
+      },
+      {
+        "from": "extreme",
+        "to": "max-min",
+        "style": "solid",
+        "line": 32
+      }
+    ],
+    "diagnostics": []
+  }
+]

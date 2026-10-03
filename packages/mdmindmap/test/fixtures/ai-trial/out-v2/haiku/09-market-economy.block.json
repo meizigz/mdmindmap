@@ -1,0 +1,282 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "社会主义市场经济",
+      "children": [
+        {
+          "line": 3,
+          "text": "基本概念",
+          "id": "concept",
+          "children": [
+            {
+              "line": 4,
+              "text": "社会主义与市场经济的结合"
+            },
+            {
+              "line": 5,
+              "text": "在中国共产党领导下建立"
+            },
+            {
+              "line": 6,
+              "text": "适应生产力发展要求的经济体制"
+            }
+          ]
+        },
+        {
+          "line": 7,
+          "text": "基本特征",
+          "id": "characteristics",
+          "children": [
+            {
+              "line": 8,
+              "text": "社会主义特征"
+            },
+            {
+              "line": 9,
+              "text": "公有制为主体"
+            },
+            {
+              "line": 10,
+              "text": "共同繁荣与共同富裕"
+            },
+            {
+              "line": 11,
+              "text": "人民当家作主"
+            },
+            {
+              "line": 13,
+              "text": "市场经济特征"
+            },
+            {
+              "line": 14,
+              "text": "市场机制配置资源"
+            },
+            {
+              "line": 15,
+              "text": "价格信号引导生产"
+            },
+            {
+              "line": 16,
+              "text": "竞争机制优胜劣汰"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 3,
+              "node": {
+                "line": 12,
+                "text": "社会主义性质"
+              }
+            },
+            {
+              "from": 4,
+              "to": 7,
+              "node": {
+                "line": 17,
+                "text": "市场性质"
+              }
+            }
+          ]
+        },
+        {
+          "line": 18,
+          "text": "公有制为主体",
+          "id": "public-ownership",
+          "color": "red",
+          "children": [
+            {
+              "line": 19,
+              "text": "国有经济：主导地位",
+              "children": [
+                {
+                  "line": 20,
+                  "text": "公益性产业控制权"
+                },
+                {
+                  "line": 21,
+                  "text": "战略性产业主导权"
+                }
+              ]
+            },
+            {
+              "line": 22,
+              "text": "集体经济：重要补充"
+            },
+            {
+              "line": 23,
+              "text": "个体、私营经济：积极作用"
+            }
+          ]
+        },
+        {
+          "line": 24,
+          "text": "收入分配制度",
+          "id": "distribution",
+          "children": [
+            {
+              "line": 25,
+              "text": "按劳分配为主"
+            },
+            {
+              "line": 26,
+              "text": "多劳多得、少劳少得"
+            },
+            {
+              "line": 27,
+              "text": "体现社会主义公平性"
+            },
+            {
+              "line": 29,
+              "text": "多种分配方式并存",
+              "children": [
+                {
+                  "line": 30,
+                  "text": "按资分配：资本收益"
+                },
+                {
+                  "line": 31,
+                  "text": "按技术分配：创新成果"
+                },
+                {
+                  "line": 32,
+                  "text": "按管理分配：管理贡献"
+                }
+              ]
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 28,
+                "text": "主要分配方式"
+              }
+            }
+          ]
+        },
+        {
+          "line": 33,
+          "text": "社会保障制度",
+          "id": "social-security",
+          "children": [
+            {
+              "line": 34,
+              "text": "基本养老保险"
+            },
+            {
+              "line": 35,
+              "text": "基本医疗保险"
+            },
+            {
+              "line": 36,
+              "text": "失业保险、工伤保险"
+            },
+            {
+              "line": 37,
+              "text": "最低生活保障"
+            }
+          ]
+        },
+        {
+          "line": 38,
+          "text": "国家宏观调控",
+          "id": "macrocontrol",
+          "children": [
+            {
+              "line": 39,
+              "text": "目标"
+            },
+            {
+              "line": 40,
+              "text": "促进经济增长"
+            },
+            {
+              "line": 41,
+              "text": "实现充分就业"
+            },
+            {
+              "line": 42,
+              "text": "稳定物价"
+            },
+            {
+              "line": 44,
+              "text": "手段"
+            },
+            {
+              "line": 45,
+              "text": "财政政策：税收、支出"
+            },
+            {
+              "line": 46,
+              "text": "货币政策：利率、准备金率"
+            },
+            {
+              "line": 47,
+              "text": "法律行政手段"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 3,
+              "node": {
+                "line": 43,
+                "text": "调控目标"
+              }
+            },
+            {
+              "from": 4,
+              "to": 7,
+              "node": {
+                "line": 48,
+                "text": "调控工具"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "concept",
+        "to": "characteristics",
+        "style": "solid",
+        "line": 51,
+        "label": "具体表现为"
+      },
+      {
+        "from": "characteristics",
+        "to": "public-ownership",
+        "style": "thick",
+        "line": 52,
+        "label": "体现"
+      },
+      {
+        "from": "public-ownership",
+        "to": "distribution",
+        "style": "solid",
+        "line": 53,
+        "label": "配合"
+      },
+      {
+        "from": "distribution",
+        "to": "social-security",
+        "style": "solid",
+        "line": 54,
+        "label": "完善通过"
+      },
+      {
+        "from": "characteristics",
+        "to": "macrocontrol",
+        "style": "dashed",
+        "line": 55,
+        "label": "需要"
+      }
+    ],
+    "diagnostics": []
+  }
+]

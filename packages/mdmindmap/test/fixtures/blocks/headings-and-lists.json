@@ -1,0 +1,46 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "第一章",
+        "children": [
+          {
+            "line": 3,
+            "text": "要点一",
+            "children": [
+              {
+                "line": 4,
+                "text": "细节"
+              }
+            ]
+          },
+          {
+            "line": 5,
+            "text": "要点二"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "text": "第二章",
+        "children": [
+          {
+            "line": 7,
+            "text": "第一节",
+            "children": [
+              {
+                "line": 8,
+                "text": "要点三"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

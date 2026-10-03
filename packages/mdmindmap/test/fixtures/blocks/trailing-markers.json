@@ -1,0 +1,48 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "推荐顺序",
+        "id": "a",
+        "color": "red",
+        "fold": true
+      },
+      {
+        "line": 3,
+        "text": "顺序反过来",
+        "id": "b",
+        "color": "green",
+        "fold": true
+      },
+      {
+        "line": 4,
+        "text": "没有空格",
+        "color": "blue"
+      },
+      {
+        "line": 5,
+        "text": "markmap 写法",
+        "fold": true
+      },
+      {
+        "line": 6,
+        "text": "只认行尾那一个 🔴",
+        "color": "purple"
+      },
+      {
+        "line": 7,
+        "text": "灰色",
+        "color": "gray"
+      },
+      {
+        "line": 8,
+        "text": "中间的 🔴 不算颜色"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

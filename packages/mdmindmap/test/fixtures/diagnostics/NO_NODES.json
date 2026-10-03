@@ -1,0 +1,13 @@
+{
+  "root": null,
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 1,
+      "severity": "error",
+      "code": "NO_NODES",
+      "message": "没有找到任何节点。",
+      "fix": "第一行写 `# 根节点`，其余节点用 `- ` 列表，每深一级缩进 2 个空格。"
+    }
+  ]
+}

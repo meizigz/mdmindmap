@@ -1,0 +1,39 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲"
+      },
+      {
+        "line": 3,
+        "text": "父节点",
+        "children": [
+          {
+            "line": 4,
+            "text": "括号写到了子节点那一层"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 3,
+      "severity": "error",
+      "code": "SUM_OPEN_UNCLOSED",
+      "message": "这个 `{` 没有配对的 `}`，已忽略。",
+      "fix": "`{` 写在了父节点「父节点」上，去括它的子节点。应该把 `{` 写在第一个被括住的子节点上，与 `- } …` 同级。"
+    },
+    {
+      "line": 4,
+      "severity": "error",
+      "code": "SUM_NO_SIBLINGS",
+      "message": "概要「括号写到了子节点那一层」前面没有可以括住的兄弟节点，已当作普通节点显示。",
+      "fix": "`{` 写在了父节点「父节点」上。`{` 应该写在第一个被括住的兄弟节点上，并与 `}` 同级。"
+    }
+  ]
+}

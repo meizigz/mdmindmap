@@ -1,0 +1,112 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "导数与函数的单调性、极值、最值",
+      "children": [
+        {
+          "line": 3,
+          "text": "导数的定义",
+          "id": "deriv-def",
+          "children": [
+            {
+              "line": 4,
+              "text": "$f'(x) = \\lim_{\\Delta x \\to 0} \\frac{\\Delta y}{\\Delta x}$"
+            },
+            {
+              "line": 5,
+              "text": "几何意义：切线的斜率"
+            },
+            {
+              "line": 6,
+              "text": "物理意义：瞬时变化率"
+            }
+          ]
+        },
+        {
+          "line": 7,
+          "text": "导数与单调性",
+          "id": "monotonic",
+          "children": [
+            {
+              "line": 8,
+              "text": "若 $f'(x) > 0$，则 $f(x)$ 在该区间递增"
+            },
+            {
+              "line": 9,
+              "text": "若 $f'(x) < 0$，则 $f(x)$ 在该区间递减"
+            },
+            {
+              "line": 10,
+              "text": "若 $f'(x) = 0$，该点可能是极值点"
+            }
+          ]
+        },
+        {
+          "line": 11,
+          "text": "极值",
+          "id": "extrema",
+          "color": "red",
+          "children": [
+            {
+              "line": 12,
+              "text": "极大值：$f'(x)$ 从正变负"
+            },
+            {
+              "line": 13,
+              "text": "极小值：$f'(x)$ 从负变正"
+            },
+            {
+              "line": 14,
+              "text": "判断方法：二阶导数或导数变号法"
+            }
+          ]
+        },
+        {
+          "line": 15,
+          "text": "最值",
+          "id": "max-min",
+          "children": [
+            {
+              "line": 16,
+              "text": "在闭区间 $[a, b]$ 上：比较端点与极值点"
+            },
+            {
+              "line": 17,
+              "text": "最大值：所有候选点中的最大值"
+            },
+            {
+              "line": 18,
+              "text": "最小值：所有候选点中的最小值"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "deriv-def",
+        "to": "monotonic",
+        "style": "solid",
+        "line": 21,
+        "label": "决定"
+      },
+      {
+        "from": "monotonic",
+        "to": "extrema",
+        "style": "solid",
+        "line": 22,
+        "label": "包含"
+      },
+      {
+        "from": "extrema",
+        "to": "max-min",
+        "style": "solid",
+        "line": 23,
+        "label": "求出后"
+      }
+    ],
+    "diagnostics": []
+  }
+]

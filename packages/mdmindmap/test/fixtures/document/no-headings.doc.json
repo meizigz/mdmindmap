@@ -1,0 +1,24 @@
+{
+  "root": {
+    "line": 0,
+    "text": "no-headings",
+    "children": [
+      {
+        "line": 3,
+        "text": "要点一",
+        "children": [
+          {
+            "line": 4,
+            "text": "细节"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "text": "要点二"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

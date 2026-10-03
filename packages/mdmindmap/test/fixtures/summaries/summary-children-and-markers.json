@@ -1,0 +1,77 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲",
+        "children": [
+          {
+            "line": 3,
+            "text": "子一"
+          },
+          {
+            "line": 4,
+            "text": "子二"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 1,
+            "node": {
+              "line": 5,
+              "text": "子概要"
+            }
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "text": "乙"
+      }
+    ],
+    "summaries": [
+      {
+        "from": 0,
+        "to": 1,
+        "node": {
+          "line": 7,
+          "text": "总结",
+          "id": "sum",
+          "color": "purple",
+          "fold": true,
+          "children": [
+            {
+              "line": 8,
+              "text": "总结的子节点",
+              "children": [
+                {
+                  "line": 9,
+                  "text": "孙一"
+                },
+                {
+                  "line": 10,
+                  "text": "孙二"
+                }
+              ],
+              "summaries": [
+                {
+                  "from": 0,
+                  "to": 1,
+                  "node": {
+                    "line": 11,
+                    "text": "概要里再套概要"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

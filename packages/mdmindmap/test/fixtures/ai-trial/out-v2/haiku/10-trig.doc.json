@@ -1,0 +1,1088 @@
+{
+  "root": {
+    "line": 1,
+    "text": "三角函数",
+    "children": [
+      {
+        "line": 3,
+        "text": "任意角与弧度制",
+        "id": "angle-radian",
+        "children": [
+          {
+            "line": 4,
+            "text": "任意角",
+            "id": "arbitrary-angle",
+            "fold": true,
+            "children": [
+              {
+                "line": 5,
+                "text": "定义：在平面内，一条射线绕顶点旋转"
+              },
+              {
+                "line": 6,
+                "text": "正角：逆时针旋转"
+              },
+              {
+                "line": 7,
+                "text": "负角：顺时针旋转"
+              },
+              {
+                "line": 8,
+                "text": "零角：射线不旋转"
+              },
+              {
+                "line": 9,
+                "text": "终边相同的角",
+                "id": "coterminal",
+                "children": [
+                  {
+                    "line": 10,
+                    "text": "$\\alpha + 2k\\pi$（$k \\in \\mathbb{Z}$）"
+                  },
+                  {
+                    "line": 11,
+                    "text": "形式统一：描述角的集合"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "line": 12,
+            "text": "弧度制",
+            "id": "radian",
+            "fold": true,
+            "children": [
+              {
+                "line": 13,
+                "text": "定义"
+              },
+              {
+                "line": 14,
+                "text": "弧长等于半径的圆心角为 1 弧度"
+              },
+              {
+                "line": 15,
+                "text": "$\\theta = \\frac{l}{r}$（$l$ 弧长，$r$ 半径）"
+              },
+              {
+                "line": 17,
+                "text": "换算关系"
+              },
+              {
+                "line": 18,
+                "text": "$\\pi$ 弧度 $= 180°$"
+              },
+              {
+                "line": 19,
+                "text": "$1° = \\frac{\\pi}{180}$ 弧度"
+              },
+              {
+                "line": 20,
+                "text": "$1$ 弧度 $= \\frac{180°}{\\pi} \\approx 57.3°$"
+              },
+              {
+                "line": 22,
+                "text": "优点：使计算简化，自然单位"
+              }
+            ],
+            "summaries": [
+              {
+                "from": 0,
+                "to": 2,
+                "node": {
+                  "line": 16,
+                  "text": "弧度定义"
+                }
+              },
+              {
+                "from": 3,
+                "to": 6,
+                "node": {
+                  "line": 21,
+                  "text": "角度互化"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "text": "三角函数的定义",
+        "id": "definition",
+        "fold": true,
+        "children": [
+          {
+            "line": 24,
+            "text": "直角坐标定义",
+            "id": "definition-rect",
+            "children": [
+              {
+                "line": 25,
+                "text": "设 $P(x, y)$ 在单位圆上，$\\angle AOP = \\alpha$"
+              },
+              {
+                "line": 26,
+                "text": "$\\sin\\alpha = y$"
+              },
+              {
+                "line": 27,
+                "text": "$\\cos\\alpha = x$"
+              },
+              {
+                "line": 28,
+                "text": "$\\tan\\alpha = \\frac{y}{x} = \\frac{\\sin\\alpha}{\\cos\\alpha}$"
+              }
+            ]
+          },
+          {
+            "line": 29,
+            "text": "余割、割线、余切",
+            "id": "reciprocal",
+            "children": [
+              {
+                "line": 30,
+                "text": "$\\csc\\alpha = \\frac{1}{\\sin\\alpha}$"
+              },
+              {
+                "line": 31,
+                "text": "$\\sec\\alpha = \\frac{1}{\\cos\\alpha}$"
+              },
+              {
+                "line": 32,
+                "text": "$\\cot\\alpha = \\frac{1}{\\tan\\alpha} = \\frac{\\cos\\alpha}{\\sin\\alpha}$"
+              }
+            ]
+          },
+          {
+            "line": 33,
+            "text": "象限角的符号",
+            "color": "red",
+            "children": [
+              {
+                "line": 34,
+                "text": "第一象限：都为正"
+              },
+              {
+                "line": 35,
+                "text": "第二象限：$\\sin > 0$，$\\cos < 0$，$\\tan < 0$"
+              },
+              {
+                "line": 36,
+                "text": "第三象限：都为负"
+              },
+              {
+                "line": 37,
+                "text": "第四象限：$\\cos > 0$，$\\sin < 0$，$\\tan < 0$"
+              },
+              {
+                "line": 38,
+                "text": "简记：一全正，二正弦，三正切，四余弦"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "text": "诱导公式",
+        "id": "induction-formula",
+        "fold": true,
+        "children": [
+          {
+            "line": 40,
+            "text": "终边相同的角"
+          },
+          {
+            "line": 41,
+            "text": "$\\sin(\\alpha + 2k\\pi) = \\sin\\alpha$"
+          },
+          {
+            "line": 42,
+            "text": "$\\cos(\\alpha + 2k\\pi) = \\cos\\alpha$"
+          },
+          {
+            "line": 44,
+            "text": "关于原点对称"
+          },
+          {
+            "line": 45,
+            "text": "$\\sin(-\\alpha) = -\\sin\\alpha$"
+          },
+          {
+            "line": 46,
+            "text": "$\\cos(-\\alpha) = \\cos\\alpha$"
+          },
+          {
+            "line": 48,
+            "text": "关于 $x$ 轴对称"
+          },
+          {
+            "line": 49,
+            "text": "$\\sin(\\pi - \\alpha) = \\sin\\alpha$"
+          },
+          {
+            "line": 50,
+            "text": "$\\cos(\\pi - \\alpha) = -\\cos\\alpha$"
+          },
+          {
+            "line": 52,
+            "text": "关于 $y$ 轴对称"
+          },
+          {
+            "line": 53,
+            "text": "$\\sin(\\pi + \\alpha) = -\\sin\\alpha$"
+          },
+          {
+            "line": 54,
+            "text": "$\\cos(\\pi + \\alpha) = -\\cos\\alpha$"
+          },
+          {
+            "line": 56,
+            "text": "关于直线 $y = x$ 对称"
+          },
+          {
+            "line": 57,
+            "text": "$\\sin(\\frac{\\pi}{2} - \\alpha) = \\cos\\alpha$"
+          },
+          {
+            "line": 58,
+            "text": "$\\cos(\\frac{\\pi}{2} - \\alpha) = \\sin\\alpha$"
+          },
+          {
+            "line": 60,
+            "text": "综合应用"
+          },
+          {
+            "line": 61,
+            "text": "$\\sin(\\frac{\\pi}{2} + \\alpha) = \\cos\\alpha$"
+          },
+          {
+            "line": 62,
+            "text": "$\\cos(\\frac{\\pi}{2} + \\alpha) = -\\sin\\alpha$"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 43,
+              "text": "周期性"
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 47,
+              "text": "奇偶性"
+            }
+          },
+          {
+            "from": 6,
+            "to": 8,
+            "node": {
+              "line": 51,
+              "text": "补角关系"
+            }
+          },
+          {
+            "from": 9,
+            "to": 11,
+            "node": {
+              "line": 55,
+              "text": "终边在相反方向"
+            }
+          },
+          {
+            "from": 12,
+            "to": 14,
+            "node": {
+              "line": 59,
+              "text": "余函数关系"
+            }
+          },
+          {
+            "from": 15,
+            "to": 17,
+            "node": {
+              "line": 63,
+              "text": "扩展公式"
+            }
+          }
+        ]
+      },
+      {
+        "line": 64,
+        "text": "同角三角函数关系",
+        "id": "same-angle",
+        "children": [
+          {
+            "line": 65,
+            "text": "平方关系"
+          },
+          {
+            "line": 66,
+            "text": "$\\sin^2\\alpha + \\cos^2\\alpha = 1$"
+          },
+          {
+            "line": 67,
+            "text": "应用：已知一个可求另一个"
+          },
+          {
+            "line": 69,
+            "text": "商数关系"
+          },
+          {
+            "line": 70,
+            "text": "$\\tan\\alpha = \\frac{\\sin\\alpha}{\\cos\\alpha}$"
+          },
+          {
+            "line": 71,
+            "text": "联系三个函数"
+          },
+          {
+            "line": 73,
+            "text": "倒数关系"
+          },
+          {
+            "line": 74,
+            "text": "$\\sin\\alpha \\cdot \\csc\\alpha = 1$"
+          },
+          {
+            "line": 75,
+            "text": "$\\cos\\alpha \\cdot \\sec\\alpha = 1$"
+          },
+          {
+            "line": 77,
+            "text": "常见技巧",
+            "id": "same-angle-skill",
+            "fold": true,
+            "children": [
+              {
+                "line": 78,
+                "text": "变形：$\\sin^2\\alpha = 1 - \\cos^2\\alpha$"
+              },
+              {
+                "line": 79,
+                "text": "齐次化：分子分母同除 $\\cos^2\\alpha$"
+              },
+              {
+                "line": 80,
+                "text": "已知 $\\tan\\alpha$，求 $\\sin\\alpha$、$\\cos\\alpha$"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 68,
+              "text": "基本恒等式"
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 72,
+              "text": "商关系"
+            }
+          },
+          {
+            "from": 6,
+            "to": 8,
+            "node": {
+              "line": 76,
+              "text": "倒数恒等式"
+            }
+          }
+        ]
+      },
+      {
+        "line": 81,
+        "text": "图像与性质",
+        "id": "graph-property",
+        "fold": true,
+        "children": [
+          {
+            "line": 82,
+            "text": "正弦函数 $y = \\sin x$",
+            "id": "sine",
+            "children": [
+              {
+                "line": 83,
+                "text": "定义域：$\\mathbb{R}$"
+              },
+              {
+                "line": 84,
+                "text": "值域：$[-1, 1]$"
+              },
+              {
+                "line": 85,
+                "text": "周期：$2\\pi$"
+              },
+              {
+                "line": 86,
+                "text": "单调性：$[-\\frac{\\pi}{2} + 2k\\pi, \\frac{\\pi}{2} + 2k\\pi]$ 递增"
+              },
+              {
+                "line": 87,
+                "text": "对称中心：$(k\\pi, 0)$"
+              },
+              {
+                "line": 88,
+                "text": "对称轴：$x = \\frac{\\pi}{2} + k\\pi$"
+              }
+            ]
+          },
+          {
+            "line": 89,
+            "text": "余弦函数 $y = \\cos x$",
+            "id": "cosine",
+            "children": [
+              {
+                "line": 90,
+                "text": "定义域：$\\mathbb{R}$"
+              },
+              {
+                "line": 91,
+                "text": "值域：$[-1, 1]$"
+              },
+              {
+                "line": 92,
+                "text": "周期：$2\\pi$"
+              },
+              {
+                "line": 93,
+                "text": "单调性：$[2k\\pi - \\pi, 2k\\pi]$ 递减，$[2k\\pi, 2k\\pi + \\pi]$ 递增"
+              },
+              {
+                "line": 94,
+                "text": "对称中心：$(\\frac{\\pi}{2} + k\\pi, 0)$"
+              },
+              {
+                "line": 95,
+                "text": "对称轴：$x = k\\pi$"
+              }
+            ]
+          },
+          {
+            "line": 96,
+            "text": "正切函数 $y = \\tan x$",
+            "id": "tangent",
+            "children": [
+              {
+                "line": 97,
+                "text": "定义域：$x \\neq \\frac{\\pi}{2} + k\\pi$"
+              },
+              {
+                "line": 98,
+                "text": "值域：$\\mathbb{R}$"
+              },
+              {
+                "line": 99,
+                "text": "周期：$\\pi$（半周期）"
+              },
+              {
+                "line": 100,
+                "text": "单调性：$(-\\frac{\\pi}{2} + k\\pi, \\frac{\\pi}{2} + k\\pi)$ 递增"
+              },
+              {
+                "line": 101,
+                "text": "对称中心：$(k\\frac{\\pi}{2}, 0)$"
+              }
+            ]
+          },
+          {
+            "line": 102,
+            "text": "函数变换",
+            "id": "function-transform",
+            "fold": true,
+            "children": [
+              {
+                "line": 103,
+                "text": "$y = A\\sin(Bx + C) + D$ 的参数",
+                "children": [
+                  {
+                    "line": 104,
+                    "text": "$A$：振幅，$|A|$"
+                  },
+                  {
+                    "line": 105,
+                    "text": "$B$：角频率，周期 $T = \\frac{2\\pi}{|B|}$"
+                  },
+                  {
+                    "line": 106,
+                    "text": "$C$：初相位，平移 $-\\frac{C}{B}$"
+                  },
+                  {
+                    "line": 107,
+                    "text": "$D$：竖直平移"
+                  }
+                ]
+              },
+              {
+                "line": 108,
+                "text": "对称轴：令 $Bx + C = \\frac{\\pi}{2} + k\\pi$"
+              },
+              {
+                "line": 109,
+                "text": "对称中心：令 $Bx + C = k\\pi$"
+              },
+              {
+                "line": 110,
+                "text": "最值：$A > 0$ 时，最大值 $A + D$，最小值 $-A + D$"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 111,
+        "text": "两角和与差的三角函数",
+        "id": "sum-diff",
+        "children": [
+          {
+            "line": 112,
+            "text": "和角公式"
+          },
+          {
+            "line": 113,
+            "text": "$\\sin(\\alpha + \\beta) = \\sin\\alpha\\cos\\beta + \\cos\\alpha\\sin\\beta$"
+          },
+          {
+            "line": 114,
+            "text": "$\\cos(\\alpha + \\beta) = \\cos\\alpha\\cos\\beta - \\sin\\alpha\\sin\\beta$"
+          },
+          {
+            "line": 115,
+            "text": "$\\tan(\\alpha + \\beta) = \\frac{\\tan\\alpha + \\tan\\beta}{1 - \\tan\\alpha\\tan\\beta}$"
+          },
+          {
+            "line": 117,
+            "text": "差角公式"
+          },
+          {
+            "line": 118,
+            "text": "$\\sin(\\alpha - \\beta) = \\sin\\alpha\\cos\\beta - \\cos\\alpha\\sin\\beta$"
+          },
+          {
+            "line": 119,
+            "text": "$\\cos(\\alpha - \\beta) = \\cos\\alpha\\cos\\beta + \\sin\\alpha\\sin\\beta$"
+          },
+          {
+            "line": 120,
+            "text": "$\\tan(\\alpha - \\beta) = \\frac{\\tan\\alpha - \\tan\\beta}{1 + \\tan\\alpha\\tan\\beta}$"
+          },
+          {
+            "line": 122,
+            "text": "应用",
+            "id": "sum-diff-apply",
+            "fold": true,
+            "children": [
+              {
+                "line": 123,
+                "text": "已知两个角求和差的三角函数值"
+              },
+              {
+                "line": 124,
+                "text": "化简三角式"
+              },
+              {
+                "line": 125,
+                "text": "解三角方程"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 3,
+            "node": {
+              "line": 116,
+              "text": "和角公式"
+            }
+          },
+          {
+            "from": 4,
+            "to": 7,
+            "node": {
+              "line": 121,
+              "text": "差角公式"
+            }
+          }
+        ]
+      },
+      {
+        "line": 126,
+        "text": "二倍角公式",
+        "id": "double-angle",
+        "color": "red",
+        "children": [
+          {
+            "line": 127,
+            "text": "正弦二倍角"
+          },
+          {
+            "line": 128,
+            "text": "$\\sin 2\\alpha = 2\\sin\\alpha\\cos\\alpha$"
+          },
+          {
+            "line": 130,
+            "text": "余弦二倍角"
+          },
+          {
+            "line": 131,
+            "text": "$\\cos 2\\alpha = \\cos^2\\alpha - \\sin^2\\alpha$"
+          },
+          {
+            "line": 132,
+            "text": "$\\cos 2\\alpha = 2\\cos^2\\alpha - 1$"
+          },
+          {
+            "line": 133,
+            "text": "$\\cos 2\\alpha = 1 - 2\\sin^2\\alpha$"
+          },
+          {
+            "line": 135,
+            "text": "正切二倍角"
+          },
+          {
+            "line": 136,
+            "text": "$\\tan 2\\alpha = \\frac{2\\tan\\alpha}{1 - \\tan^2\\alpha}$"
+          },
+          {
+            "line": 138,
+            "text": "降幂公式",
+            "id": "power-reduction",
+            "children": [
+              {
+                "line": 139,
+                "text": "$\\sin^2\\alpha = \\frac{1 - \\cos 2\\alpha}{2}$"
+              },
+              {
+                "line": 140,
+                "text": "$\\cos^2\\alpha = \\frac{1 + \\cos 2\\alpha}{2}$"
+              },
+              {
+                "line": 141,
+                "text": "$\\sin\\alpha\\cos\\alpha = \\frac{\\sin 2\\alpha}{2}$"
+              }
+            ]
+          },
+          {
+            "line": 142,
+            "text": "半角公式",
+            "id": "half-angle",
+            "children": [
+              {
+                "line": 143,
+                "text": "$\\sin\\frac{\\alpha}{2} = \\pm\\sqrt{\\frac{1 - \\cos\\alpha}{2}}$"
+              },
+              {
+                "line": 144,
+                "text": "$\\cos\\frac{\\alpha}{2} = \\pm\\sqrt{\\frac{1 + \\cos\\alpha}{2}}$"
+              },
+              {
+                "line": 145,
+                "text": "$\\tan\\frac{\\alpha}{2} = \\frac{\\sin\\alpha}{1 + \\cos\\alpha} = \\frac{1 - \\cos\\alpha}{\\sin\\alpha}$"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 1,
+            "node": {
+              "line": 129,
+              "text": "正弦"
+            }
+          },
+          {
+            "from": 2,
+            "to": 5,
+            "node": {
+              "line": 134,
+              "text": "余弦"
+            }
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "node": {
+              "line": 137,
+              "text": "正切"
+            }
+          }
+        ]
+      },
+      {
+        "line": 146,
+        "text": "恒等变换",
+        "id": "identity-transform",
+        "fold": true,
+        "children": [
+          {
+            "line": 147,
+            "text": "积化和差"
+          },
+          {
+            "line": 148,
+            "text": "$\\sin\\alpha\\cos\\beta = \\frac{1}{2}[\\sin(\\alpha + \\beta) + \\sin(\\alpha - \\beta)]$"
+          },
+          {
+            "line": 149,
+            "text": "$\\cos\\alpha\\cos\\beta = \\frac{1}{2}[\\cos(\\alpha + \\beta) + \\cos(\\alpha - \\beta)]$"
+          },
+          {
+            "line": 151,
+            "text": "和差化积"
+          },
+          {
+            "line": 152,
+            "text": "$\\sin A + \\sin B = 2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}$"
+          },
+          {
+            "line": 153,
+            "text": "$\\cos A + \\cos B = 2\\cos\\frac{A+B}{2}\\cos\\frac{A-B}{2}$"
+          },
+          {
+            "line": 155,
+            "text": "辅助角公式",
+            "id": "auxiliary-angle",
+            "children": [
+              {
+                "line": 156,
+                "text": "$a\\sin x + b\\cos x = \\sqrt{a^2 + b^2}\\sin(x + \\phi)$"
+              },
+              {
+                "line": 157,
+                "text": "$\\tan\\phi = \\frac{b}{a}$"
+              },
+              {
+                "line": 158,
+                "text": "用于求最值和化简"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 150,
+              "text": "积化和差公式"
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 154,
+              "text": "和差化积公式"
+            }
+          }
+        ]
+      },
+      {
+        "line": 159,
+        "text": "解三角形",
+        "id": "solve-triangle",
+        "children": [
+          {
+            "line": 160,
+            "text": "正弦定理"
+          },
+          {
+            "line": 161,
+            "text": "$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R$"
+          },
+          {
+            "line": 162,
+            "text": "$R$ 为外接圆半径"
+          },
+          {
+            "line": 166,
+            "text": "余弦定理"
+          },
+          {
+            "line": 167,
+            "text": "$a^2 = b^2 + c^2 - 2bc\\cos A$"
+          },
+          {
+            "line": 168,
+            "text": "$\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$"
+          },
+          {
+            "line": 172,
+            "text": "面积公式",
+            "id": "triangle-area",
+            "children": [
+              {
+                "line": 173,
+                "text": "$S = \\frac{1}{2}ab\\sin C$"
+              },
+              {
+                "line": 174,
+                "text": "$S = \\frac{1}{2}bc\\sin A$"
+              },
+              {
+                "line": 175,
+                "text": "$S = \\frac{1}{2}ac\\sin B$"
+              }
+            ]
+          },
+          {
+            "line": 176,
+            "text": "解三角形步骤",
+            "id": "solve-steps",
+            "fold": true,
+            "children": [
+              {
+                "line": 177,
+                "text": "明确已知条件：SSS、SAS、ASA、AAS、SSA"
+              },
+              {
+                "line": 178,
+                "text": "选择定理：正弦定理或余弦定理"
+              },
+              {
+                "line": 179,
+                "text": "列方程求解"
+              },
+              {
+                "line": 180,
+                "text": "检验答案合理性（三角形内角和 180°）"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 163,
+              "text": "正弦定理应用",
+              "children": [
+                {
+                  "line": 164,
+                  "text": "已知两角一边 → 求第三边"
+                },
+                {
+                  "line": 165,
+                  "text": "已知两边一对角 → 求另一边或角"
+                }
+              ]
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 169,
+              "text": "余弦定理应用",
+              "children": [
+                {
+                  "line": 170,
+                  "text": "已知三边 → 求角"
+                },
+                {
+                  "line": 171,
+                  "text": "已知两边及夹角 → 求第三边"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "angle-radian",
+      "to": "definition",
+      "style": "solid",
+      "line": 183,
+      "label": "用于"
+    },
+    {
+      "from": "definition",
+      "to": "induction-formula",
+      "style": "solid",
+      "line": 184,
+      "label": "应用"
+    },
+    {
+      "from": "induction-formula",
+      "to": "same-angle",
+      "style": "solid",
+      "line": 185,
+      "label": "配合"
+    },
+    {
+      "from": "same-angle",
+      "to": "graph-property",
+      "style": "thick",
+      "line": 186,
+      "label": "决定"
+    },
+    {
+      "from": "graph-property",
+      "to": "sum-diff",
+      "style": "solid",
+      "line": 187,
+      "label": "进阶"
+    },
+    {
+      "from": "sum-diff",
+      "to": "double-angle",
+      "style": "solid",
+      "line": 188,
+      "label": "特例"
+    },
+    {
+      "from": "double-angle",
+      "to": "identity-transform",
+      "style": "solid",
+      "line": 189,
+      "label": "综合"
+    },
+    {
+      "from": "identity-transform",
+      "to": "solve-triangle",
+      "style": "solid",
+      "line": 190,
+      "label": "应用于"
+    },
+    {
+      "from": "coterminal",
+      "to": "arbitrary-angle",
+      "style": "dashed",
+      "line": 191,
+      "label": "概念相关"
+    },
+    {
+      "from": "sine",
+      "to": "cosine",
+      "style": "dashed",
+      "line": 192,
+      "label": "对应"
+    },
+    {
+      "from": "sine",
+      "to": "tangent",
+      "style": "dashed",
+      "line": 193,
+      "label": "对比"
+    },
+    {
+      "from": "function-transform",
+      "to": "graph-property",
+      "style": "solid",
+      "line": 194,
+      "label": "改变"
+    },
+    {
+      "from": "power-reduction",
+      "to": "double-angle",
+      "style": "dashed",
+      "line": 195,
+      "label": "来自"
+    },
+    {
+      "from": "half-angle",
+      "to": "double-angle",
+      "style": "dashed",
+      "line": 196,
+      "label": "衍生"
+    },
+    {
+      "from": "auxiliary-angle",
+      "to": "identity-transform",
+      "style": "solid",
+      "line": 197,
+      "label": "化简用"
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 4,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^arbitrary-angle` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^arbitrary-angle]]` 引用这个节点。",
+      "fix": "把 `^arbitrary-angle` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 12,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^radian` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^radian]]` 引用这个节点。",
+      "fix": "把 `^radian` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 23,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^definition` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^definition]]` 引用这个节点。",
+      "fix": "把 `^definition` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 39,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^induction-formula` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^induction-formula]]` 引用这个节点。",
+      "fix": "把 `^induction-formula` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 77,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^same-angle-skill` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^same-angle-skill]]` 引用这个节点。",
+      "fix": "把 `^same-angle-skill` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 81,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^graph-property` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^graph-property]]` 引用这个节点。",
+      "fix": "把 `^graph-property` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 102,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^function-transform` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^function-transform]]` 引用这个节点。",
+      "fix": "把 `^function-transform` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 122,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^sum-diff-apply` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^sum-diff-apply]]` 引用这个节点。",
+      "fix": "把 `^sum-diff-apply` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 146,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^identity-transform` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^identity-transform]]` 引用这个节点。",
+      "fix": "把 `^identity-transform` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 176,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^solve-steps` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^solve-steps]]` 引用这个节点。",
+      "fix": "把 `^solve-steps` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    }
+  ]
+}

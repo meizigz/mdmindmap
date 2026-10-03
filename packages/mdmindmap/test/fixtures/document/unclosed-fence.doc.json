@@ -1,0 +1,14 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "节点一"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

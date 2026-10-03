@@ -1,0 +1,283 @@
+{
+  "root": {
+    "line": 1,
+    "text": "定语从句",
+    "children": [
+      {
+        "line": 3,
+        "text": "定语从句的定义",
+        "id": "definition",
+        "children": [
+          {
+            "line": 4,
+            "text": "修饰名词或代词的从句"
+          },
+          {
+            "line": 5,
+            "text": "由关系词引导"
+          },
+          {
+            "line": 6,
+            "text": "放在被修饰词后面"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "text": "关系代词",
+        "id": "rel-pronoun",
+        "children": [
+          {
+            "line": 8,
+            "text": "who：指人、作主语或宾语",
+            "children": [
+              {
+                "line": 9,
+                "text": "例：The girl **who** smiles is Mary."
+              },
+              {
+                "line": 10,
+                "text": "例：The man **whom** I met was kind."
+              }
+            ]
+          },
+          {
+            "line": 11,
+            "text": "whom：指人、作宾语",
+            "color": "red",
+            "children": [
+              {
+                "line": 12,
+                "text": "例：The teacher **whom** we respect left."
+              }
+            ]
+          },
+          {
+            "line": 13,
+            "text": "whose：指人或物、表所属",
+            "children": [
+              {
+                "line": 14,
+                "text": "例：A student **whose** work is good will succeed."
+              }
+            ]
+          },
+          {
+            "line": 15,
+            "text": "that：指人或物、作主语或宾语",
+            "children": [
+              {
+                "line": 16,
+                "text": "例：The book **that** you read is famous."
+              }
+            ]
+          },
+          {
+            "line": 17,
+            "text": "which：指物、作主语或宾语",
+            "children": [
+              {
+                "line": 18,
+                "text": "例：The car **which** is red belongs to me."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "text": "关系副词",
+        "id": "rel-adverb",
+        "children": [
+          {
+            "line": 20,
+            "text": "when：时间状语",
+            "children": [
+              {
+                "line": 21,
+                "text": "例：I remember the day **when** we met."
+              }
+            ]
+          },
+          {
+            "line": 22,
+            "text": "where：地点状语",
+            "children": [
+              {
+                "line": 23,
+                "text": "例：This is the place **where** I lived."
+              }
+            ]
+          },
+          {
+            "line": 24,
+            "text": "why：原因状语",
+            "children": [
+              {
+                "line": 25,
+                "text": "例：Do you know the reason **why** he left?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "text": "限制性与非限制性",
+        "id": "restrictive",
+        "children": [
+          {
+            "line": 27,
+            "text": "限制性定语从句"
+          },
+          {
+            "line": 28,
+            "text": "对先行词的意义起限制作用"
+          },
+          {
+            "line": 29,
+            "text": "不用逗号隔开"
+          },
+          {
+            "line": 32,
+            "text": "非限制性定语从句",
+            "color": "red"
+          },
+          {
+            "line": 33,
+            "text": "对先行词进行补充说明"
+          },
+          {
+            "line": 34,
+            "text": "用逗号隔开"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 30,
+              "text": "限制性",
+              "children": [
+                {
+                  "line": 31,
+                  "text": "例：The book that is on the desk is mine.（不是所有书，而是特定的）"
+                }
+              ]
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 35,
+              "text": "非限制性",
+              "children": [
+                {
+                  "line": 36,
+                  "text": "例：This book, which is very famous, is interesting.（补充信息）"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "text": "易错点",
+        "fold": true,
+        "children": [
+          {
+            "line": 38,
+            "text": "which vs that"
+          },
+          {
+            "line": 39,
+            "text": "that 用于限制性"
+          },
+          {
+            "line": 40,
+            "text": "which 可用限制性和非限制性"
+          },
+          {
+            "line": 43,
+            "text": "who vs whom"
+          },
+          {
+            "line": 44,
+            "text": "who 是主格"
+          },
+          {
+            "line": 45,
+            "text": "whom 是宾格"
+          },
+          {
+            "line": 48,
+            "text": "先行词的确定",
+            "children": [
+              {
+                "line": 49,
+                "text": "从句修饰最近的名词，有时产生歧义"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 41,
+              "text": "代词混淆",
+              "children": [
+                {
+                  "line": 42,
+                  "text": "非限制性从句用 which，不用 that"
+                }
+              ]
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 46,
+              "text": "格数混淆",
+              "children": [
+                {
+                  "line": 47,
+                  "text": "强调：定语从句中缺主语用 who，缺宾语用 whom"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "rel-pronoun",
+      "to": "definition",
+      "style": "solid",
+      "line": 52,
+      "label": "是"
+    },
+    {
+      "from": "rel-adverb",
+      "to": "definition",
+      "style": "solid",
+      "line": 53,
+      "label": "是"
+    },
+    {
+      "from": "definition",
+      "to": "restrictive",
+      "style": "solid",
+      "line": 54,
+      "label": "分为"
+    }
+  ],
+  "diagnostics": []
+}

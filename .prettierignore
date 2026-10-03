@@ -1,0 +1,6 @@
+dist/
+/main.js
+/styles.css
+.scratch/
+package-lock.json
+**/test/fixtures/

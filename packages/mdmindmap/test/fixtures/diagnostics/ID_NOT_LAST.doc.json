@@ -1,0 +1,43 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "不在行尾",
+        "id": "a",
+        "color": "red"
+      },
+      {
+        "line": 3,
+        "text": "在行尾",
+        "id": "b",
+        "color": "red"
+      },
+      {
+        "line": 4,
+        "text": "折叠在后",
+        "id": "c",
+        "fold": true
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 2,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^a` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^a]]` 引用这个节点。",
+      "fix": "把 `^a` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 4,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^c` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^c]]` 引用这个节点。",
+      "fix": "把 `^c` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    }
+  ]
+}

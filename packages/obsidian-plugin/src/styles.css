@@ -1,0 +1,57 @@
+/*
+ * Obsidian 端：把 --mdmm-* 基础色映射到 Obsidian 的主题变量（spec §9），
+ * 这样会自动跟随明暗主题和第三方主题。拼接在核心库 style.css 之后，所以能盖过它的默认值。
+ */
+.mdmm {
+  --mdmm-font: var(--font-text);
+  --mdmm-bg: var(--background-primary);
+  --mdmm-text: var(--text-normal);
+  --mdmm-text-muted: var(--text-muted);
+  --mdmm-accent: var(--interactive-accent);
+  --mdmm-link: var(--link-color);
+  --mdmm-red: var(--color-red);
+  --mdmm-orange: var(--color-orange);
+  --mdmm-yellow: var(--color-yellow);
+  --mdmm-green: var(--color-green);
+  --mdmm-blue: var(--color-blue);
+  --mdmm-purple: var(--color-purple);
+  --mdmm-gray: var(--color-base-50);
+}
+
+/* 嵌在笔记里的导图 */
+.mdmindmap-block {
+  margin: 0.5em 0;
+}
+.mdmindmap-block .mdmm {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+/* 整篇文件视图：导图占满整个标签页 */
+.mdmindmap-file-view {
+  padding: 0;
+  overflow: hidden;
+}
+
+/* 嵌入导图右上角的小工具栏：在新标签页打开、导出 */
+.mdmindmap-block {
+  position: relative;
+}
+.mdmindmap-toolbar {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 3;
+  display: flex;
+  gap: 2px;
+  opacity: 0.45;
+  transition: opacity 0.15s;
+}
+.mdmindmap-block:hover .mdmindmap-toolbar {
+  opacity: 1;
+}
+@media (hover: none) {
+  .mdmindmap-toolbar {
+    opacity: 1;
+  }
+}

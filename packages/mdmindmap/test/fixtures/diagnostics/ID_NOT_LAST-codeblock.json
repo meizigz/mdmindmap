@@ -1,0 +1,16 @@
+{
+  "root": {
+    "line": 1,
+    "text": "代码块模式不报",
+    "children": [
+      {
+        "line": 2,
+        "text": "不在行尾",
+        "id": "a",
+        "color": "red"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

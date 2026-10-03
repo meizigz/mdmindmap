@@ -1,0 +1,361 @@
+{
+  "root": {
+    "line": 1,
+    "text": "大气环流",
+    "children": [
+      {
+        "line": 3,
+        "text": "三圈环流",
+        "id": "tri-cell",
+        "fold": true,
+        "children": [
+          {
+            "line": 4,
+            "text": "低纬环流（哈德利环流）"
+          },
+          {
+            "line": 5,
+            "text": "赤道受热，空气上升"
+          },
+          {
+            "line": 6,
+            "text": "上空向两极流动"
+          },
+          {
+            "line": 7,
+            "text": "30°纬度下沉，补偿流向赤道"
+          },
+          {
+            "line": 8,
+            "text": "高纬环流（极地环流）"
+          },
+          {
+            "line": 9,
+            "text": "两极冷，空气下沉"
+          },
+          {
+            "line": 10,
+            "text": "下层向中纬流动，被地转偏向力偏转"
+          },
+          {
+            "line": 11,
+            "text": "中纬环流（费雷尔环流）"
+          },
+          {
+            "line": 12,
+            "text": "由相邻两圈相互作用形成"
+          },
+          {
+            "line": 13,
+            "text": "特点：上升和下沉交替"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 9,
+            "node": {
+              "line": 14,
+              "text": "结构",
+              "children": [
+                {
+                  "line": 15,
+                  "text": "驱动力：太阳辐射在不同纬度的不均匀分布"
+                },
+                {
+                  "line": 16,
+                  "text": "调节力：地转偏向力改变风向"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "text": "气压带和风带",
+        "id": "pressure-wind",
+        "children": [
+          {
+            "line": 18,
+            "text": "赤道低气压带"
+          },
+          {
+            "line": 19,
+            "text": "位置：0°-10°纬度"
+          },
+          {
+            "line": 20,
+            "text": "特点：空气上升，降水多"
+          },
+          {
+            "line": 21,
+            "text": "副热带高气压带",
+            "id": "sub-tropic",
+            "color": "red"
+          },
+          {
+            "line": 22,
+            "text": "位置：30°纬度左右"
+          },
+          {
+            "line": 23,
+            "text": "特点：空气下沉，晴朗干燥，荒漠多"
+          },
+          {
+            "line": 24,
+            "text": "副极地低气压带"
+          },
+          {
+            "line": 25,
+            "text": "位置：60°纬度左右"
+          },
+          {
+            "line": 26,
+            "text": "特点：冷暖气流交汇，降水多"
+          },
+          {
+            "line": 27,
+            "text": "极地高气压带"
+          },
+          {
+            "line": 28,
+            "text": "位置：两极"
+          },
+          {
+            "line": 29,
+            "text": "特点：空气下沉，寒冷干燥"
+          },
+          {
+            "line": 31,
+            "text": "信风（贸易风）"
+          },
+          {
+            "line": 32,
+            "text": "位置：30°-0°纬度"
+          },
+          {
+            "line": 33,
+            "text": "方向：向赤道吹，被地转偏向力偏转"
+          },
+          {
+            "line": 34,
+            "text": "盛行西风"
+          },
+          {
+            "line": 35,
+            "text": "位置：30°-60°纬度"
+          },
+          {
+            "line": 36,
+            "text": "方向：向两极吹，被地转偏向力偏转"
+          },
+          {
+            "line": 37,
+            "text": "极地东风"
+          },
+          {
+            "line": 38,
+            "text": "位置：60°-90°纬度"
+          },
+          {
+            "line": 39,
+            "text": "方向：向赤道吹，被地转偏向力偏转"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 11,
+            "node": {
+              "line": 30,
+              "text": "四种气压带"
+            }
+          },
+          {
+            "from": 12,
+            "to": 20,
+            "node": {
+              "line": 40,
+              "text": "三种风带",
+              "children": [
+                {
+                  "line": 41,
+                  "text": "风向规律：北半球向右偏，南半球向左偏"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "text": "季风环流",
+        "id": "monsoon",
+        "fold": true,
+        "children": [
+          {
+            "line": 43,
+            "text": "成因：陆地与海洋温度差异大"
+          },
+          {
+            "line": 44,
+            "text": "冬季季风"
+          },
+          {
+            "line": 45,
+            "text": "北半球：冷空气南下，风向偏北"
+          },
+          {
+            "line": 46,
+            "text": "南半球：暖空气北上，风向偏北"
+          },
+          {
+            "line": 47,
+            "text": "夏季季风"
+          },
+          {
+            "line": 48,
+            "text": "北半球：暖空气北上，风向偏南"
+          },
+          {
+            "line": 49,
+            "text": "南半球：冷空气南下，风向偏南"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 1,
+            "to": 6,
+            "node": {
+              "line": 50,
+              "text": "季节变化",
+              "children": [
+                {
+                  "line": 51,
+                  "text": "强度与陆地面积和纬度有关"
+                },
+                {
+                  "line": 52,
+                  "text": "亚洲季风最强"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 53,
+        "text": "对气候的影响",
+        "id": "climate-effect",
+        "children": [
+          {
+            "line": 54,
+            "text": "气压带与风带位置决定气候类型"
+          },
+          {
+            "line": 55,
+            "text": "位于低压带下沉区：干旱气候"
+          },
+          {
+            "line": 56,
+            "text": "位于低压带上升区：湿润气候"
+          },
+          {
+            "line": 57,
+            "text": "纬度移动导致气候季节变化"
+          },
+          {
+            "line": 58,
+            "text": "夏季气压带向北移，南亚季风强"
+          },
+          {
+            "line": 59,
+            "text": "冬季气压带向南移，影响中纬度气候"
+          },
+          {
+            "line": 61,
+            "text": "季风强弱影响降水量",
+            "children": [
+              {
+                "line": 62,
+                "text": "季风强→降水多→农业丰收"
+              },
+              {
+                "line": 63,
+                "text": "季风弱→降水少→可能干旱"
+              }
+            ]
+          },
+          {
+            "line": 64,
+            "text": "海陆分布影响气流路径",
+            "children": [
+              {
+                "line": 65,
+                "text": "大陆内部干旱"
+              },
+              {
+                "line": 66,
+                "text": "沿海地区湿润"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 5,
+            "node": {
+              "line": 60,
+              "text": "主要机制"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "tri-cell",
+      "to": "pressure-wind",
+      "style": "solid",
+      "line": 69
+    },
+    {
+      "from": "pressure-wind",
+      "to": "monsoon",
+      "style": "solid",
+      "line": 70
+    },
+    {
+      "from": "monsoon",
+      "to": "climate-effect",
+      "style": "solid",
+      "line": 71
+    },
+    {
+      "from": "tri-cell",
+      "to": "climate-effect",
+      "style": "dashed",
+      "line": 72,
+      "label": "基础"
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 3,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^tri-cell` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^tri-cell]]` 引用这个节点。",
+      "fix": "把 `^tri-cell` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 42,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^monsoon` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^monsoon]]` 引用这个节点。",
+      "fix": "把 `^monsoon` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    }
+  ]
+}

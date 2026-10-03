@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.jpg binary
+*.png binary
+# 测试样例要逐字节保留（例如 blocks/crlf.md 专门测 CRLF 换行）。
+packages/mdmindmap/test/fixtures/** -text

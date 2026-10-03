@@ -1,0 +1,27 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "第一行 接着写的第二行 第三行",
+        "id": "cont"
+      },
+      {
+        "line": 5,
+        "text": "下一个节点"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 7,
+      "severity": "warning",
+      "code": "NON_NODE_LINE",
+      "message": "这一行既不是标题也不是列表项，不会出现在导图里。",
+      "fix": "要显示在导图里，请写成 `- ` 列表项或 `#` 标题；如果它是上一个节点的补充，缩进到那个列表项下面作为续行。"
+    }
+  ]
+}

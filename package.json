@@ -1,0 +1,37 @@
+{
+  "name": "mdmindmap-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/mdmindmap",
+    "packages/obsidian-plugin"
+  ],
+  "scripts": {
+    "build": "npm run build -w mdmindmap && npm run build -w mdmindmap-obsidian",
+    "dev": "npm run dev -w mdmindmap-obsidian",
+    "lint": "eslint .",
+    "typecheck": "tsc -p packages/mdmindmap && tsc -p packages/obsidian-plugin",
+    "test": "vitest run",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build",
+    "format": "prettier --write .",
+    "release": "node scripts/release.mjs",
+    "demo": "vite packages/mdmindmap/demo"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@eslint/json": "0.14.0",
+    "@types/node": "^22.14.0",
+    "@vitest/browser-playwright": "5.0.3",
+    "eslint": "^9.39.0",
+    "eslint-plugin-obsidianmd": "0.4.2",
+    "globals": "^16.5.0",
+    "obsidian": "1.8.7",
+    "playwright": "^1.63.0",
+    "prettier": "^3.9.9",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "vite": "^8.3.2",
+    "vitest": "5.0.3"
+  }
+}

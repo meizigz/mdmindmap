@@ -1,0 +1,28 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲",
+        "id": "a"
+      },
+      {
+        "line": 3,
+        "text": "乙",
+        "id": "b"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 4,
+      "severity": "warning",
+      "code": "REL_OUTSIDE_REGION",
+      "message": "这一行像是一条联系，但没有写在文末的 `%%` 块里，已忽略。",
+      "fix": "把所有联系移到文末，用单独一行 `%%` 开始、单独一行 `%%` 结束。"
+    }
+  ]
+}

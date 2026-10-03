@@ -1,0 +1,324 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "辛亥革命（1911年）",
+      "children": [
+        {
+          "line": 3,
+          "text": "背景",
+          "children": [
+            {
+              "line": 4,
+              "text": "民族危机加深：《辛丑条约》签订，清政府沦为「洋人的朝廷」",
+              "id": "crisis"
+            },
+            {
+              "line": 5,
+              "text": "民族资本主义初步发展",
+              "id": "capitalism",
+              "children": [
+                {
+                  "line": 6,
+                  "text": "资产阶级力量壮大"
+                }
+              ]
+            },
+            {
+              "line": 7,
+              "text": "清末新政、预备立宪失败",
+              "id": "reform",
+              "children": [
+                {
+                  "line": 8,
+                  "text": "皇族内阁",
+                  "color": "red"
+                }
+              ]
+            },
+            {
+              "line": 9,
+              "text": "资产阶级革命思想传播",
+              "id": "thought",
+              "children": [
+                {
+                  "line": 10,
+                  "text": "《革命军》、《警世钟》"
+                }
+              ]
+            },
+            {
+              "line": 11,
+              "text": "革命团体建立",
+              "id": "league",
+              "children": [
+                {
+                  "line": 12,
+                  "text": "兴中会（1894）"
+                },
+                {
+                  "line": 13,
+                  "text": "中国同盟会（1905）",
+                  "color": "red",
+                  "children": [
+                    {
+                      "line": 14,
+                      "text": "三民主义：民族、民权、民生"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 15,
+          "text": "过程",
+          "children": [
+            {
+              "line": 16,
+              "text": "早期起义：黄花岗起义（1911.4）"
+            },
+            {
+              "line": 17,
+              "text": "保路运动：四川最激烈",
+              "id": "railway"
+            },
+            {
+              "line": 18,
+              "text": "武昌起义（1911.10.10）",
+              "id": "wuchang",
+              "color": "red",
+              "children": [
+                {
+                  "line": 19,
+                  "text": "文学社、共进会发动"
+                },
+                {
+                  "line": 20,
+                  "text": "湖北军政府成立"
+                }
+              ]
+            },
+            {
+              "line": 21,
+              "text": "各省响应、宣布独立"
+            },
+            {
+              "line": 22,
+              "text": "中华民国成立（1912.1.1）",
+              "id": "roc",
+              "children": [
+                {
+                  "line": 23,
+                  "text": "孙中山任临时大总统"
+                },
+                {
+                  "line": 24,
+                  "text": "南京临时政府"
+                }
+              ]
+            },
+            {
+              "line": 25,
+              "text": "清帝退位（1912.2.12）",
+              "id": "abdicate"
+            },
+            {
+              "line": 26,
+              "text": "袁世凯窃取果实",
+              "id": "yuan",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "line": 27,
+          "text": "结果",
+          "children": [
+            {
+              "line": 28,
+              "text": "推翻清朝统治",
+              "id": "overthrow"
+            },
+            {
+              "line": 29,
+              "text": "革命果实被袁世凯窃取"
+            },
+            {
+              "line": 30,
+              "text": "《中华民国临时约法》",
+              "id": "constitution",
+              "color": "orange",
+              "children": [
+                {
+                  "line": 31,
+                  "text": "中国第一部资产阶级宪法性文件"
+                },
+                {
+                  "line": 32,
+                  "text": "三权分立，责任内阁制"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 33,
+          "text": "历史意义",
+          "id": "meaning",
+          "children": [
+            {
+              "line": 34,
+              "text": "推翻两千多年君主专制制度"
+            },
+            {
+              "line": 35,
+              "text": "建立资产阶级共和国"
+            },
+            {
+              "line": 36,
+              "text": "民主共和观念深入人心"
+            },
+            {
+              "line": 39,
+              "text": "为民族资本主义发展创造条件"
+            },
+            {
+              "line": 40,
+              "text": "打击帝国主义侵略势力"
+            },
+            {
+              "line": 41,
+              "text": "推动亚洲民族解放运动"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 37,
+                "text": "政治上的意义",
+                "children": [
+                  {
+                    "line": 38,
+                    "text": "近代中国第一次历史性巨变"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 42,
+          "text": "局限性",
+          "id": "limit",
+          "color": "red",
+          "children": [
+            {
+              "line": 43,
+              "text": "没有提出彻底的反帝反封建纲领"
+            },
+            {
+              "line": 44,
+              "text": "没有充分发动广大群众"
+            },
+            {
+              "line": 45,
+              "text": "没有建立坚强的革命政党"
+            },
+            {
+              "line": 46,
+              "text": "没有改变半殖民地半封建社会性质"
+            },
+            {
+              "line": 47,
+              "text": "根本原因：资产阶级软弱性、妥协性",
+              "id": "weak"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "crisis",
+        "to": "thought",
+        "style": "solid",
+        "line": 50,
+        "label": "促使"
+      },
+      {
+        "from": "capitalism",
+        "to": "league",
+        "style": "solid",
+        "line": 51,
+        "label": "阶级基础"
+      },
+      {
+        "from": "thought",
+        "to": "league",
+        "style": "solid",
+        "line": 52,
+        "label": "思想基础"
+      },
+      {
+        "from": "reform",
+        "to": "wuchang",
+        "style": "dashed",
+        "line": 53,
+        "label": "失望转向革命"
+      },
+      {
+        "from": "league",
+        "to": "wuchang",
+        "style": "solid",
+        "line": 54,
+        "label": "组织准备"
+      },
+      {
+        "from": "railway",
+        "to": "wuchang",
+        "style": "solid",
+        "line": 55,
+        "label": "导火线"
+      },
+      {
+        "from": "wuchang",
+        "to": "roc",
+        "style": "thick",
+        "line": 56
+      },
+      {
+        "from": "abdicate",
+        "to": "overthrow",
+        "style": "solid",
+        "line": 57,
+        "label": "导致"
+      },
+      {
+        "from": "weak",
+        "to": "yuan",
+        "style": "solid",
+        "line": 58,
+        "label": "导致"
+      },
+      {
+        "from": "weak",
+        "to": "limit",
+        "style": "thick",
+        "line": 59,
+        "label": "根源"
+      },
+      {
+        "from": "constitution",
+        "to": "meaning",
+        "style": "dashed",
+        "line": 60
+      }
+    ],
+    "diagnostics": []
+  }
+]

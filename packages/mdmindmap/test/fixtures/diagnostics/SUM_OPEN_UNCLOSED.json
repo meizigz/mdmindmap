@@ -1,0 +1,30 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲"
+      },
+      {
+        "line": 3,
+        "text": "乙"
+      },
+      {
+        "line": 4,
+        "text": "丙"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 2,
+      "severity": "error",
+      "code": "SUM_OPEN_UNCLOSED",
+      "message": "这个 `{` 没有配对的 `}`，已忽略。",
+      "fix": "在要括住的最后一个兄弟节点之后，另起一行同级的 `- } 总结文字`。"
+    }
+  ]
+}

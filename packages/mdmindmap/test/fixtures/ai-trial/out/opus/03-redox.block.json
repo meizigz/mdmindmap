@@ -1,0 +1,272 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "氧化还原反应",
+      "children": [
+        {
+          "line": 3,
+          "text": "基本概念",
+          "id": "concept",
+          "children": [
+            {
+              "line": 4,
+              "text": "本质：电子转移（得失或偏移）",
+              "color": "red"
+            },
+            {
+              "line": 5,
+              "text": "特征：元素化合价升降",
+              "id": "feature"
+            },
+            {
+              "line": 6,
+              "text": "氧化剂：得电子，化合价降低"
+            },
+            {
+              "line": 7,
+              "text": "还原剂：失电子，化合价升高"
+            },
+            {
+              "line": 11,
+              "text": "与四大基本反应类型",
+              "children": [
+                {
+                  "line": 12,
+                  "text": "置换反应一定是氧化还原"
+                },
+                {
+                  "line": 13,
+                  "text": "复分解反应一定不是"
+                },
+                {
+                  "line": 14,
+                  "text": "有单质参加的化合、分解才是"
+                },
+                {
+                  "line": 15,
+                  "text": "有单质参与不一定是：$\\ce{3O2 -> 2O3}$",
+                  "color": "orange"
+                }
+              ]
+            }
+          ],
+          "summaries": [
+            {
+              "from": 2,
+              "to": 3,
+              "node": {
+                "line": 8,
+                "text": "口诀：升失氧，降得还",
+                "color": "red",
+                "children": [
+                  {
+                    "line": 9,
+                    "text": "氧化剂 → 被还原 → 还原产物"
+                  },
+                  {
+                    "line": 10,
+                    "text": "还原剂 → 被氧化 → 氧化产物"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 16,
+          "text": "电子转移表示",
+          "fold": true,
+          "children": [
+            {
+              "line": 17,
+              "text": "双线桥：标得失电子总数"
+            },
+            {
+              "line": 18,
+              "text": "单线桥：从还原剂指向氧化剂"
+            },
+            {
+              "line": 19,
+              "text": "例：$\\ce{2Na + Cl2 -> 2NaCl}$ 转移 $2e^-$"
+            }
+          ]
+        },
+        {
+          "line": 20,
+          "text": "氧化性、还原性强弱比较",
+          "id": "compare",
+          "children": [
+            {
+              "line": 21,
+              "text": "依据方程式：氧化剂 > 氧化产物"
+            },
+            {
+              "line": 22,
+              "text": "依据金属活动顺序"
+            },
+            {
+              "line": 23,
+              "text": "依据反应条件难易"
+            },
+            {
+              "line": 24,
+              "text": "依据被氧化/还原的程度"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 3,
+              "node": {
+                "line": 25,
+                "text": "判断强弱的四种方法",
+                "children": [
+                  {
+                    "line": 26,
+                    "text": "例：$\\ce{Fe + CuSO4 -> FeSO4 + Cu}$ ⇒ 还原性 Fe > Cu"
+                  },
+                  {
+                    "line": 27,
+                    "text": "与得失电子**数目**无关，只看难易",
+                    "color": "red"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 28,
+          "text": "重要规律",
+          "id": "rules",
+          "children": [
+            {
+              "line": 29,
+              "text": "守恒律：得失电子总数相等",
+              "id": "conserve"
+            },
+            {
+              "line": 30,
+              "text": "强弱律：强制弱"
+            },
+            {
+              "line": 31,
+              "text": "价态律：高价氧化、低价还原、中间价两性"
+            },
+            {
+              "line": 32,
+              "text": "先后律：强者优先反应"
+            },
+            {
+              "line": 33,
+              "text": "转化律：同元素价态只靠近不交叉"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 4,
+              "node": {
+                "line": 34,
+                "text": "五大规律",
+                "children": [
+                  {
+                    "line": 35,
+                    "text": "守恒律用于计算"
+                  },
+                  {
+                    "line": 36,
+                    "text": "先后律：$\\ce{Cl2}$ 先氧化 $\\ce{Fe^2+}$ 还是 $\\ce{Br-}$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 37,
+          "text": "方程式配平",
+          "id": "balance",
+          "children": [
+            {
+              "line": 38,
+              "text": "化合价升降法步骤",
+              "children": [
+                {
+                  "line": 39,
+                  "text": "标价态"
+                },
+                {
+                  "line": 40,
+                  "text": "列变化"
+                },
+                {
+                  "line": 41,
+                  "text": "求最小公倍数"
+                },
+                {
+                  "line": 42,
+                  "text": "配系数、查守恒"
+                }
+              ]
+            },
+            {
+              "line": 43,
+              "text": "例：$\\ce{3Cu + 8HNO3(稀) -> 3Cu(NO3)2 + 2NO ^ + 4H2O}$"
+            },
+            {
+              "line": 44,
+              "text": "离子方程式：还要电荷守恒",
+              "color": "orange"
+            }
+          ]
+        },
+        {
+          "line": 45,
+          "text": "常见物质",
+          "fold": true,
+          "children": [
+            {
+              "line": 46,
+              "text": "常见氧化剂：$\\ce{KMnO4}$、$\\ce{HNO3}$、浓 $\\ce{H2SO4}$、$\\ce{Cl2}$、$\\ce{Fe^3+}$"
+            },
+            {
+              "line": 47,
+              "text": "常见还原剂：活泼金属、$\\ce{H2}$、$\\ce{CO}$、$\\ce{I-}$、$\\ce{S^2-}$、$\\ce{Fe^2+}$"
+            },
+            {
+              "line": 48,
+              "text": "既有氧化性又有还原性：$\\ce{H2O2}$、$\\ce{SO2}$、$\\ce{Fe^2+}$"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "feature",
+        "to": "concept",
+        "style": "solid",
+        "line": 51,
+        "label": "判断依据"
+      },
+      {
+        "from": "conserve",
+        "to": "balance",
+        "style": "thick",
+        "line": 52,
+        "label": "指导"
+      },
+      {
+        "from": "compare",
+        "to": "rules",
+        "style": "dashed",
+        "line": 53,
+        "label": "依据"
+      }
+    ],
+    "diagnostics": []
+  }
+]

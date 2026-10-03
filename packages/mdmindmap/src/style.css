@@ -1,0 +1,489 @@
+/*
+ * mdmindmap 样式（spec §9）。
+ * 公开 API = 下面的 --mdmm-* 变量 + 选择器属性 data-depth / data-color / data-summary。
+ * 类名（.mdmm-*）和其余 DOM 结构属于内部实现，可能随版本变化。
+ */
+
+/* ---------- 变量：亮色默认值 ---------- */
+.mdmm {
+  /* 基础色（宿主提供；Obsidian 插件映射到主题变量） */
+  --mdmm-font: inherit;
+  --mdmm-bg: #ffffff;
+  --mdmm-text: #1f2328;
+  --mdmm-text-muted: #59636e;
+  --mdmm-accent: #6e56cf;
+  --mdmm-link: #0d74ce;
+  /* Radix Colors 第 9 阶 */
+  --mdmm-red: #e5484d;
+  --mdmm-orange: #f76b15;
+  --mdmm-yellow: #ffc53d;
+  --mdmm-green: #30a46c;
+  --mdmm-blue: #0090ff;
+  --mdmm-purple: #8e4ec6;
+  --mdmm-gray: #8d8d8d;
+
+  /* 派生色（由基础色算出，可覆盖） */
+  --mdmm-branch: color-mix(in srgb, var(--mdmm-text) 35%, var(--mdmm-bg));
+  --mdmm-brace: var(--mdmm-branch);
+  --mdmm-l1-fill: color-mix(in srgb, var(--mdmm-text) 8%, var(--mdmm-bg));
+  --mdmm-summary-fill: color-mix(in srgb, var(--mdmm-text) 14%, var(--mdmm-bg));
+  --mdmm-relation: var(--mdmm-accent);
+  --mdmm-color-fill-amount: 20%;
+
+  /* 尺寸 */
+  --mdmm-line-height: 1.45;
+  --mdmm-branch-width: 1.5px;
+  --mdmm-node-max-width: 240px;
+  --mdmm-root-max-width: 280px;
+  --mdmm-root-font-size: 18px;
+  --mdmm-root-padding: 4px 6px;
+  --mdmm-root-radius: 0;
+  --mdmm-l1-font-size: 15px;
+  --mdmm-l1-padding: 5px 14px;
+  --mdmm-l1-radius: 999px;
+  --mdmm-node-font-size: 13px;
+  --mdmm-node-padding: 2px 4px 4px;
+  --mdmm-node-radius: 6px;
+  --mdmm-summary-font-size: 13px;
+  --mdmm-summary-padding: 4px 10px;
+  --mdmm-summary-radius: 6px;
+}
+
+/* ---------- 变量：暗色 ---------- */
+@media (prefers-color-scheme: dark) {
+  .mdmm {
+    --mdmm-bg: #1e1e1e;
+    --mdmm-text: #dcddde;
+    --mdmm-text-muted: #a0a4a8;
+    --mdmm-accent: #9b8afb;
+    --mdmm-link: #70b8ff;
+    /* Radix Colors 暗色第 10 阶 */
+    --mdmm-red: #ec5d5e;
+    --mdmm-orange: #ff801f;
+    --mdmm-yellow: #ffdc00;
+    --mdmm-green: #33b074;
+    --mdmm-blue: #3b9eff;
+    --mdmm-purple: #9a5cd0;
+    --mdmm-gray: #7b7b7b;
+  }
+}
+
+/* 在任意外层元素（或导图自身）上用 data-mdmm-theme 强制某一种 */
+[data-mdmm-theme="light"] .mdmm,
+.mdmm[data-mdmm-theme="light"] {
+  --mdmm-bg: #ffffff;
+  --mdmm-text: #1f2328;
+  --mdmm-text-muted: #59636e;
+  --mdmm-accent: #6e56cf;
+  --mdmm-link: #0d74ce;
+  --mdmm-red: #e5484d;
+  --mdmm-orange: #f76b15;
+  --mdmm-yellow: #ffc53d;
+  --mdmm-green: #30a46c;
+  --mdmm-blue: #0090ff;
+  --mdmm-purple: #8e4ec6;
+  --mdmm-gray: #8d8d8d;
+}
+
+[data-mdmm-theme="dark"] .mdmm,
+.mdmm[data-mdmm-theme="dark"] {
+  --mdmm-bg: #1e1e1e;
+  --mdmm-text: #dcddde;
+  --mdmm-text-muted: #a0a4a8;
+  --mdmm-accent: #9b8afb;
+  --mdmm-link: #70b8ff;
+  --mdmm-red: #ec5d5e;
+  --mdmm-orange: #ff801f;
+  --mdmm-yellow: #ffdc00;
+  --mdmm-green: #33b074;
+  --mdmm-blue: #3b9eff;
+  --mdmm-purple: #9a5cd0;
+  --mdmm-gray: #7b7b7b;
+}
+
+/* ---------- 画布 ---------- */
+.mdmm {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: var(--mdmm-bg);
+  color: var(--mdmm-text);
+  font-family: var(--mdmm-font);
+  line-height: var(--mdmm-line-height);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.mdmm-viewport {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.mdmm-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  transform: translate(var(--mdmm-tx, 0), var(--mdmm-ty, 0))
+    scale(var(--mdmm-scale, 1));
+}
+
+.mdmm-edges {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: visible;
+}
+
+.mdmm-nodes {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* 离屏测量：足够宽，节点按内容自然宽度（受最大宽度限制）排开 */
+.mdmm-measure {
+  position: absolute;
+  left: -100000px;
+  top: 0;
+  width: 100000px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ---------- 节点 ---------- */
+.mdmm-node {
+  position: absolute;
+  box-sizing: border-box;
+  max-width: var(--mdmm-node-max-width);
+  padding: var(--mdmm-node-padding);
+  border-radius: var(--mdmm-node-radius);
+  font-size: var(--mdmm-node-font-size);
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* 宽公式撑出最大宽度的节点：按实际内容宽度放宽 */
+.mdmm-node.mdmm-wide {
+  width: var(--mdmm-w);
+  max-width: none;
+}
+
+.mdmm-nodes .mdmm-node {
+  left: var(--mdmm-x);
+  top: var(--mdmm-y);
+  /* 与排版用的尺寸（测量值向上取整）完全一致，下划线和连线才能贴住节点边缘 */
+  width: var(--mdmm-w);
+  height: var(--mdmm-h);
+  max-width: none;
+}
+
+/* 根节点：粗体大字，没有边框 */
+.mdmm-node[data-depth="0"] {
+  max-width: var(--mdmm-root-max-width);
+  padding: var(--mdmm-root-padding);
+  border-radius: var(--mdmm-root-radius);
+  font-size: var(--mdmm-root-font-size);
+  font-weight: 700;
+}
+
+/* 一级分支：圆角色块 */
+.mdmm-node[data-depth="1"] {
+  padding: var(--mdmm-l1-padding);
+  border-radius: var(--mdmm-l1-radius);
+  font-size: var(--mdmm-l1-font-size);
+  font-weight: 600;
+  background: var(--mdmm-l1-fill);
+}
+
+/* 概要节点：填底色的圆角框 */
+.mdmm-node[data-summary] {
+  padding: var(--mdmm-summary-padding);
+  border-radius: var(--mdmm-summary-radius);
+  font-size: var(--mdmm-summary-font-size);
+  font-weight: normal;
+  background: var(--mdmm-summary-fill);
+}
+
+/* 预设颜色：浅底 + 彩色边框，文字仍用正文色；任何层级都画成色块 */
+.mdmm-node[data-color] {
+  --mdmm-c: var(--mdmm-gray);
+  background: color-mix(
+    in srgb,
+    var(--mdmm-c) var(--mdmm-color-fill-amount),
+    var(--mdmm-bg)
+  );
+  box-shadow: inset 0 0 0 1.5px var(--mdmm-c);
+}
+.mdmm-node[data-color]:not([data-depth="1"]) {
+  padding: var(--mdmm-summary-padding);
+}
+.mdmm-node[data-color="red"] {
+  --mdmm-c: var(--mdmm-red);
+}
+.mdmm-node[data-color="orange"] {
+  --mdmm-c: var(--mdmm-orange);
+}
+.mdmm-node[data-color="yellow"] {
+  --mdmm-c: var(--mdmm-yellow);
+}
+.mdmm-node[data-color="green"] {
+  --mdmm-c: var(--mdmm-green);
+}
+.mdmm-node[data-color="blue"] {
+  --mdmm-c: var(--mdmm-blue);
+}
+.mdmm-node[data-color="purple"] {
+  --mdmm-c: var(--mdmm-purple);
+}
+.mdmm-node[data-color="gray"] {
+  --mdmm-c: var(--mdmm-gray);
+}
+
+/* ---------- 节点内容 ---------- */
+.mdmm-node code {
+  font-size: 0.92em;
+  padding: 0 0.25em;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--mdmm-text) 10%, transparent);
+}
+.mdmm-node mark {
+  color: inherit;
+  background: color-mix(in srgb, var(--mdmm-yellow) 45%, transparent);
+}
+.mdmm-node a {
+  color: var(--mdmm-link);
+  text-decoration: none;
+}
+.mdmm-node .mdmm-wikilink {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--mdmm-link) 45%, transparent);
+}
+
+/* ---------- 连线层 ---------- */
+.mdmm-branch,
+.mdmm-underline {
+  fill: none;
+  stroke: var(--mdmm-branch);
+  stroke-width: var(--mdmm-branch-width);
+  stroke-linecap: round;
+}
+.mdmm-brace {
+  fill: none;
+  stroke: var(--mdmm-brace);
+  stroke-width: var(--mdmm-branch-width);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- 联系线 ---------- */
+.mdmm-relation {
+  fill: none;
+  stroke: var(--mdmm-relation);
+  stroke-width: var(--mdmm-branch-width);
+}
+.mdmm-relation-dashed {
+  stroke-dasharray: 6 4;
+}
+.mdmm-relation-thick {
+  stroke-width: calc(var(--mdmm-branch-width) * 2);
+}
+.mdmm-arrow path {
+  fill: var(--mdmm-relation);
+}
+.mdmm-relation-label {
+  font-size: 12px;
+  fill: var(--mdmm-relation);
+  paint-order: stroke;
+  stroke: var(--mdmm-bg);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+/* ---------- 尺寸与交互状态 ---------- */
+.mdmm.mdmm-sized {
+  height: var(--mdmm-height);
+}
+
+/* 点击激活：激活前滚动和触摸交给页面 */
+.mdmm[data-interaction="click-to-activate"]:not(.mdmm-active) .mdmm-viewport {
+  cursor: pointer;
+}
+.mdmm.mdmm-active .mdmm-viewport {
+  cursor: grab;
+  touch-action: none;
+}
+.mdmm[data-interaction="click-to-activate"].mdmm-active {
+  outline: 1.5px solid color-mix(in srgb, var(--mdmm-accent) 60%, transparent);
+  outline-offset: -1.5px;
+}
+
+/* 拖动底边调整高度 */
+.mdmm-resize {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  cursor: ns-resize;
+  touch-action: none;
+  z-index: 1;
+}
+.mdmm-resize::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  width: 36px;
+  height: 3px;
+  margin-left: -18px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--mdmm-text) 18%, transparent);
+}
+
+/* ---------- 折叠按钮 ---------- */
+.mdmm-toggle {
+  position: absolute;
+  left: var(--mdmm-x);
+  top: var(--mdmm-y);
+  box-sizing: border-box;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  border: 1px solid var(--mdmm-branch);
+  border-radius: 8px;
+  background: var(--mdmm-bg);
+  color: var(--mdmm-text-muted);
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  cursor: pointer;
+  transform: translate(3px, -50%);
+}
+.mdmm-toggle[data-side="left"] {
+  transform: translate(calc(-100% - 3px), -50%);
+}
+.mdmm-toggle[aria-expanded="true"]::before {
+  content: "−";
+}
+/* 展开状态的按钮平时隐藏，悬停在节点或按钮上才出现；没有悬停的触屏设备一直显示 */
+.mdmm-toggle[aria-expanded="true"] {
+  opacity: 0;
+}
+.mdmm-node:hover + .mdmm-toggle,
+.mdmm-toggle:hover {
+  opacity: 1;
+}
+@media (hover: none) {
+  .mdmm-toggle[aria-expanded="true"] {
+    opacity: 1;
+  }
+}
+
+/* ---------- 链接 ---------- */
+.mdmm[data-links] .mdmm-wikilink,
+.mdmm-node .mdmm-link {
+  cursor: pointer;
+}
+
+/* ---------- 诊断：角标与问题列表 ---------- */
+.mdmm-badge {
+  position: absolute;
+  right: 8px;
+  bottom: 12px;
+  z-index: 2;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+  color: var(--mdmm-bg);
+  background: var(--mdmm-orange);
+}
+.mdmm-badge[data-severity="error"] {
+  background: var(--mdmm-red);
+}
+
+.mdmm-problems {
+  position: absolute;
+  right: 8px;
+  bottom: 38px;
+  z-index: 2;
+  display: none;
+  box-sizing: border-box;
+  width: min(420px, calc(100% - 16px));
+  max-height: calc(100% - 50px);
+  overflow: auto;
+  padding: 4px 0;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--mdmm-text);
+  background: var(--mdmm-bg);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--mdmm-text) 15%, transparent),
+    0 4px 14px color-mix(in srgb, var(--mdmm-text) 18%, transparent);
+  user-select: text;
+  -webkit-user-select: text;
+}
+.mdmm.mdmm-problems-open .mdmm-problems {
+  display: block;
+}
+/* 一个节点都没有：问题列表占满画布 */
+.mdmm-problems.mdmm-problems-full {
+  display: block;
+  inset: 12px;
+  width: auto;
+  max-height: none;
+}
+
+.mdmm-problem {
+  padding: 4px 10px;
+  border-left: 3px solid var(--mdmm-orange);
+}
+.mdmm-problem[data-severity="error"] {
+  border-left-color: var(--mdmm-red);
+}
+.mdmm-problem[data-severity="hint"] {
+  border-left-color: var(--mdmm-gray);
+}
+.mdmm-problem[role="button"] {
+  cursor: pointer;
+}
+.mdmm-problem[role="button"]:hover {
+  background: color-mix(in srgb, var(--mdmm-text) 6%, transparent);
+}
+.mdmm-problem-line {
+  margin-right: 6px;
+  color: var(--mdmm-text-muted);
+}
+.mdmm-problem-fix {
+  color: var(--mdmm-text-muted);
+}
+
+/* ---------- 导出 ---------- */
+.mdmm.mdmm-export {
+  width: var(--mdmm-export-w);
+  height: var(--mdmm-export-h);
+  overflow: visible;
+  background: transparent;
+}
+
+/* revealLine 之后短暂高亮（用 outline，不碰预设颜色用的 box-shadow） */
+@keyframes mdmm-flash {
+  from {
+    outline-color: var(--mdmm-accent);
+  }
+  to {
+    outline-color: transparent;
+  }
+}
+.mdmm-node.mdmm-flash {
+  outline: 3px solid transparent;
+  outline-offset: 2px;
+  animation: mdmm-flash 0.9s ease-out;
+}

@@ -1,0 +1,28 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲",
+        "id": "a"
+      },
+      {
+        "line": 3,
+        "text": "乙",
+        "id": "b"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 5,
+      "severity": "error",
+      "code": "REGION_UNCLOSED",
+      "message": "这个 `%%` 块没有闭合，从这里往后的内容都被忽略了。",
+      "fix": "在联系区最后补上单独一行 `%%`。"
+    }
+  ]
+}

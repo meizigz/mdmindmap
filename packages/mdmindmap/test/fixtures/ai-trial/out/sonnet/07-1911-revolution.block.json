@@ -1,0 +1,222 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "辛亥革命",
+      "children": [
+        {
+          "line": 3,
+          "text": "背景",
+          "id": "background",
+          "children": [
+            {
+              "line": 4,
+              "text": "民族危机加深：甲午战争后列强瓜分中国"
+            },
+            {
+              "line": 5,
+              "text": "清政府腐朽：签订《辛丑条约》，成为「洋人的朝廷」"
+            },
+            {
+              "line": 6,
+              "text": "民族资本主义发展，资产阶级力量壮大",
+              "id": "bourgeois"
+            },
+            {
+              "line": 7,
+              "text": "革命思想传播：邹容《革命军》、陈天华《警世钟》"
+            },
+            {
+              "line": 8,
+              "text": "革命团体：兴中会、华兴会、光复会"
+            }
+          ]
+        },
+        {
+          "line": 9,
+          "text": "领导力量与纲领",
+          "id": "program",
+          "children": [
+            {
+              "line": 10,
+              "text": "1905年同盟会成立，孙中山任总理"
+            },
+            {
+              "line": 11,
+              "text": "纲领：驱除鞑虏，恢复中华，创立民国，平均地权"
+            },
+            {
+              "line": 12,
+              "text": "三民主义：民族、民权、民生",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "line": 13,
+          "text": "过程",
+          "id": "process",
+          "children": [
+            {
+              "line": 14,
+              "text": "武装起义：多次发动，如黄花岗起义失败"
+            },
+            {
+              "line": 15,
+              "text": "保路运动：1911年，四川爆发，成为导火索",
+              "id": "railway"
+            },
+            {
+              "line": 16,
+              "text": "武昌起义：1911年10月10日，湖北新军发动",
+              "id": "wuchang"
+            },
+            {
+              "line": 17,
+              "text": "各省响应：湖南、陕西、江苏等省相继独立"
+            },
+            {
+              "line": 18,
+              "text": "1912年1月1日：中华民国成立，孙中山任临时大总统",
+              "id": "republic"
+            },
+            {
+              "line": 19,
+              "text": "《中华民国临时约法》：1912年3月公布",
+              "fold": true,
+              "children": [
+                {
+                  "line": 20,
+                  "text": "规定中华民国主权属于国民全体"
+                },
+                {
+                  "line": 21,
+                  "text": "具有资产阶级共和国宪法性质"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 22,
+          "text": "结果",
+          "id": "result",
+          "children": [
+            {
+              "line": 23,
+              "text": "清帝退位：1912年2月，清朝统治结束"
+            },
+            {
+              "line": 24,
+              "text": "袁世凯窃取革命果实，就任临时大总统"
+            },
+            {
+              "line": 25,
+              "text": "北洋军阀统治，革命成果丧失"
+            }
+          ]
+        },
+        {
+          "line": 26,
+          "text": "历史意义",
+          "id": "meaning",
+          "children": [
+            {
+              "line": 27,
+              "text": "推翻清朝，结束两千多年的君主专制制度"
+            },
+            {
+              "line": 28,
+              "text": "建立共和政体，使民主共和观念深入人心"
+            },
+            {
+              "line": 30,
+              "text": "打击了帝国主义在华的势力"
+            },
+            {
+              "line": 31,
+              "text": "给人们带来一次思想解放"
+            },
+            {
+              "line": 32,
+              "text": "促进了民族资本主义发展"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 1,
+              "node": {
+                "line": 29,
+                "text": "政治意义"
+              }
+            }
+          ]
+        },
+        {
+          "line": 33,
+          "text": "局限与教训",
+          "id": "limit",
+          "children": [
+            {
+              "line": 34,
+              "text": "没有提出彻底的反帝反封建纲领"
+            },
+            {
+              "line": 35,
+              "text": "没有真正发动广大农民群众"
+            },
+            {
+              "line": 36,
+              "text": "资产阶级革命派的软弱性和妥协性",
+              "color": "red"
+            },
+            {
+              "line": 37,
+              "text": "没有改变中国半殖民地半封建社会的性质"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "bourgeois",
+        "to": "program",
+        "style": "solid",
+        "line": 40,
+        "label": "提供阶级基础"
+      },
+      {
+        "from": "railway",
+        "to": "wuchang",
+        "style": "solid",
+        "line": 41,
+        "label": "导火索"
+      },
+      {
+        "from": "wuchang",
+        "to": "republic",
+        "style": "solid",
+        "line": 42,
+        "label": "各省响应"
+      },
+      {
+        "from": "limit",
+        "to": "result",
+        "style": "solid",
+        "line": 43,
+        "label": "导致"
+      },
+      {
+        "from": "republic",
+        "to": "result",
+        "style": "dashed",
+        "line": 44,
+        "label": "旋即被窃取"
+      }
+    ],
+    "diagnostics": []
+  }
+]

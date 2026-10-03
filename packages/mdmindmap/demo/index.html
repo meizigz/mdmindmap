@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mdmindmap 演示</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        font:
+          14px/1.5 system-ui,
+          -apple-system,
+          "PingFang SC",
+          "Microsoft YaHei",
+          sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      #bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        padding: 8px 12px;
+        border-bottom: 1px solid #8884;
+      }
+      #map {
+        flex: 1;
+        min-height: 0;
+      }
+      #diagnostics {
+        max-height: 30vh;
+        overflow: auto;
+        margin: 0;
+        padding: 6px 12px;
+        font-size: 12px;
+        border-top: 1px solid #8884;
+      }
+      #diagnostics:empty {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bar">
+      <strong>mdmindmap 演示</strong>
+      <span>（开发用，不发布）</span>
+      <label
+        >样例
+        <select id="sample"></select
+      ></label>
+      <label
+        >结构
+        <select id="layout">
+          <option value="logic">logic</option>
+          <option value="bilateral">bilateral</option>
+        </select>
+      </label>
+      <label
+        >主题
+        <select id="theme">
+          <option value="">跟随系统</option>
+          <option value="light">亮色</option>
+          <option value="dark">暗色</option>
+        </select>
+      </label>
+      <button id="export-png">导出 PNG</button>
+      <button id="export-svg">导出 SVG</button>
+    </div>
+    <div id="map"></div>
+    <pre id="diagnostics"></pre>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

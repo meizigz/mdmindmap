@@ -1,0 +1,54 @@
+{
+  "name": "mdmindmap",
+  "version": "0.1.0",
+  "description": "Render read-only mind maps from Markdown headings and lists, with summary braces, cross-branch relationships, colors and math.",
+  "license": "MIT",
+  "author": "pengyg",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "files": [
+    "dist",
+    "ai-guide.md",
+    "README.zh-CN.md"
+  ],
+  "bin": {
+    "mdmindmap": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "@mdmindmap/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./parse": {
+      "@mdmindmap/source": "./src/parse/index.ts",
+      "types": "./dist/parse.d.ts",
+      "default": "./dist/parse.js"
+    },
+    "./katex": {
+      "@mdmindmap/source": "./src/katex.ts",
+      "types": "./dist/katex.d.ts",
+      "default": "./dist/katex.js"
+    },
+    "./style.css": "./dist/style.css",
+    "./ai-guide.md": "./ai-guide.md",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "tsdown"
+  },
+  "devDependencies": {
+    "tsdown": "0.23.0"
+  },
+  "optionalDependencies": {
+    "katex": "^0.19.0"
+  },
+  "dependencies": {
+    "@plait/layouts": "0.94.1"
+  }
+}

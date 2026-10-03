@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+.vitest-attachments/
+__screenshots__/
+
+# 插件构建产物（发布时作为 GitHub Release 附件上传）
+/main.js
+/styles.css
+
+.claude/worktrees/

@@ -1,0 +1,60 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "楞次定律",
+        "id": "lenz"
+      },
+      {
+        "line": 3,
+        "text": "法拉第定律",
+        "id": "faraday"
+      },
+      {
+        "line": 4,
+        "text": "惯性"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 7,
+      "severity": "error",
+      "code": "REL_UNKNOWN_ID",
+      "message": "联系的终点 `nowhere` 不是已定义的节点ID，这条联系没有画出。",
+      "fix": "给要连接的节点行末尾加 `^id`，再在这里引用这个ID（不带 `^`）。"
+    },
+    {
+      "line": 8,
+      "severity": "error",
+      "code": "REL_UNKNOWN_ID",
+      "message": "联系的终点 `faradya` 不是已定义的节点ID，这条联系没有画出。",
+      "fix": "是不是 `faraday`？"
+    },
+    {
+      "line": 9,
+      "severity": "error",
+      "code": "REL_UNKNOWN_ID",
+      "message": "联系的起点 `惯性` 不是已定义的节点ID，这条联系没有画出。",
+      "fix": "「惯性」是节点文字，不是ID。请在那个节点行末尾加 `^id`（只用英文字母、数字和 `-`），再在这里写这个ID（不带 `^`）。"
+    },
+    {
+      "line": 10,
+      "severity": "error",
+      "code": "REL_UNKNOWN_ID",
+      "message": "联系的起点 `^lenz` 不是已定义的节点ID，这条联系没有画出。",
+      "fix": "端点不要带 `^`，写成 `lenz`。"
+    },
+    {
+      "line": 11,
+      "severity": "error",
+      "code": "REL_UNKNOWN_ID",
+      "message": "联系的终点 `^missing` 不是已定义的节点ID，这条联系没有画出。",
+      "fix": "端点不要带 `^`；并且还没有节点定义 `^missing`，请在那个节点行末尾加上它。"
+    }
+  ]
+}

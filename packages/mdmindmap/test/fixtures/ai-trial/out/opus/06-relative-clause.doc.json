@@ -1,0 +1,291 @@
+{
+  "root": {
+    "line": 1,
+    "text": "定语从句",
+    "children": [
+      {
+        "line": 3,
+        "text": "基本概念",
+        "children": [
+          {
+            "line": 4,
+            "text": "修饰名词或代词的从句"
+          },
+          {
+            "line": 5,
+            "text": "先行词：被修饰的词",
+            "id": "antecedent"
+          },
+          {
+            "line": 6,
+            "text": "关系词：引导从句，并在从句中充当成分"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "text": "关系代词",
+        "id": "pronoun",
+        "children": [
+          {
+            "line": 8,
+            "text": "who：指人，作主语/宾语",
+            "children": [
+              {
+                "line": 9,
+                "text": "The man who lives next door is a doctor."
+              }
+            ]
+          },
+          {
+            "line": 10,
+            "text": "whom：指人，作宾语",
+            "children": [
+              {
+                "line": 11,
+                "text": "The girl whom I met is Lucy."
+              }
+            ]
+          },
+          {
+            "line": 12,
+            "text": "whose：表所属，人或物",
+            "children": [
+              {
+                "line": 13,
+                "text": "I have a friend whose father is a pilot."
+              }
+            ]
+          },
+          {
+            "line": 14,
+            "text": "which：指物，作主语/宾语",
+            "children": [
+              {
+                "line": 15,
+                "text": "This is the book which I bought."
+              }
+            ]
+          },
+          {
+            "line": 16,
+            "text": "that：指人或物",
+            "id": "that",
+            "color": "orange",
+            "children": [
+              {
+                "line": 17,
+                "text": "The car that he drives is new."
+              }
+            ]
+          },
+          {
+            "line": 18,
+            "text": "作宾语时可省略",
+            "children": [
+              {
+                "line": 19,
+                "text": "The book (that) I read was boring."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "text": "关系副词",
+        "id": "adverb",
+        "children": [
+          {
+            "line": 21,
+            "text": "when：时间，= in/on which",
+            "children": [
+              {
+                "line": 22,
+                "text": "I remember the day when we met."
+              }
+            ]
+          },
+          {
+            "line": 23,
+            "text": "where：地点，= in/at which",
+            "children": [
+              {
+                "line": 24,
+                "text": "This is the house where I was born."
+              }
+            ]
+          },
+          {
+            "line": 25,
+            "text": "why：原因，= for which",
+            "children": [
+              {
+                "line": 26,
+                "text": "That's the reason why he left."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "text": "限制性与非限制性",
+        "id": "restrict",
+        "children": [
+          {
+            "line": 28,
+            "text": "限制性：无逗号，不可省",
+            "children": [
+              {
+                "line": 29,
+                "text": "Students who work hard will pass."
+              }
+            ]
+          },
+          {
+            "line": 30,
+            "text": "非限制性：有逗号，补充说明",
+            "color": "blue",
+            "children": [
+              {
+                "line": 31,
+                "text": "My father, who is 50, loves tennis."
+              }
+            ]
+          },
+          {
+            "line": 32,
+            "text": "非限制性不能用 that",
+            "id": "no-that",
+            "color": "red"
+          },
+          {
+            "line": 33,
+            "text": "as / which 引导整句",
+            "children": [
+              {
+                "line": 34,
+                "text": "As we know, the earth is round."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "text": "易错点",
+        "color": "red",
+        "fold": true,
+        "children": [
+          {
+            "line": 36,
+            "text": "只用 that 不用 which",
+            "id": "only-that",
+            "children": [
+              {
+                "line": 37,
+                "text": "先行词为 all、everything、nothing 等",
+                "children": [
+                  {
+                    "line": 38,
+                    "text": "All that he said is true."
+                  }
+                ]
+              },
+              {
+                "line": 39,
+                "text": "先行词有最高级、序数词修饰",
+                "children": [
+                  {
+                    "line": 40,
+                    "text": "It's the best film that I've seen."
+                  }
+                ]
+              },
+              {
+                "line": 41,
+                "text": "先行词既有人又有物"
+              }
+            ]
+          },
+          {
+            "line": 42,
+            "text": "介词 + 关系代词：只能 which/whom",
+            "children": [
+              {
+                "line": 43,
+                "text": "The pen with which I write is red."
+              }
+            ]
+          },
+          {
+            "line": 44,
+            "text": "关系副词 vs 关系代词：看从句缺不缺成分",
+            "children": [
+              {
+                "line": 45,
+                "text": "This is the place (which) I visited."
+              },
+              {
+                "line": 46,
+                "text": "This is the place where I live."
+              }
+            ]
+          },
+          {
+            "line": 47,
+            "text": "先行词是 way：用 that / in which / 省略",
+            "children": [
+              {
+                "line": 48,
+                "text": "I like the way (that) she talks."
+              }
+            ]
+          },
+          {
+            "line": 49,
+            "text": "主谓一致：看先行词的单复数",
+            "children": [
+              {
+                "line": 50,
+                "text": "He is one of the students who are good at English."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "that",
+      "to": "no-that",
+      "style": "dashed",
+      "line": 53,
+      "label": "限制"
+    },
+    {
+      "from": "that",
+      "to": "only-that",
+      "style": "dashed",
+      "line": 54,
+      "label": "特殊情况"
+    },
+    {
+      "from": "adverb",
+      "to": "pronoun",
+      "style": "solid",
+      "line": 55,
+      "label": "可替换为介词+which"
+    },
+    {
+      "from": "no-that",
+      "to": "restrict",
+      "style": "solid",
+      "line": 56,
+      "label": "区别"
+    }
+  ],
+  "diagnostics": []
+}

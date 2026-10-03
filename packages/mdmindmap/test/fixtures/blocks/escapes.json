@@ -1,0 +1,40 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "{ 真的以左括号开头"
+      },
+      {
+        "line": 3,
+        "text": "} 真的以右括号开头"
+      },
+      {
+        "line": 4,
+        "text": "行尾真的是 ^abc"
+      },
+      {
+        "line": 5,
+        "text": "行尾真的是 🔴"
+      },
+      {
+        "line": 6,
+        "text": "概要起点"
+      }
+    ],
+    "summaries": [
+      {
+        "from": 4,
+        "to": 4,
+        "node": {
+          "line": 7,
+          "text": "概要"
+        }
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "议论文论证方法",
+      "children": [
+        {
+          "line": 3,
+          "text": "议论文三要素",
+          "children": [
+            {
+              "line": 4,
+              "text": "论点：作者的观点、主张",
+              "id": "thesis"
+            },
+            {
+              "line": 5,
+              "text": "论据：事实论据、道理论据",
+              "id": "evidence"
+            },
+            {
+              "line": 6,
+              "text": "论证：用论据证明论点的过程"
+            }
+          ]
+        },
+        {
+          "line": 7,
+          "text": "常见论证方法",
+          "color": "blue",
+          "children": [
+            {
+              "line": 8,
+              "text": "举例论证",
+              "id": "example",
+              "children": [
+                {
+                  "line": 9,
+                  "text": "列举典型事例"
+                },
+                {
+                  "line": 10,
+                  "text": "作用：具体有力地证明论点，增强说服力"
+                }
+              ]
+            },
+            {
+              "line": 11,
+              "text": "道理论证",
+              "id": "reason",
+              "children": [
+                {
+                  "line": 12,
+                  "text": "引用名言、公理、俗语"
+                },
+                {
+                  "line": 13,
+                  "text": "作用：增强权威性和说服力"
+                }
+              ]
+            },
+            {
+              "line": 14,
+              "text": "对比论证",
+              "id": "contrast",
+              "color": "red",
+              "children": [
+                {
+                  "line": 15,
+                  "text": "正反两方面对照"
+                },
+                {
+                  "line": 16,
+                  "text": "作用：突出论点，鲜明有力"
+                }
+              ]
+            },
+            {
+              "line": 17,
+              "text": "比喻论证",
+              "id": "metaphor",
+              "children": [
+                {
+                  "line": 18,
+                  "text": "用熟悉事物打比方"
+                },
+                {
+                  "line": 19,
+                  "text": "作用：生动形象、通俗易懂"
+                }
+              ]
+            },
+            {
+              "line": 20,
+              "text": "类比论证",
+              "children": [
+                {
+                  "line": 21,
+                  "text": "由同类事物推出相似结论"
+                }
+              ]
+            },
+            {
+              "line": 22,
+              "text": "因果论证",
+              "children": [
+                {
+                  "line": 23,
+                  "text": "分析原因与结果的必然联系"
+                }
+              ]
+            },
+            {
+              "line": 24,
+              "text": "归谬法",
+              "children": [
+                {
+                  "line": 25,
+                  "text": "假设对方正确，推出荒谬结论"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 26,
+          "text": "答题模板",
+          "color": "orange",
+          "children": [
+            {
+              "line": 27,
+              "text": "判断方法"
+            },
+            {
+              "line": 28,
+              "text": "结合原文内容"
+            },
+            {
+              "line": 29,
+              "text": "说明作用"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 30,
+                "text": "三步答题",
+                "children": [
+                  {
+                    "line": 31,
+                    "text": "运用了 ××论证，通过……，证明了……观点，使论证……"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 32,
+          "text": "易混辨析",
+          "fold": true,
+          "children": [
+            {
+              "line": 33,
+              "text": "举例论证 vs 道理论证：事实 or 名言",
+              "color": "red"
+            },
+            {
+              "line": 34,
+              "text": "比喻论证 vs 类比论证：打比方 or 同类推理"
+            },
+            {
+              "line": 35,
+              "text": "对比论证 vs 正反对比论据"
+            }
+          ]
+        },
+        {
+          "line": 36,
+          "text": "写作运用",
+          "fold": true,
+          "children": [
+            {
+              "line": 37,
+              "text": "多种方法综合使用"
+            },
+            {
+              "line": 38,
+              "text": "事例要典型、新颖"
+            },
+            {
+              "line": 39,
+              "text": "分析论据，不堆砌"
+            },
+            {
+              "line": 40,
+              "text": "[[议论文结构]]"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "example",
+        "to": "evidence",
+        "style": "solid",
+        "line": 43,
+        "label": "使用"
+      },
+      {
+        "from": "reason",
+        "to": "evidence",
+        "style": "solid",
+        "line": 44,
+        "label": "使用"
+      },
+      {
+        "from": "evidence",
+        "to": "thesis",
+        "style": "thick",
+        "line": 45,
+        "label": "证明"
+      },
+      {
+        "from": "contrast",
+        "to": "metaphor",
+        "style": "dashed",
+        "line": 46,
+        "label": "易混"
+      }
+    ],
+    "diagnostics": []
+  }
+]

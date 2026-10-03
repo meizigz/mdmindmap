@@ -1,0 +1,264 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "社会主义市场经济",
+      "children": [
+        {
+          "line": 3,
+          "text": "市场配置资源",
+          "id": "market",
+          "children": [
+            {
+              "line": 4,
+              "text": "资源配置的两种基本手段：计划、市场"
+            },
+            {
+              "line": 5,
+              "text": "市场调节：价格、供求、竞争"
+            },
+            {
+              "line": 6,
+              "text": "优点：灵敏、高效"
+            },
+            {
+              "line": 7,
+              "text": "能促进资源合理流动"
+            },
+            {
+              "line": 10,
+              "text": "市场秩序",
+              "fold": true,
+              "children": [
+                {
+                  "line": 11,
+                  "text": "市场规则：准入、竞争、交易规则"
+                },
+                {
+                  "line": 12,
+                  "text": "社会信用体系"
+                }
+              ]
+            }
+          ],
+          "summaries": [
+            {
+              "from": 2,
+              "to": 3,
+              "node": {
+                "line": 8,
+                "text": "市场的积极作用",
+                "children": [
+                  {
+                    "line": 9,
+                    "text": "市场在资源配置中起**决定性作用**",
+                    "color": "red"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 13,
+          "text": "市场调节的局限性",
+          "id": "limits",
+          "color": "orange",
+          "children": [
+            {
+              "line": 14,
+              "text": "自发性"
+            },
+            {
+              "line": 15,
+              "text": "盲目性"
+            },
+            {
+              "line": 16,
+              "text": "滞后性"
+            },
+            {
+              "line": 19,
+              "text": "有些领域不能由市场调节",
+              "children": [
+                {
+                  "line": 20,
+                  "text": "国防、治安、公共产品"
+                }
+              ]
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 2,
+              "node": {
+                "line": 17,
+                "text": "三大固有弊端",
+                "children": [
+                  {
+                    "line": 18,
+                    "text": "可能导致资源浪费、收入差距扩大"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "line": 21,
+          "text": "宏观调控",
+          "id": "macro",
+          "children": [
+            {
+              "line": 22,
+              "text": "必要性：弥补市场失灵"
+            },
+            {
+              "line": 23,
+              "text": "目标",
+              "fold": true,
+              "children": [
+                {
+                  "line": 24,
+                  "text": "促进经济增长"
+                },
+                {
+                  "line": 25,
+                  "text": "增加就业"
+                },
+                {
+                  "line": 26,
+                  "text": "稳定物价"
+                },
+                {
+                  "line": 27,
+                  "text": "保持国际收支平衡"
+                }
+              ]
+            },
+            {
+              "line": 28,
+              "text": "手段",
+              "color": "blue",
+              "children": [
+                {
+                  "line": 29,
+                  "text": "经济手段（主要）：财政、货币政策"
+                },
+                {
+                  "line": 30,
+                  "text": "法律手段"
+                },
+                {
+                  "line": 31,
+                  "text": "行政手段"
+                }
+              ]
+            },
+            {
+              "line": 32,
+              "text": "更好发挥政府作用",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "line": 33,
+          "text": "基本特征",
+          "id": "feature",
+          "children": [
+            {
+              "line": 34,
+              "text": "坚持公有制主体地位"
+            },
+            {
+              "line": 35,
+              "text": "坚持共同富裕"
+            },
+            {
+              "line": 36,
+              "text": "坚持党的领导"
+            },
+            {
+              "line": 37,
+              "text": "能把人民当前利益与长远利益结合"
+            }
+          ]
+        },
+        {
+          "line": 38,
+          "text": "基本经济制度",
+          "fold": true,
+          "children": [
+            {
+              "line": 39,
+              "text": "公有制为主体、多种所有制经济共同发展"
+            },
+            {
+              "line": 40,
+              "text": "按劳分配为主体、多种分配方式并存"
+            },
+            {
+              "line": 41,
+              "text": "社会主义市场经济体制"
+            },
+            {
+              "line": 42,
+              "text": "「两个毫不动摇」",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "line": 43,
+          "text": "现代化经济体系",
+          "fold": true,
+          "children": [
+            {
+              "line": 44,
+              "text": "新发展理念：创新、协调、绿色、开放、共享"
+            },
+            {
+              "line": 45,
+              "text": "供给侧结构性改革"
+            },
+            {
+              "line": 46,
+              "text": "高质量发展"
+            },
+            {
+              "line": 47,
+              "text": "[[新发展格局]]"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "limits",
+        "to": "macro",
+        "style": "solid",
+        "line": 50,
+        "label": "需要"
+      },
+      {
+        "from": "market",
+        "to": "macro",
+        "style": "dashed",
+        "line": 51,
+        "label": "有机结合"
+      },
+      {
+        "from": "feature",
+        "to": "macro",
+        "style": "solid",
+        "line": 52,
+        "label": "保障"
+      }
+    ],
+    "diagnostics": []
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "root": {
+    "line": 1,
+    "text": "化学",
+    "children": [
+      {
+        "line": 2,
+        "text": "实验室制氢 $\\ce{Zn + H2SO4 -> ZnSO4 + H2 ^}$"
+      },
+      {
+        "line": 3,
+        "text": "上标不是ID $x^2$"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

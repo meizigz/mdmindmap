@@ -1,0 +1,18 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 16,
+        "text": "节点一"
+      },
+      {
+        "line": 20,
+        "text": "节点二"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

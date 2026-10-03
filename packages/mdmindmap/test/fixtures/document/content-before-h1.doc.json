@@ -1,0 +1,24 @@
+{
+  "root": {
+    "line": 0,
+    "text": "content-before-h1",
+    "children": [
+      {
+        "line": 1,
+        "text": "写在标题前面的要点"
+      },
+      {
+        "line": 2,
+        "text": "标题",
+        "children": [
+          {
+            "line": 3,
+            "text": "要点"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": []
+}

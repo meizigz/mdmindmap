@@ -1,0 +1,298 @@
+{
+  "root": {
+    "line": 1,
+    "text": "电磁感应",
+    "children": [
+      {
+        "line": 3,
+        "text": "基础概念",
+        "id": "basic",
+        "children": [
+          {
+            "line": 4,
+            "text": "磁通量 $\\Phi=BS\\cos\\theta$"
+          },
+          {
+            "line": 5,
+            "text": "产生感应电流条件：闭合回路 + $\\Phi$ 变化",
+            "id": "cond"
+          },
+          {
+            "line": 6,
+            "text": "有 $\\Phi$ 不一定有感应电流",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "text": "法拉第电磁感应定律",
+        "id": "faraday",
+        "children": [
+          {
+            "line": 8,
+            "text": "$E=n\\frac{\\Delta\\Phi}{\\Delta t}$"
+          },
+          {
+            "line": 9,
+            "text": "$E$ 取决于 $\\Phi$ 的变化率，不是 $\\Phi$ 大小",
+            "color": "red"
+          },
+          {
+            "line": 10,
+            "text": "导体切割 $E=BLv$",
+            "id": "blv",
+            "children": [
+              {
+                "line": 11,
+                "text": "$B$、$L$、$v$ 两两垂直"
+              },
+              {
+                "line": 12,
+                "text": "$L$ 为有效长度",
+                "color": "red"
+              }
+            ]
+          },
+          {
+            "line": 13,
+            "text": "转动切割 $E=\\frac{1}{2}BL^2\\omega$"
+          },
+          {
+            "line": 14,
+            "text": "电荷量 $q=n\\frac{\\Delta\\Phi}{R}$",
+            "id": "charge",
+            "children": [
+              {
+                "line": 15,
+                "text": "与时间无关"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "text": "楞次定律",
+        "id": "lenz",
+        "color": "red",
+        "children": [
+          {
+            "line": 17,
+            "text": "内容：感应电流磁场**阻碍**原磁通量变化"
+          },
+          {
+            "line": 18,
+            "text": "「阻碍」不是「阻止」",
+            "color": "red"
+          },
+          {
+            "line": 19,
+            "text": "增反减同"
+          },
+          {
+            "line": 20,
+            "text": "来拒去留"
+          },
+          {
+            "line": 21,
+            "text": "增缩减扩"
+          },
+          {
+            "line": 24,
+            "text": "右手定则：切割时判方向",
+            "id": "right-hand"
+          },
+          {
+            "line": 25,
+            "text": "判断步骤",
+            "fold": true,
+            "children": [
+              {
+                "line": 26,
+                "text": "明确原磁场方向"
+              },
+              {
+                "line": 27,
+                "text": "判断 $\\Phi$ 增大还是减小"
+              },
+              {
+                "line": 28,
+                "text": "确定感应电流磁场方向"
+              },
+              {
+                "line": 29,
+                "text": "安培定则判电流方向"
+              }
+            ]
+          }
+        ],
+        "summaries": [
+          {
+            "from": 2,
+            "to": 4,
+            "node": {
+              "line": 22,
+              "text": "推论：阻碍的几种表现",
+              "children": [
+                {
+                  "line": 23,
+                  "text": "本质：能量守恒",
+                  "id": "energy"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "text": "自感与互感",
+        "id": "self-ind",
+        "children": [
+          {
+            "line": 31,
+            "text": "自感：线圈自身电流变化引起",
+            "children": [
+              {
+                "line": 32,
+                "text": "$E=L\\frac{\\Delta I}{\\Delta t}$"
+              },
+              {
+                "line": 33,
+                "text": "自感系数 $L$：与匝数、长度、横截面积、铁芯有关"
+              }
+            ]
+          },
+          {
+            "line": 34,
+            "text": "通电自感：灯泡逐渐变亮"
+          },
+          {
+            "line": 35,
+            "text": "断电自感",
+            "id": "off",
+            "color": "orange",
+            "children": [
+              {
+                "line": 36,
+                "text": "灯泡闪亮条件：$I_L>I_灯$",
+                "color": "red"
+              },
+              {
+                "line": 37,
+                "text": "电流方向可能反向"
+              }
+            ]
+          },
+          {
+            "line": 38,
+            "text": "互感：变压器原理",
+            "children": [
+              {
+                "line": 39,
+                "text": "[[变压器]]"
+              }
+            ]
+          },
+          {
+            "line": 40,
+            "text": "应用与防止",
+            "fold": true,
+            "children": [
+              {
+                "line": 41,
+                "text": "日光灯镇流器"
+              },
+              {
+                "line": 42,
+                "text": "双线绕法消除自感"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "text": "综合问题",
+        "id": "comp",
+        "fold": true,
+        "children": [
+          {
+            "line": 44,
+            "text": "电路问题：等效电源 + 内阻"
+          },
+          {
+            "line": 45,
+            "text": "动力学：安培力 $F=\\frac{B^2L^2v}{R}$"
+          },
+          {
+            "line": 46,
+            "text": "能量：克服安培力做功 = 电能"
+          },
+          {
+            "line": 47,
+            "text": "图像问题：$\\Phi$-$t$、$E$-$t$、$I$-$t$"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "cond",
+      "to": "faraday",
+      "style": "solid",
+      "line": 50,
+      "label": "定量"
+    },
+    {
+      "from": "lenz",
+      "to": "faraday",
+      "style": "solid",
+      "line": 51,
+      "label": "决定方向"
+    },
+    {
+      "from": "blv",
+      "to": "faraday",
+      "style": "dashed",
+      "line": 52,
+      "label": "特例"
+    },
+    {
+      "from": "right-hand",
+      "to": "lenz",
+      "style": "dashed",
+      "line": 53,
+      "label": "等价"
+    },
+    {
+      "from": "self-ind",
+      "to": "lenz",
+      "style": "solid",
+      "line": 54,
+      "label": "方向遵循"
+    },
+    {
+      "from": "energy",
+      "to": "comp",
+      "style": "thick",
+      "line": 55
+    },
+    {
+      "from": "charge",
+      "to": "comp",
+      "style": "dashed",
+      "line": 56
+    },
+    {
+      "from": "off",
+      "to": "lenz",
+      "style": "dashed",
+      "line": 57,
+      "label": "阻碍电流减小"
+    }
+  ],
+  "diagnostics": []
+}

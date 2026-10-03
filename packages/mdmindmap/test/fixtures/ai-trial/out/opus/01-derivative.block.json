@@ -1,0 +1,254 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "导数与函数的单调性、极值、最值",
+      "children": [
+        {
+          "line": 3,
+          "text": "导数基础",
+          "id": "deriv",
+          "children": [
+            {
+              "line": 4,
+              "text": "定义：$f'(x_0)=\\lim\\limits_{\\Delta x\\to 0}\\frac{\\Delta y}{\\Delta x}$"
+            },
+            {
+              "line": 5,
+              "text": "几何意义：切线斜率 $k=f'(x_0)$"
+            },
+            {
+              "line": 6,
+              "text": "切线方程 $y-f(x_0)=f'(x_0)(x-x_0)$"
+            },
+            {
+              "line": 7,
+              "text": "常用求导公式",
+              "fold": true,
+              "children": [
+                {
+                  "line": 8,
+                  "text": "$(x^n)'=nx^{n-1}$"
+                },
+                {
+                  "line": 9,
+                  "text": "$(e^x)'=e^x$，$(a^x)'=a^x\\ln a$"
+                },
+                {
+                  "line": 10,
+                  "text": "$(\\ln x)'=\\frac{1}{x}$"
+                },
+                {
+                  "line": 11,
+                  "text": "$(\\sin x)'=\\cos x$，$(\\cos x)'=-\\sin x$"
+                }
+              ]
+            },
+            {
+              "line": 12,
+              "text": "运算法则",
+              "fold": true,
+              "children": [
+                {
+                  "line": 13,
+                  "text": "$(u\\pm v)'=u'\\pm v'$"
+                },
+                {
+                  "line": 14,
+                  "text": "$(uv)'=u'v+uv'$"
+                },
+                {
+                  "line": 15,
+                  "text": "$\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}$"
+                },
+                {
+                  "line": 16,
+                  "text": "复合函数 $y'_x=y'_u\\cdot u'_x$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 17,
+          "text": "单调性",
+          "id": "mono",
+          "children": [
+            {
+              "line": 18,
+              "text": "$f'(x)>0$ ⇒ 单调递增"
+            },
+            {
+              "line": 19,
+              "text": "$f'(x)<0$ ⇒ 单调递减"
+            },
+            {
+              "line": 20,
+              "text": "已知单调求参：$f'(x)\\ge 0$ 恒成立",
+              "color": "red"
+            },
+            {
+              "line": 21,
+              "text": "求单调区间步骤",
+              "children": [
+                {
+                  "line": 22,
+                  "text": "确定定义域",
+                  "color": "orange"
+                },
+                {
+                  "line": 23,
+                  "text": "求 $f'(x)$"
+                },
+                {
+                  "line": 24,
+                  "text": "解 $f'(x)>0$ 或 $f'(x)<0$"
+                }
+              ],
+              "summaries": [
+                {
+                  "from": 0,
+                  "to": 2,
+                  "node": {
+                    "line": 25,
+                    "text": "定义域优先",
+                    "children": [
+                      {
+                        "line": 26,
+                        "text": "区间不能用「∪」连接",
+                        "color": "red"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "line": 27,
+          "text": "极值",
+          "id": "extreme",
+          "children": [
+            {
+              "line": 28,
+              "text": "极值点：$f'(x_0)=0$ 且两侧异号"
+            },
+            {
+              "line": 29,
+              "text": "左正右负 → 极大值"
+            },
+            {
+              "line": 30,
+              "text": "左负右正 → 极小值"
+            },
+            {
+              "line": 31,
+              "text": "$f'(x_0)=0$ 不一定是极值点",
+              "id": "trap",
+              "color": "red",
+              "children": [
+                {
+                  "line": 32,
+                  "text": "反例：$f(x)=x^3$ 在 $x=0$"
+                }
+              ]
+            },
+            {
+              "line": 33,
+              "text": "极值是局部概念，极大值可能小于极小值"
+            }
+          ]
+        },
+        {
+          "line": 34,
+          "text": "最值",
+          "id": "maxmin",
+          "children": [
+            {
+              "line": 35,
+              "text": "闭区间 $[a,b]$ 上连续必有最值"
+            },
+            {
+              "line": 36,
+              "text": "求极值"
+            },
+            {
+              "line": 37,
+              "text": "求端点值 $f(a)$、$f(b)$"
+            },
+            {
+              "line": 39,
+              "text": "开区间上不一定有最值"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 1,
+              "to": 2,
+              "node": {
+                "line": 38,
+                "text": "比较取最大、最小"
+              }
+            }
+          ]
+        },
+        {
+          "line": 40,
+          "text": "综合应用",
+          "fold": true,
+          "children": [
+            {
+              "line": 41,
+              "text": "恒成立问题：$f(x)\\ge a \\Leftrightarrow f(x)_{min}\\ge a$"
+            },
+            {
+              "line": 42,
+              "text": "零点个数：结合极值与图像"
+            },
+            {
+              "line": 43,
+              "text": "不等式证明：构造函数 $g(x)=f(x)-h(x)$"
+            },
+            {
+              "line": 44,
+              "text": "[[导数压轴题]]"
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "deriv",
+        "to": "mono",
+        "style": "solid",
+        "line": 47,
+        "label": "符号判断"
+      },
+      {
+        "from": "mono",
+        "to": "extreme",
+        "style": "solid",
+        "line": 48,
+        "label": "单调性改变处"
+      },
+      {
+        "from": "extreme",
+        "to": "maxmin",
+        "style": "solid",
+        "line": 49,
+        "label": "与端点比较"
+      },
+      {
+        "from": "trap",
+        "to": "extreme",
+        "style": "dashed",
+        "line": 50,
+        "label": "易错"
+      }
+    ],
+    "diagnostics": []
+  }
+]

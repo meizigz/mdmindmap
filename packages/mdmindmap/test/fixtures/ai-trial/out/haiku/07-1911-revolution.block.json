@@ -1,0 +1,206 @@
+[
+  {
+    "fenceLine": 3,
+    "root": {
+      "line": 1,
+      "text": "辛亥革命",
+      "children": [
+        {
+          "line": 3,
+          "text": "历史背景",
+          "id": "background",
+          "children": [
+            {
+              "line": 4,
+              "text": "政治背景：晚清政治腐败，权力集中在满族贵族手中"
+            },
+            {
+              "line": 5,
+              "text": "经济背景：列强经济侵略，民族资本主义发展受阻"
+            },
+            {
+              "line": 6,
+              "text": "思想背景"
+            },
+            {
+              "line": 7,
+              "text": "资产阶级民主思想传播"
+            },
+            {
+              "line": 8,
+              "text": "孙中山提出三民主义"
+            },
+            {
+              "line": 10,
+              "text": "组织基础：同盟会成立于日本（1905年）"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 2,
+              "to": 4,
+              "node": {
+                "line": 9,
+                "text": "思想准备"
+              }
+            }
+          ]
+        },
+        {
+          "line": 11,
+          "text": "革命过程",
+          "id": "process",
+          "children": [
+            {
+              "line": 12,
+              "text": "酝酿阶段（1905-1911）"
+            },
+            {
+              "line": 13,
+              "text": "同盟会在国内策划多次起义"
+            },
+            {
+              "line": 14,
+              "text": "多次失败，积累经验"
+            },
+            {
+              "line": 15,
+              "text": "武昌起义阶段（1911年10月）"
+            },
+            {
+              "line": 16,
+              "text": "新军工程队起义，打响第一枪",
+              "color": "red"
+            },
+            {
+              "line": 17,
+              "text": "迅速扩大到全国，各地纷纷独立"
+            },
+            {
+              "line": 19,
+              "text": "南京建立临时政府（1912年1月）"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 5,
+              "node": {
+                "line": 18,
+                "text": "主要经过"
+              }
+            }
+          ]
+        },
+        {
+          "line": 20,
+          "text": "革命结果",
+          "id": "result",
+          "children": [
+            {
+              "line": 21,
+              "text": "推翻清末帝制：宣统帝逊位，清朝灭亡"
+            },
+            {
+              "line": 22,
+              "text": "建立共和制：中华民国成立"
+            },
+            {
+              "line": 23,
+              "text": "制定《临时约法》：资产阶级宪法"
+            },
+            {
+              "line": 24,
+              "text": "但：权力转移到袁世凯手中，革命不彻底"
+            }
+          ]
+        },
+        {
+          "line": 25,
+          "text": "历史意义",
+          "id": "significance",
+          "children": [
+            {
+              "line": 26,
+              "text": "进步意义"
+            },
+            {
+              "line": 27,
+              "text": "推翻了腐朽的清末帝制"
+            },
+            {
+              "line": 28,
+              "text": "建立了亚洲第一个共和国"
+            },
+            {
+              "line": 29,
+              "text": "传播了共和理念和民主思想"
+            },
+            {
+              "line": 30,
+              "text": "激励了民族独立运动"
+            },
+            {
+              "line": 32,
+              "text": "局限性"
+            },
+            {
+              "line": 33,
+              "text": "资产阶级力量薄弱，不能彻底反帝反封建"
+            },
+            {
+              "line": 34,
+              "text": "权力被军阀篡夺，未能真正建立民主制度"
+            },
+            {
+              "line": 35,
+              "text": "农村问题等根本问题未解决"
+            }
+          ],
+          "summaries": [
+            {
+              "from": 0,
+              "to": 4,
+              "node": {
+                "line": 31,
+                "text": "主要成就"
+              }
+            },
+            {
+              "from": 5,
+              "to": 8,
+              "node": {
+                "line": 36,
+                "text": "历史局限"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "from": "background",
+        "to": "process",
+        "style": "solid",
+        "line": 39,
+        "label": "导致"
+      },
+      {
+        "from": "process",
+        "to": "result",
+        "style": "solid",
+        "line": 40,
+        "label": "造就"
+      },
+      {
+        "from": "result",
+        "to": "significance",
+        "style": "solid",
+        "line": 41,
+        "label": "产生"
+      }
+    ],
+    "diagnostics": []
+  }
+]

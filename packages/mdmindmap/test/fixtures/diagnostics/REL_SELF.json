@@ -1,0 +1,23 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲",
+        "id": "a"
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 5,
+      "severity": "error",
+      "code": "REL_SELF",
+      "message": "联系的起点和终点都是 `a`，这条联系没有画出。",
+      "fix": "删掉这一行，或者改正其中一个端点。"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "root": {
+    "line": 1,
+    "text": "大气环流",
+    "children": [
+      {
+        "line": 3,
+        "text": "三圈环流",
+        "id": "three-cell",
+        "children": [
+          {
+            "line": 4,
+            "text": "成因",
+            "children": [
+              {
+                "line": 5,
+                "text": "高低纬受热不均（根本原因）",
+                "color": "red"
+              },
+              {
+                "line": 6,
+                "text": "地转偏向力"
+              }
+            ]
+          },
+          {
+            "line": 7,
+            "text": "假设条件：地表均匀、太阳直射赤道"
+          },
+          {
+            "line": 8,
+            "text": "三圈",
+            "fold": true,
+            "children": [
+              {
+                "line": 9,
+                "text": "低纬环流：赤道—30°"
+              },
+              {
+                "line": 10,
+                "text": "中纬环流：30°—60°"
+              },
+              {
+                "line": 11,
+                "text": "高纬环流：60°—极地"
+              }
+            ]
+          },
+          {
+            "line": 12,
+            "text": "偏向规律",
+            "color": "orange",
+            "children": [
+              {
+                "line": 13,
+                "text": "北半球右偏"
+              },
+              {
+                "line": 14,
+                "text": "南半球左偏"
+              },
+              {
+                "line": 15,
+                "text": "赤道上不偏"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "text": "气压带和风带",
+        "id": "belts",
+        "color": "blue",
+        "children": [
+          {
+            "line": 17,
+            "text": "七个气压带",
+            "fold": true,
+            "children": [
+              {
+                "line": 18,
+                "text": "赤道低气压带：热力原因"
+              },
+              {
+                "line": 19,
+                "text": "副热带高气压带（30°）：动力原因"
+              },
+              {
+                "line": 20,
+                "text": "副极地低气压带（60°）：动力原因"
+              },
+              {
+                "line": 21,
+                "text": "极地高气压带：热力原因"
+              }
+            ]
+          },
+          {
+            "line": 22,
+            "text": "六个风带",
+            "fold": true,
+            "children": [
+              {
+                "line": 23,
+                "text": "低纬信风带：北半球东北风，南半球东南风"
+              },
+              {
+                "line": 24,
+                "text": "中纬西风带：北半球西南风，南半球西北风"
+              },
+              {
+                "line": 25,
+                "text": "极地东风带：北半球东北风，南半球东南风"
+              }
+            ]
+          },
+          {
+            "line": 26,
+            "text": "季节移动",
+            "id": "shift",
+            "children": [
+              {
+                "line": 27,
+                "text": "随太阳直射点移动"
+              },
+              {
+                "line": 28,
+                "text": "北半球夏季北移，冬季南移"
+              },
+              {
+                "line": 29,
+                "text": "「夏北冬南」",
+                "color": "red"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "text": "季风环流",
+        "id": "monsoon",
+        "children": [
+          {
+            "line": 31,
+            "text": "成因",
+            "children": [
+              {
+                "line": 32,
+                "text": "海陆热力性质差异（主要）",
+                "id": "land-sea"
+              },
+              {
+                "line": 33,
+                "text": "气压带、风带季节移动",
+                "id": "shift-cause"
+              }
+            ]
+          },
+          {
+            "line": 34,
+            "text": "东亚季风",
+            "fold": true,
+            "children": [
+              {
+                "line": 35,
+                "text": "冬季：西北季风，亚洲高压"
+              },
+              {
+                "line": 36,
+                "text": "夏季：东南季风，亚洲低压"
+              },
+              {
+                "line": 37,
+                "text": "成因：海陆热力性质差异"
+              }
+            ]
+          },
+          {
+            "line": 38,
+            "text": "南亚季风",
+            "color": "orange",
+            "fold": true,
+            "children": [
+              {
+                "line": 39,
+                "text": "冬季：东北季风"
+              },
+              {
+                "line": 40,
+                "text": "夏季：西南季风"
+              },
+              {
+                "line": 41,
+                "text": "成因：海陆热力差异 + 气压带风带移动"
+              }
+            ]
+          },
+          {
+            "line": 42,
+            "text": "东亚季风 vs 南亚季风是易错点",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "text": "对气候的影响",
+        "id": "climate",
+        "children": [
+          {
+            "line": 44,
+            "text": "受单一气压带或风带控制",
+            "fold": true,
+            "children": [
+              {
+                "line": 45,
+                "text": "热带雨林气候：赤道低气压带"
+              },
+              {
+                "line": 46,
+                "text": "热带沙漠气候：副高或信风带"
+              },
+              {
+                "line": 47,
+                "text": "温带海洋性气候：西风带"
+              }
+            ]
+          },
+          {
+            "line": 48,
+            "text": "两者交替控制",
+            "fold": true,
+            "children": [
+              {
+                "line": 49,
+                "text": "热带草原气候：赤道低压与信风交替"
+              },
+              {
+                "line": 50,
+                "text": "地中海气候：副高与西风交替",
+                "children": [
+                  {
+                    "line": 51,
+                    "text": "夏季炎热干燥，冬季温和多雨",
+                    "color": "red"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "line": 52,
+            "text": "季风气候",
+            "fold": true,
+            "children": [
+              {
+                "line": 53,
+                "text": "热带季风气候"
+              },
+              {
+                "line": 54,
+                "text": "亚热带季风气候"
+              },
+              {
+                "line": 55,
+                "text": "温带季风气候"
+              }
+            ]
+          },
+          {
+            "line": 56,
+            "text": "其他：[[气候类型判读]]"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "three-cell",
+      "to": "belts",
+      "style": "thick",
+      "line": 59,
+      "label": "形成"
+    },
+    {
+      "from": "shift",
+      "to": "shift-cause",
+      "style": "solid",
+      "line": 60,
+      "label": "导致"
+    },
+    {
+      "from": "land-sea",
+      "to": "monsoon",
+      "style": "solid",
+      "line": 61,
+      "label": "主导"
+    },
+    {
+      "from": "belts",
+      "to": "climate",
+      "style": "solid",
+      "line": 62,
+      "label": "控制"
+    },
+    {
+      "from": "monsoon",
+      "to": "climate",
+      "style": "solid",
+      "line": 63,
+      "label": "形成季风气候"
+    },
+    {
+      "from": "shift",
+      "to": "climate",
+      "style": "dashed",
+      "line": 64,
+      "label": "交替控制"
+    }
+  ],
+  "diagnostics": []
+}

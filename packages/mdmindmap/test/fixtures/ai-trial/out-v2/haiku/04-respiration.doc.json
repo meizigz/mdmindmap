@@ -1,0 +1,277 @@
+{
+  "root": {
+    "line": 1,
+    "text": "细胞呼吸",
+    "children": [
+      {
+        "line": 3,
+        "text": "有氧呼吸",
+        "id": "aerobic",
+        "children": [
+          {
+            "line": 4,
+            "text": "第一阶段：细胞质基质"
+          },
+          {
+            "line": 5,
+            "text": "葡萄糖（6碳）分解为丙酮酸（3碳）"
+          },
+          {
+            "line": 6,
+            "text": "释放部分能量，产生少量ATP"
+          },
+          {
+            "line": 9,
+            "text": "第二阶段：线粒体基质"
+          },
+          {
+            "line": 10,
+            "text": "丙酮酸进入线粒体完全氧化"
+          },
+          {
+            "line": 11,
+            "text": "产生 $\\ce{CO2}$"
+          },
+          {
+            "line": 14,
+            "text": "第三阶段：线粒体内膜",
+            "children": [
+              {
+                "line": 15,
+                "text": "电子传递链，大量产生ATP"
+              },
+              {
+                "line": 16,
+                "text": "NADH 和 FADH2 被氧化"
+              },
+              {
+                "line": 17,
+                "text": "产物：约32 ATP"
+              }
+            ]
+          },
+          {
+            "line": 18,
+            "text": "总反应：$\\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O + 能量}$"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 7,
+              "text": "糖酵解",
+              "children": [
+                {
+                  "line": 8,
+                  "text": "产物：2个丙酮酸、2 ATP、2 NADH"
+                }
+              ]
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 12,
+              "text": "柠檬酸循环（三羧酸循环）",
+              "children": [
+                {
+                  "line": 13,
+                  "text": "产物：4 ATP、2 $\\ce{CO2}$、8 NADH、2 FADH2"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "text": "无氧呼吸",
+        "id": "anaerobic",
+        "children": [
+          {
+            "line": 20,
+            "text": "乳酸发酵",
+            "color": "red",
+            "children": [
+              {
+                "line": 21,
+                "text": "丙酮酸 → 乳酸，再生NAD+"
+              },
+              {
+                "line": 22,
+                "text": "肌肉剧烈运动时发生"
+              },
+              {
+                "line": 23,
+                "text": "产物：2 ATP、乳酸"
+              }
+            ]
+          },
+          {
+            "line": 24,
+            "text": "酒精发酵",
+            "children": [
+              {
+                "line": 25,
+                "text": "丙酮酸 → 乙醛 → 乙醇"
+              },
+              {
+                "line": 26,
+                "text": "微生物和植物进行"
+              },
+              {
+                "line": 27,
+                "text": "产物：2 ATP、乙醇、$\\ce{CO2}$"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "text": "两种呼吸对比",
+        "id": "comparison",
+        "children": [
+          {
+            "line": 29,
+            "text": "进行地点不同"
+          },
+          {
+            "line": 30,
+            "text": "有氧：细胞质基质和线粒体"
+          },
+          {
+            "line": 31,
+            "text": "无氧：仅在细胞质基质"
+          },
+          {
+            "line": 33,
+            "text": "需氧情况不同"
+          },
+          {
+            "line": 34,
+            "text": "有氧：必须有氧气"
+          },
+          {
+            "line": 35,
+            "text": "无氧：没有氧气进行"
+          },
+          {
+            "line": 37,
+            "text": "ATP产量不同",
+            "color": "red"
+          },
+          {
+            "line": 38,
+            "text": "有氧：约32～38 ATP"
+          },
+          {
+            "line": 39,
+            "text": "无氧：仅2 ATP"
+          },
+          {
+            "line": 41,
+            "text": "产物种类不同"
+          },
+          {
+            "line": 42,
+            "text": "有氧：$\\ce{CO2}$、$\\ce{H2O}$"
+          },
+          {
+            "line": 43,
+            "text": "无氧：乳酸或乙醇"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 2,
+            "node": {
+              "line": 32,
+              "text": "场所对比"
+            }
+          },
+          {
+            "from": 3,
+            "to": 5,
+            "node": {
+              "line": 36,
+              "text": "氧气需求"
+            }
+          },
+          {
+            "from": 6,
+            "to": 8,
+            "node": {
+              "line": 40,
+              "text": "能量产量"
+            }
+          },
+          {
+            "from": 9,
+            "to": 11,
+            "node": {
+              "line": 44,
+              "text": "产物对比"
+            }
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "text": "影响因素",
+        "id": "factors",
+        "fold": true,
+        "children": [
+          {
+            "line": 46,
+            "text": "温度：37°C 最适，过高过低都降低速率"
+          },
+          {
+            "line": 47,
+            "text": "氧气浓度：有氧呼吸速率随浓度增加而增加"
+          },
+          {
+            "line": 48,
+            "text": "二氧化碳：浓度过高抑制呼吸"
+          },
+          {
+            "line": 49,
+            "text": "营养物质：充足时呼吸速率最大"
+          },
+          {
+            "line": 50,
+            "text": "pH：不同生物有不同最适pH"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "aerobic",
+      "to": "comparison",
+      "style": "solid",
+      "line": 53,
+      "label": "对比"
+    },
+    {
+      "from": "anaerobic",
+      "to": "comparison",
+      "style": "solid",
+      "line": 54,
+      "label": "对比"
+    },
+    {
+      "from": "comparison",
+      "to": "factors",
+      "style": "solid",
+      "line": 55,
+      "label": "受"
+    }
+  ],
+  "diagnostics": []
+}

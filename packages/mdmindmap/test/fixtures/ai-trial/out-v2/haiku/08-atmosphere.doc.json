@@ -1,0 +1,341 @@
+{
+  "root": {
+    "line": 1,
+    "text": "大气环流",
+    "children": [
+      {
+        "line": 3,
+        "text": "三圈环流",
+        "id": "tri-cell",
+        "fold": true,
+        "children": [
+          {
+            "line": 4,
+            "text": "赤道低气压带与信风",
+            "id": "equator",
+            "children": [
+              {
+                "line": 5,
+                "text": "赤道地区受热，空气上升"
+              },
+              {
+                "line": 6,
+                "text": "形成赤道低气压带"
+              },
+              {
+                "line": 7,
+                "text": "高空气流向两极流动"
+              },
+              {
+                "line": 8,
+                "text": "地面吹向赤道：信风（东北信风和东南信风）"
+              }
+            ]
+          },
+          {
+            "line": 9,
+            "text": "副热带高气压带与贸易风",
+            "id": "subtrop",
+            "children": [
+              {
+                "line": 10,
+                "text": "来自两极的高空气流在副热带下沉"
+              },
+              {
+                "line": 11,
+                "text": "形成副热带高气压带（30°纬度）"
+              },
+              {
+                "line": 12,
+                "text": "地面吹向赤道：信风"
+              },
+              {
+                "line": 13,
+                "text": "地面吹向两极：西风"
+              }
+            ]
+          },
+          {
+            "line": 14,
+            "text": "中纬度西风带",
+            "id": "westerly",
+            "children": [
+              {
+                "line": 15,
+                "text": "副热带高气压吹向极地"
+              },
+              {
+                "line": 16,
+                "text": "形成中纬度西风带"
+              },
+              {
+                "line": 17,
+                "text": "气流方向：自西向东"
+              }
+            ]
+          },
+          {
+            "line": 18,
+            "text": "极地高气压带与极地东风",
+            "id": "polar",
+            "children": [
+              {
+                "line": 19,
+                "text": "极地地区辐射冷却，空气下沉"
+              },
+              {
+                "line": 20,
+                "text": "形成极地高气压带"
+              },
+              {
+                "line": 21,
+                "text": "地面吹向中纬度：极地东风"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "text": "气压带和风带",
+        "id": "pressure-wind",
+        "fold": true,
+        "children": [
+          {
+            "line": 23,
+            "text": "七个气压带"
+          },
+          {
+            "line": 24,
+            "text": "赤道低压带"
+          },
+          {
+            "line": 25,
+            "text": "副热带高压带"
+          },
+          {
+            "line": 26,
+            "text": "中纬度低压带"
+          },
+          {
+            "line": 28,
+            "text": "六个风带"
+          },
+          {
+            "line": 29,
+            "text": "信风：东北信风、东南信风"
+          },
+          {
+            "line": 30,
+            "text": "西风：中纬度西风、极地西风"
+          },
+          {
+            "line": 32,
+            "text": "规律：气压带与风带交替分布，纬度在 0、30°、60°、90°",
+            "id": "distribution"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 3,
+            "node": {
+              "line": 27,
+              "text": "气压带分布"
+            }
+          },
+          {
+            "from": 4,
+            "to": 6,
+            "node": {
+              "line": 31,
+              "text": "风带分布"
+            }
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "text": "季风环流",
+        "id": "monsoon",
+        "fold": true,
+        "children": [
+          {
+            "line": 34,
+            "text": "东亚季风",
+            "children": [
+              {
+                "line": 35,
+                "text": "冬季：冷高压南下，吹东北风"
+              },
+              {
+                "line": 36,
+                "text": "夏季：低气压，吹西南风"
+              }
+            ]
+          },
+          {
+            "line": 37,
+            "text": "南亚季风",
+            "children": [
+              {
+                "line": 38,
+                "text": "冬季：受信风影响，吹东北风"
+              },
+              {
+                "line": 39,
+                "text": "夏季：吹西南季风，降水丰富"
+              }
+            ]
+          },
+          {
+            "line": 40,
+            "text": "成因：陆地与海洋的热力差异",
+            "children": [
+              {
+                "line": 41,
+                "text": "陆地升温快降温快，海洋升温慢降温慢"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "text": "对气候的影响",
+        "id": "climate-effect",
+        "color": "red",
+        "children": [
+          {
+            "line": 43,
+            "text": "信风带的气候",
+            "children": [
+              {
+                "line": 44,
+                "text": "东侧：降水丰富（迎风坡）"
+              },
+              {
+                "line": 45,
+                "text": "西侧：降水少（背风坡）"
+              },
+              {
+                "line": 46,
+                "text": "例：撒哈拉沙漠在非洲东部"
+              }
+            ]
+          },
+          {
+            "line": 47,
+            "text": "西风带的气候",
+            "id": "westerly-climate",
+            "children": [
+              {
+                "line": 48,
+                "text": "中纬度地区气候多变"
+              },
+              {
+                "line": 49,
+                "text": "降水主要在冬季（地中海型气候）"
+              }
+            ]
+          },
+          {
+            "line": 50,
+            "text": "高气压带气候",
+            "children": [
+              {
+                "line": 51,
+                "text": "升温下沉，降水少"
+              },
+              {
+                "line": 52,
+                "text": "形成干旱区：撒哈拉沙漠、澳大利亚大沙漠"
+              }
+            ]
+          },
+          {
+            "line": 53,
+            "text": "大陆性气候",
+            "children": [
+              {
+                "line": 54,
+                "text": "内陆远离海洋：温度年较差大"
+              },
+              {
+                "line": 55,
+                "text": "例：中亚地区"
+              }
+            ]
+          },
+          {
+            "line": 56,
+            "text": "海洋性气候",
+            "children": [
+              {
+                "line": 57,
+                "text": "沿海地区：温度年较差小，降水均匀"
+              },
+              {
+                "line": 58,
+                "text": "例：英国、西欧"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "tri-cell",
+      "to": "pressure-wind",
+      "style": "solid",
+      "line": 61,
+      "label": "产生"
+    },
+    {
+      "from": "pressure-wind",
+      "to": "monsoon",
+      "style": "dashed",
+      "line": 62,
+      "label": "与"
+    },
+    {
+      "from": "monsoon",
+      "to": "climate-effect",
+      "style": "solid",
+      "line": 63,
+      "label": "共同影响"
+    },
+    {
+      "from": "equator",
+      "to": "distribution",
+      "style": "dashed",
+      "line": 64,
+      "label": "对应"
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 3,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^tri-cell` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^tri-cell]]` 引用这个节点。",
+      "fix": "把 `^tri-cell` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 22,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^pressure-wind` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^pressure-wind]]` 引用这个节点。",
+      "fix": "把 `^pressure-wind` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    },
+    {
+      "line": 33,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^monsoon` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^monsoon]]` 引用这个节点。",
+      "fix": "把 `^monsoon` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    }
+  ]
+}

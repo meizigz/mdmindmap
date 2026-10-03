@@ -1,0 +1,165 @@
+{
+  "root": {
+    "line": 1,
+    "text": "电磁感应",
+    "children": [
+      {
+        "line": 3,
+        "text": "法拉第电磁感应定律",
+        "id": "faraday",
+        "color": "red",
+        "children": [
+          {
+            "line": 4,
+            "text": "内容：磁通量变化产生感应电动势"
+          },
+          {
+            "line": 5,
+            "text": "$\\varepsilon = -\\frac{\\Delta \\Phi}{\\Delta t}$"
+          },
+          {
+            "line": 6,
+            "text": "条件：磁通量必须改变"
+          },
+          {
+            "line": 7,
+            "text": "应用：变压器、发电机原理"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "text": "楞次定律",
+        "id": "lenz",
+        "color": "red",
+        "fold": true,
+        "children": [
+          {
+            "line": 9,
+            "text": "方向：感应电流阻碍原因磁通量的变化"
+          },
+          {
+            "line": 10,
+            "text": "磁通量增加时"
+          },
+          {
+            "line": 11,
+            "text": "感应电流产生的磁场方向与原磁场相反"
+          },
+          {
+            "line": 13,
+            "text": "磁通量减少时"
+          },
+          {
+            "line": 14,
+            "text": "感应电流产生的磁场与原磁场同向"
+          },
+          {
+            "line": 16,
+            "text": "易错：不要混淆\"阻碍变化\"和\"阻碍磁通量\""
+          }
+        ],
+        "summaries": [
+          {
+            "from": 1,
+            "to": 2,
+            "node": {
+              "line": 12,
+              "text": "增加情况"
+            }
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "node": {
+              "line": 15,
+              "text": "减少情况"
+            }
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "text": "自感",
+        "id": "self-ind",
+        "children": [
+          {
+            "line": 18,
+            "text": "定义：线圈中电流变化引起的感应现象"
+          },
+          {
+            "line": 19,
+            "text": "自感系数（电感） $L = \\frac{\\Phi}{I}$",
+            "id": "self-coef"
+          },
+          {
+            "line": 20,
+            "text": "应用：日光灯启动、开关电源"
+          },
+          {
+            "line": 21,
+            "text": "能量储存 $E = \\frac{1}{2}LI^2$"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "text": "互感",
+        "id": "mutual-ind",
+        "children": [
+          {
+            "line": 23,
+            "text": "定义：一个线圈中电流变化引起相邻线圈的感应现象"
+          },
+          {
+            "line": 24,
+            "text": "互感系数 $M = \\frac{\\Phi_{21}}{I_1}$"
+          },
+          {
+            "line": 25,
+            "text": "应用：变压器、感应加热"
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "faraday",
+      "to": "lenz",
+      "style": "solid",
+      "line": 28,
+      "label": "决定方向"
+    },
+    {
+      "from": "self-ind",
+      "to": "faraday",
+      "style": "solid",
+      "line": 29,
+      "label": "同线圈内电流变化"
+    },
+    {
+      "from": "self-ind",
+      "to": "lenz",
+      "style": "dashed",
+      "line": 30,
+      "label": "能量概念相关"
+    },
+    {
+      "from": "mutual-ind",
+      "to": "lenz",
+      "style": "solid",
+      "line": 31,
+      "label": "两线圈间电磁耦合"
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 8,
+      "severity": "hint",
+      "code": "ID_NOT_LAST",
+      "message": "节点ID `^lenz` 不在行尾，在 Obsidian 里它不是块ID，其他笔记无法用 `[[文件#^lenz]]` 引用这个节点。",
+      "fix": "把 `^lenz` 移到这一行的最末尾（放在颜色和 `<!-- fold -->` 之后）。"
+    }
+  ]
+}

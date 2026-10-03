@@ -1,0 +1,49 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲",
+        "id": "a"
+      },
+      {
+        "line": 3,
+        "text": "乙",
+        "id": "b"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "a",
+      "to": "b",
+      "style": "solid",
+      "line": 9
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 6,
+      "severity": "error",
+      "code": "REL_UNPARSED",
+      "message": "箭头 `->` 写错了，这一行被忽略。",
+      "fix": "箭头只能用 `-->`（实线）、`-.->`（虚线）、`==>`（粗线），例如 `lenz -->|决定方向| faraday`。"
+    },
+    {
+      "line": 7,
+      "severity": "error",
+      "code": "REL_UNPARSED",
+      "message": "箭头 `→` 写错了，这一行被忽略。",
+      "fix": "箭头只能用 `-->`（实线）、`-.->`（虚线）、`==>`（粗线），例如 `lenz -->|决定方向| faraday`。"
+    },
+    {
+      "line": 8,
+      "severity": "error",
+      "code": "REL_UNPARSED",
+      "message": "联系区里这一行看不懂，已忽略。",
+      "fix": "每行写一条联系：`起点ID 箭头 终点ID`，可以在箭头后加 `|标签|`，例如 `lenz -->|决定方向| faraday`。"
+    }
+  ]
+}

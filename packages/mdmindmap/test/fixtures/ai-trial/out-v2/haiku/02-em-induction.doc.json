@@ -1,0 +1,129 @@
+{
+  "root": {
+    "line": 1,
+    "text": "电磁感应",
+    "children": [
+      {
+        "line": 3,
+        "text": "法拉第电磁感应定律",
+        "id": "faraday",
+        "children": [
+          {
+            "line": 4,
+            "text": "定律内容：磁通量变化产生感应电动势"
+          },
+          {
+            "line": 5,
+            "text": "$\\varepsilon = -n \\frac{\\Delta \\Phi_B}{\\Delta t}$"
+          },
+          {
+            "line": 6,
+            "text": "磁通量：$\\Phi_B = BS\\cos\\theta$"
+          },
+          {
+            "line": 7,
+            "text": "产生条件：闭合回路中磁通量变化"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "text": "楞次定律",
+        "id": "lenz",
+        "color": "red",
+        "children": [
+          {
+            "line": 9,
+            "text": "感应电流方向规则"
+          },
+          {
+            "line": 10,
+            "text": "阻碍磁通量变化：增大则反向，减小则同向"
+          },
+          {
+            "line": 11,
+            "text": "判断方向：左手定则结合磁场方向"
+          },
+          {
+            "line": 12,
+            "text": "能量守恒体现：对变化的反抗"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "text": "自感与互感",
+        "id": "induction",
+        "fold": true,
+        "children": [
+          {
+            "line": 14,
+            "text": "自感",
+            "id": "self-ind",
+            "children": [
+              {
+                "line": 15,
+                "text": "线圈内磁通量变化，产生自感电动势"
+              },
+              {
+                "line": 16,
+                "text": "$\\varepsilon = -L \\frac{\\Delta I}{\\Delta t}$"
+              },
+              {
+                "line": 17,
+                "text": "线圈自身系数：自感系数 $L$"
+              },
+              {
+                "line": 18,
+                "text": "惯性效应：开关启闭时产生反向电动势"
+              }
+            ]
+          },
+          {
+            "line": 19,
+            "text": "互感",
+            "id": "mutual-ind",
+            "children": [
+              {
+                "line": 20,
+                "text": "一个线圈电流变化，影响临近线圈"
+              },
+              {
+                "line": 21,
+                "text": "两线圈间的耦合效应"
+              },
+              {
+                "line": 22,
+                "text": "变压器工作原理基础"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "faraday",
+      "to": "lenz",
+      "style": "solid",
+      "line": 25,
+      "label": "描述现象"
+    },
+    {
+      "from": "lenz",
+      "to": "self-ind",
+      "style": "solid",
+      "line": 26,
+      "label": "决定方向"
+    },
+    {
+      "from": "self-ind",
+      "to": "mutual-ind",
+      "style": "dashed",
+      "line": 27,
+      "label": "相关概念"
+    }
+  ],
+  "diagnostics": []
+}

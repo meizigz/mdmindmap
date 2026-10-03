@@ -1,0 +1,31 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲",
+        "id": "a"
+      },
+      {
+        "line": 6,
+        "text": "乙",
+        "id": "b"
+      },
+      {
+        "line": 8,
+        "text": "丙"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "a",
+      "to": "b",
+      "style": "solid",
+      "line": 11
+    }
+  ],
+  "diagnostics": []
+}

@@ -1,0 +1,36 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲"
+      },
+      {
+        "line": 3,
+        "text": "乙"
+      }
+    ],
+    "summaries": [
+      {
+        "from": 0,
+        "to": 1,
+        "node": {
+          "line": 4,
+          "text": ""
+        }
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 4,
+      "severity": "warning",
+      "code": "SUM_EMPTY",
+      "message": "概要 `}` 后面没有总结文字，导图里会画出一个空的概要节点。",
+      "fix": "在 `}` 后面写上总结文字：`- } 总结文字`。"
+    }
+  ]
+}

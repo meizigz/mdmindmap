@@ -1,0 +1,42 @@
+{
+  "root": {
+    "line": 1,
+    "text": "三角函数",
+    "children": [
+      {
+        "line": 2,
+        "text": "弧度与角度的关系",
+        "children": [
+          {
+            "line": 3,
+            "text": "$\\pi$ 弧度 $= 180°$"
+          },
+          {
+            "line": 4,
+            "text": "$1° = \\frac{\\pi}{180}$ 弧度"
+          }
+        ],
+        "summaries": [
+          {
+            "from": 0,
+            "to": 1,
+            "node": {
+              "line": 5,
+              "text": "换算公式"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 2,
+      "severity": "error",
+      "code": "SUM_OPEN_UNCLOSED",
+      "message": "这个 `{` 没有配对的 `}`，已忽略。",
+      "fix": "`{` 写在了父节点「弧度与角度的关系」上，去括它的子节点。应该把 `{` 写在第一个被括住的子节点上，与 `- } …` 同级。"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "root": {
+    "line": 1,
+    "text": "根",
+    "children": [
+      {
+        "line": 2,
+        "text": "甲"
+      },
+      {
+        "line": 3,
+        "text": "乙"
+      }
+    ],
+    "summaries": [
+      {
+        "from": 1,
+        "to": 1,
+        "node": {
+          "line": 4,
+          "text": "总结"
+        }
+      }
+    ]
+  },
+  "relationships": [],
+  "diagnostics": [
+    {
+      "line": 3,
+      "severity": "error",
+      "code": "SUM_DOUBLE_OPEN",
+      "message": "第 2 行的 `{` 还没有配对的 `}`，这里又出现了一个 `{`；前一个已忽略，以这一个为准。",
+      "fix": "每个 `{` 都要配一个 `}`：在前一组的最后一个兄弟节点之后加 `- } 总结文字`，或者删掉多余的 `{`。"
+    }
+  ]
+}

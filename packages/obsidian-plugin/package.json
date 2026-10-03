@@ -1,6 +1,6 @@
 {
   "name": "mdmindmap-obsidian",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Obsidian plugin for mdmindmap. Its manifest.json lives at the repository root.",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "dev": "node esbuild.config.mjs --watch"
   },
   "dependencies": {
-    "mdmindmap": "0.1.0"
+    "mdmindmap": "0.1.1"
   },
   "devDependencies": {
     "esbuild": "^0.28.2"

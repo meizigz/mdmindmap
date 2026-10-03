@@ -1,6 +1,6 @@
 {
   "name": "mdmindmap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Render read-only mind maps from Markdown headings and lists, with summary braces, cross-branch relationships, colors and math.",
   "license": "MIT",
   "author": "pengyg",

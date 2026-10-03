@@ -51,6 +51,7 @@ To check a file from the command line (also handy for AI agents): `npx mdmindmap
 - **Click a node** to jump to its line in the source. **Right-click / long-press** a node to copy its text.
 - **Fold** a branch with the small button at the end of its line; the number shows how many nodes are hidden.
 - **Whole notes as maps**: run **Open current file as mind map** (or use the file menu). Any `.md` file works; the note's only top-level heading becomes the root, otherwise the file name does. Edit the note in a split pane and the map follows.
+- **New mind map**: the command **New mind map** creates a note holding just a root heading in your default location for new notes, opens it in the editor, and shows its map in a split on the right. To add frontmatter to every new mind map, set it in the plugin settings: for example `disabled rules: [all]` stops the Linter plugin from reformatting mind map notes.
 - **Toolbar** (top right of an embedded map): open the map in its own tab, or export it as PNG / SVG into your attachment folder.
 - Problems in the source show up as a ⚠ badge in the corner; click it to see what to fix.
 

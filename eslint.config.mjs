@@ -41,6 +41,11 @@ export default defineConfig([
     rules: { "no-restricted-globals": "off" },
   },
   {
+    // 声明式设置 API（getSettingDefinitions）要 Obsidian 1.13，插件最低支持 1.8.7，类型里也还没有。
+    files: ["packages/obsidian-plugin/src/settings.ts"],
+    rules: { "obsidianmd/settings-tab/prefer-setting-definitions": "off" },
+  },
+  {
     // spec §12：不用 innerHTML（推荐配置里只是警告）。
     files: ["packages/*/src/**/*.ts"],
     rules: { "@microsoft/sdl/no-inner-html": "error" },

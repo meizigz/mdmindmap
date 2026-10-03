@@ -12,6 +12,7 @@ export default defineConfig([
     "styles.css",
     ".scratch/",
     ".claude/",
+    "test-vault/",
   ]),
   ...obsidianmd.configs.recommended,
   {
@@ -56,6 +57,8 @@ export default defineConfig([
     rules: {
       "obsidianmd/no-nodejs-modules": "off",
       "obsidianmd/rule-custom-message": "off",
+      // 构建脚本往仓库自带的测试 vault 里写，那里的配置目录就是 .obsidian。
+      "obsidianmd/hardcoded-config-path": "off",
     },
   },
   {

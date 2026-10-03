@@ -1,5 +1,7 @@
 // 构建插件：打包核心库源码，产出仓库根目录的 main.js 和 styles.css。
-// --watch：监听并重建；设置了 OBSIDIAN_PLUGIN_DIR 时，每次构建后把三个文件复制过去。
+// --watch：监听并重建，每次构建后把三个文件复制到仓库里的测试 vault（test-vault/），
+// 并放一个 .hotreload 标记让 Hot Reload 插件自动重载。设置 OBSIDIAN_PLUGIN_DIR 可以改复制目标；
+// 不带 --watch 时只有设置了它才复制。
 import { readFile, writeFile, copyFile, mkdir } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -9,7 +11,9 @@ import esbuild from "esbuild";
 const here = fileURLToPath(new URL(".", import.meta.url));
 const root = resolve(here, "../..");
 const watch = process.argv.includes("--watch");
-const pluginDir = process.env.OBSIDIAN_PLUGIN_DIR;
+const pluginDir =
+  process.env.OBSIDIAN_PLUGIN_DIR ??
+  (watch ? join(root, "test-vault/.obsidian/plugins/mdmindmap") : undefined);
 
 async function writeStyles() {
   const core = await readFile(
@@ -29,6 +33,7 @@ async function copyToVault() {
   for (const file of ["main.js", "manifest.json", "styles.css"]) {
     await copyFile(join(root, file), join(pluginDir, file));
   }
+  if (watch) await writeFile(join(pluginDir, ".hotreload"), "");
   console.log(`已复制到 ${pluginDir}`);
 }
 

@@ -90,6 +90,10 @@ The full variable list is in the [library README](packages/mdmindmap/README.md#c
 
 The renderer is also an npm package: see [packages/mdmindmap](packages/mdmindmap/README.md).
 
+## Development
+
+Local debugging, the bundled test vault, and testing releases with BRAT are covered in [docs/development.md](docs/development.md) (in Chinese).
+
 ## License
 
 MIT

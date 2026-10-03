@@ -9,3 +9,12 @@ __screenshots__/
 /styles.css
 
 .claude/worktrees/
+
+# 测试 vault：只提交示例笔记、启用插件列表和 Hot Reload；dev 构建产物和 Obsidian 生成的状态不提交
+/test-vault/.obsidian/*
+!/test-vault/.obsidian/community-plugins.json
+!/test-vault/.obsidian/plugins/
+/test-vault/.obsidian/plugins/*
+!/test-vault/.obsidian/plugins/hot-reload/
+/test-vault/**/*.png
+/test-vault/**/*.svg

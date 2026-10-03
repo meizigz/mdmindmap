@@ -90,6 +90,10 @@ law1 -.->|合力为零时的特例| law2
 
 渲染器也是一个 npm 包，见 [packages/mdmindmap](packages/mdmindmap/README.zh-CN.md)。
 
+## 开发
+
+本地调试、测试 vault、用 BRAT 测试发布版，见 [docs/development.md](docs/development.md)。
+
 ## 许可
 
 MIT

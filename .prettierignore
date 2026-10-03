@@ -4,3 +4,4 @@ dist/
 .scratch/
 package-lock.json
 **/test/fixtures/
+test-vault/

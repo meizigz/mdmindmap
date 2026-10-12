@@ -12,7 +12,7 @@ import {
 } from "obsidian";
 import { render, type MindMap } from "mdmindmap";
 import { HOVER_SOURCE } from "./block";
-import { exportMap, showExportMenu } from "./export";
+import { addExportItems, showExportMenu } from "./export";
 import { t } from "./i18n";
 import { obsidianMath } from "./math";
 import { showNodeMenu } from "./menu";
@@ -109,23 +109,13 @@ export class MindMapTabView extends ItemView implements HoverParent {
   }
 
   override onPaneMenu(menu: Menu, source: string): void {
-    for (const kind of ["png", "svg"] as const) {
-      menu.addItem((item) =>
-        item
-          .setTitle(t(kind === "png" ? "exportPng" : "exportSvg"))
-          .setIcon("image-down")
-          .onClick(() => {
-            const state = this.state;
-            if (this.map && state) {
-              void exportMap(
-                this.app,
-                this.map,
-                kind,
-                state.sourcePath,
-                state.title,
-              );
-            }
-          }),
+    if (this.map && this.state) {
+      addExportItems(
+        menu,
+        this.app,
+        this.map,
+        this.state.sourcePath,
+        this.state.title,
       );
     }
     super.onPaneMenu(menu, source);

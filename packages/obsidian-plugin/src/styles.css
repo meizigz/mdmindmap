@@ -39,8 +39,8 @@
 }
 .mdmindmap-toolbar {
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: 34px; /* 避开 Obsidian 自带的“查看源码 </>”按钮 */
+  right: 36px;
   z-index: 3;
   display: flex;
   gap: 2px;
@@ -54,4 +54,20 @@
   .mdmindmap-toolbar {
     opacity: 1;
   }
+}
+
+/* 设置页里「新建导图」的示例预览 */
+.mdmindmap-settings-preview {
+  margin-top: 0.5em;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+.mdmindmap-settings-preview pre {
+  margin: 0.4em 0 0;
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background: var(--background-secondary);
+  color: var(--text-normal);
+  font-family: var(--font-monospace);
 }

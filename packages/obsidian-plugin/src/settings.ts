@@ -2,6 +2,9 @@
 
 import { PluginSettingTab, Setting, type App, type Plugin } from "obsidian";
 import { t } from "./i18n";
+import { newMindmapSource } from "./new-file";
+
+const EXAMPLE_FRONTMATTER = "disabled rules: [all]";
 
 export interface Settings {
   /** 命令「新建导图」写在文件开头的 frontmatter，不含 --- 分隔线；空字符串表示不写。 */
@@ -27,11 +30,28 @@ export class SettingsTab extends PluginSettingTab {
       .setDesc(t("newFileFrontmatterDesc"))
       .addTextArea((text) =>
         text
+          .setPlaceholder(EXAMPLE_FRONTMATTER)
           .setValue(this.settings.newFileFrontmatter)
           .onChange(async (value) => {
             this.settings.newFileFrontmatter = value;
+            renderPreview();
             await this.save();
           }),
       );
+
+    // 示例：按当前设置，新建出来的文件长什么样
+    const preview = this.containerEl.createDiv({
+      cls: "mdmindmap-settings-preview",
+    });
+    preview.createDiv({ text: t("newFilePreview") });
+    const pre = preview.createEl("pre");
+    const renderPreview = () => {
+      const frontmatter =
+        this.settings.newFileFrontmatter.trim() === ""
+          ? EXAMPLE_FRONTMATTER
+          : this.settings.newFileFrontmatter;
+      pre.setText(newMindmapSource(frontmatter, t("untitledMindmap")).text);
+    };
+    renderPreview();
   }
 }

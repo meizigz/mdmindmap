@@ -14,7 +14,7 @@ import {
 } from "obsidian";
 import { render, type MindMap } from "mdmindmap";
 import { HOVER_SOURCE } from "./block";
-import { exportMap, showExportMenu } from "./export";
+import { addExportItems, showExportMenu } from "./export";
 import { t } from "./i18n";
 import { obsidianMath } from "./math";
 import { showNodeMenu } from "./menu";
@@ -103,22 +103,13 @@ export class MindMapFileView extends TextFileView implements HoverParent {
         .setIcon("file-text")
         .onClick(() => void this.backToDocument()),
     );
-    for (const kind of ["png", "svg"] as const) {
-      menu.addItem((item) =>
-        item
-          .setTitle(t(kind === "png" ? "exportPng" : "exportSvg"))
-          .setIcon("image-down")
-          .onClick(() => {
-            if (this.map && this.file) {
-              void exportMap(
-                this.app,
-                this.map,
-                kind,
-                this.file.path,
-                this.file.basename,
-              );
-            }
-          }),
+    if (this.map && this.file) {
+      addExportItems(
+        menu,
+        this.app,
+        this.map,
+        this.file.path,
+        this.file.basename,
       );
     }
     super.onPaneMenu(menu, source);

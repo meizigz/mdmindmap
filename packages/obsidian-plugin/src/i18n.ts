@@ -15,6 +15,7 @@ const zh = {
   aiGuideCopied: "AI 写作说明已复制",
   exportPng: "导出 PNG",
   exportSvg: "导出 SVG",
+  saveAsSuffix: "到…",
   exported: "已导出：",
   exportFailed: "导出失败：",
   viewTitle: "导图",
@@ -23,6 +24,7 @@ const zh = {
   newFileFrontmatter: "新建导图的 frontmatter",
   newFileFrontmatterDesc:
     "命令「新建导图」会把这里的内容作为 frontmatter 写在文件开头，不用写 --- 分隔线。留空就不写。例如填 disabled rules: [all]，Linter 插件就不会格式化导图文件。",
+  newFilePreview: "示例：新建出来的文件内容（留空时显示的是上面的例子）",
 };
 
 type Strings = typeof zh;
@@ -41,6 +43,7 @@ const en: Strings = {
   aiGuideCopied: "AI authoring guide copied",
   exportPng: "Export PNG",
   exportSvg: "Export SVG",
+  saveAsSuffix: " to…",
   exported: "Exported: ",
   exportFailed: "Export failed: ",
   viewTitle: "Mind map",
@@ -49,6 +52,8 @@ const en: Strings = {
   newFileFrontmatter: "Frontmatter for new mind maps",
   newFileFrontmatterDesc:
     'The command "New mind map" writes this at the top of the new file as frontmatter. Leave out the --- lines; leave empty for none. For example, disabled rules: [all] keeps the Linter plugin from formatting mind map files.',
+  newFilePreview:
+    "Example: content of a newly created file (when empty, the example above is shown)",
 };
 
 export function t(key: keyof Strings): string {

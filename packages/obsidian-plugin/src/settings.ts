@@ -3,6 +3,7 @@
 import { PluginSettingTab, Setting, type App, type Plugin } from "obsidian";
 import { t } from "./i18n";
 import { newMindmapSource } from "./new-file";
+import exampleSource from "../../../docs/images/example.md";
 import exampleSvg from "../../../docs/images/example.svg";
 
 const EXAMPLE_FRONTMATTER = "disabled rules: [all]";
@@ -66,5 +67,7 @@ export class SettingsTab extends PluginSettingTab {
         alt: t("exampleImage"),
       },
     });
+    sample.createDiv({ text: t("exampleSource") });
+    sample.createEl("pre", { text: exampleSource });
   }
 }

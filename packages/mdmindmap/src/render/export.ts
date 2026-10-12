@@ -140,6 +140,15 @@ export async function exportPng(
   if (!ctx) throw new Error("无法创建画布");
   ctx.scale(scale, scale);
   ctx.drawImage(img, 0, 0, width, height);
+  if (svg.includes("@font-face")) {
+    // img.decode() 不等 SVG 里的 data URL 字体加载完：第一次画出来公式是空白的。
+    // 触发过一次加载之后稍等一下，清掉画布再画。
+    await new Promise((resolve) =>
+      (doc.defaultView ?? window).setTimeout(resolve, 300),
+    );
+    ctx.clearRect(0, 0, width, height);
+    ctx.drawImage(img, 0, 0, width, height);
+  }
   return new Promise((resolve, reject) => {
     canvas.toBlob((blob) => {
       if (blob) resolve(blob);

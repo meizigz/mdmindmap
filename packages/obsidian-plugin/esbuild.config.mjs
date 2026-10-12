@@ -56,8 +56,8 @@ const context = await esbuild.context({
   platform: "browser",
   target: "es2021",
   conditions: ["@mdmindmap/source"],
-  // AI 写作说明作为字符串打进 main.js（「复制 AI 写作说明」命令）。
-  loader: { ".md": "text" },
+  // AI 写作说明作为字符串打进 main.js（「复制 AI 写作说明」命令）；设置页的示例图同理。
+  loader: { ".md": "text", ".svg": "text" },
   external: [
     "obsidian",
     "electron",

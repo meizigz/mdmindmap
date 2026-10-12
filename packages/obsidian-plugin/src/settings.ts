@@ -3,6 +3,7 @@
 import { PluginSettingTab, Setting, type App, type Plugin } from "obsidian";
 import { t } from "./i18n";
 import { newMindmapSource } from "./new-file";
+import exampleSvg from "../../../docs/images/example.svg";
 
 const EXAMPLE_FRONTMATTER = "disabled rules: [all]";
 
@@ -53,5 +54,17 @@ export class SettingsTab extends PluginSettingTab {
       pre.setText(newMindmapSource(frontmatter, t("untitledMindmap")).text);
     };
     renderPreview();
+
+    // 效果图：一张导图的样子
+    const sample = this.containerEl.createDiv({
+      cls: "mdmindmap-settings-example",
+    });
+    sample.createDiv({ text: t("exampleImage") });
+    sample.createEl("img", {
+      attr: {
+        src: `data:image/svg+xml;charset=utf-8,${encodeURIComponent(exampleSvg)}`,
+        alt: t("exampleImage"),
+      },
+    });
   }
 }

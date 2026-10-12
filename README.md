@@ -8,6 +8,8 @@ The source is plain Markdown: without the plugin it is still a readable outline.
 
 > Status: v0.x, under active development. Not yet submitted to the community plugin list.
 
+![Example mind map](docs/images/example.svg)
+
 ## Writing a mind map
 
 Put the map in a `mdmindmap` code block:

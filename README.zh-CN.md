@@ -8,6 +8,8 @@
 
 > 状态：v0.x，开发中，还没有提交到社区插件列表。
 
+![导图示例](docs/images/example.svg)
+
 ## 怎么写
 
 把导图写在 `mdmindmap` 代码块里：

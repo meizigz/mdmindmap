@@ -74,7 +74,7 @@ BRAT 从 GitHub Release 下载插件，和用户安装的方式一样。适合�
    npm run release <x.y.z>   # 不带 v
    ```
 
-   它会把版本号写进各个 `package.json`、`manifest.json` 和 `versions.json`，跑 `npm run check`，然后提交并打标签，最后把核心库打包成根目录的 `mdmindmap-<x.y.z>.tgz`。
+   它会把版本号写进各个 `package.json`、`manifest.json` 和 `versions.json`，跑 `npm run check`，然后提交并打标签，最后把核心库打包成根目录的 `mdmindmap-<x.y.z>.tgz`，把 VS Code 扩展打包成 `mdmindmap-vscode-<x.y.z>.vsix`。
 
 2. 推送提交和标签：
 
@@ -84,7 +84,7 @@ BRAT 从 GitHub Release 下载插件，和用户安装的方式一样。适合�
 
 3. 在 GitHub 的 Releases 页面新建 Release：
    - 选刚推上去的标签。
-   - 附上根目录的 `main.js`、`manifest.json`、`styles.css`，以及 `mdmindmap-<x.y.z>.tgz`（核心库还没发布到 npm，其他 web 应用从这里安装）。
+   - 附上根目录的 `main.js`、`manifest.json`、`styles.css`，以及 `mdmindmap-<x.y.z>.tgz`（核心库还没发布到 npm，其他 web 应用从这里安装），以及 `mdmindmap-vscode-<x.y.z>.vsix`（VS Code 里用「从 VSIX 安装」）。
    - 测试版勾选 "Set as a pre-release"。
 
 `npm run dev` 会把根目录的 `main.js` 换成不压缩的调试版。`npm run release` 会先重新构建，所以不受影响；但如果是手动上传附件，上传前先跑一次 `npm run build`；tgz 要重新打的话，再跑 `npm pack -w mdmindmap`。

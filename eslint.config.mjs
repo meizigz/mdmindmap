@@ -24,6 +24,7 @@ export default defineConfig([
             "vitest.config.ts",
             "scripts/*.mjs",
             "packages/obsidian-plugin/esbuild.config.mjs",
+            "packages/vscode-extension/esbuild.config.mjs",
           ],
         },
         tsconfigRootDir: import.meta.dirname,
@@ -64,6 +65,17 @@ export default defineConfig([
       "obsidianmd/rule-custom-message": "off",
       // 构建脚本往仓库自带的测试 vault 里写，那里的配置目录就是 .obsidian。
       "obsidianmd/hardcoded-config-path": "off",
+    },
+  },
+  {
+    // VS Code 扩展：宿主代码跑在 Node 里，不受 Obsidian 插件规则（弹出窗口、Obsidian API 等）约束。
+    files: ["packages/vscode-extension/**"],
+    languageOptions: { globals: globals.node },
+    rules: {
+      "obsidianmd/prefer-window-timers": "off",
+      "obsidianmd/no-nodejs-modules": "off",
+      "obsidianmd/rule-custom-message": "off",
+      "obsidianmd/prefer-create-el": "off",
     },
   },
   {

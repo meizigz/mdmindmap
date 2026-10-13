@@ -20,3 +20,4 @@ __screenshots__/
 !/test-vault/.obsidian/plugins/hot-reload/
 /test-vault/**/*.png
 /test-vault/**/*.svg
+*.vsix

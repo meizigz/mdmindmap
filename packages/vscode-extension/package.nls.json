@@ -1,0 +1,4 @@
+{
+  "command.openPreview": "Open Mind Map to the Side",
+  "config.layout": "Layout of the whole-file mind map: logic (grows to the right) or bilateral (grows to both sides)."
+}

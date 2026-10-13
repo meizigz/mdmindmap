@@ -1,0 +1,4 @@
+{
+  "command.openPreview": "在侧边打开导图",
+  "config.layout": "整篇导图的结构：logic（向右生长）或 bilateral（向左右两侧生长）。"
+}

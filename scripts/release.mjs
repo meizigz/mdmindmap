@@ -31,6 +31,7 @@ const packageFiles = [
   "package.json",
   "packages/mdmindmap/package.json",
   "packages/obsidian-plugin/package.json",
+  "packages/vscode-extension/package.json",
 ];
 const touched = [
   ...packageFiles,

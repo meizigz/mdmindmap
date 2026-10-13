@@ -1,0 +1,9 @@
+/* 导图的基础色跟随 VS Code 主题；选择器比核心库里的 [data-mdmm-theme] .mdmm 更具体，才能盖过它。 */
+:root[data-mdmm-theme] .mdmm {
+  --mdmm-font: var(--vscode-font-family, sans-serif);
+  --mdmm-bg: var(--vscode-editor-background);
+  --mdmm-text: var(--vscode-editor-foreground);
+  --mdmm-text-muted: var(--vscode-descriptionForeground);
+  --mdmm-accent: var(--vscode-textLink-foreground);
+  --mdmm-link: var(--vscode-textLink-foreground);
+}

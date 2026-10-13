@@ -6,6 +6,10 @@
   "private": true,
   "publisher": "meizigz",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meizigz/mdmindmap.git"
+  },
   "type": "commonjs",
   "engines": {
     "vscode": "^1.90.0"

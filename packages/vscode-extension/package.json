@@ -2,7 +2,7 @@
   "name": "mdmindmap-vscode",
   "displayName": "MD Mindmap",
   "description": "Render mdmindmap mind maps in VS Code: Markdown preview code blocks and a live side-by-side mind map of the whole file.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "publisher": "meizigz",
   "license": "MIT",
@@ -78,7 +78,7 @@
     "package": "npm run build && vsce package --no-dependencies --out ../../"
   },
   "dependencies": {
-    "mdmindmap": "0.1.5"
+    "mdmindmap": "0.1.6"
   },
   "devDependencies": {
     "@types/vscode": "^1.90.0",
